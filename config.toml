@@ -1,4 +1,7 @@
 title = "Heartysoft Solutions Limited"
-baseURL = "http://example.org/"
+baseURL = "http://localhost:1313/"
 languageCode = "en"
 theme = "hsft"
+
+[permalinks]
+"ashic/blog" = "/:year/:month/:slug/"
