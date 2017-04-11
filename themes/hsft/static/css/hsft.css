@@ -3,6 +3,20 @@
     text-align: center;
 }*/
 
+div#blog-banner img {
+    float:right;
+    width: 120px;
+    box-shadow: 0 4px 40px #fff
+}
+
+div#blog-banner p {
+    font-weight: bold;
+}
+
+#article .all-posts-link {
+    float: right
+}
+
 div.company-footer{
  font-size:0.8em;
  text-align:center;
@@ -134,13 +148,20 @@ div.tag-holder ul {
 div.tag-holder li {
     background: #f0f8ff;
     float: right;
-    margin-left: 0.5em;
-    margin-top: 0.5em;
-    padding: 0.25em;
+    padding: 0.25em 0.5em;
 }
 
+div.tag-holder li:nth-child(odd) {
+    background: #4baad3;
+}
 div.tag-holder ul li a {
-    color: #000;
+    color: #4baad3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.tag-holder ul li:nth-child(odd) a {
+    color: #f0f8ff;
     font-weight: bold;
     text-decoration: none;
 }

@@ -1,0 +1,20 @@
+<div class="tag-holder">
+    <ul>
+        {{range $t := .Params.Tags }}
+        
+            <!--if (shouldRender(tag))-->
+            <!--{-->
+                <li>
+                    <a href="/">{{ $t }}</a>
+                </li>
+            <!--}-->
+        {{ end }}
+    </ul>
+</div>
+<!--@functions {
+
+    bool shouldRender(string tag)
+    {
+        return tag != "blog" && tag != "news";
+    }
+}-->
