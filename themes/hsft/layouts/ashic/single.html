@@ -27,13 +27,12 @@
             </a>
         </div>
         <h1>{{ .Title }}</h1>
-        <!--@Html.Partial("_TagList", Model.Article.Tags)-->
         {{ partial "blog/tag-list" .}}
         <div class="clear"></div>
         <div class="article-date">
             {{ .Date.Format "2 Jan, 2006" }}
         </div>
-        <!--@Html.Partial("_Share")-->
+        {{ partial "share.html" }}
         <div class="clear"></div>
         <div class="article-text">
             {{ .Content }}
@@ -42,7 +41,7 @@
         <br />
         <hr />
         <p>
-            <!--@Html.Partial("DisqusComment")-->
+            {{ partial "blog/disqus.html" }}
         </p>
     </div>
 </div>

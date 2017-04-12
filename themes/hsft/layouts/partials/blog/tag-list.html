@@ -1,13 +1,11 @@
 <div class="tag-holder">
     <ul>
         {{range $t := .Params.Tags }}
-        
-            <!--if (shouldRender(tag))-->
-            <!--{-->
+            {{if (and (ne $t "blog") (ne $t "news") ) }}        
                 <li>
                     <a href="/">{{ $t }}</a>
                 </li>
-            <!--}-->
+            {{ end }}
         {{ end }}
     </ul>
 </div>

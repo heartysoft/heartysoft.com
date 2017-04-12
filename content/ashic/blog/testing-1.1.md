@@ -1,7 +1,7 @@
 +++
 title = "title-hello-2"
 description = "Summary of hello-1."
-tags = [ ".NET", "NuGet" ]
+tags = [ ".NET", "NuGet", "blog", "news" ]
 date = "2017-04-11"
 categories = [
   "Development",
