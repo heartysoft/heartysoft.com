@@ -38,7 +38,11 @@
             </div>
 
             <!--   @RenderSection("navlinks", false) -->
-            {{ partial "top-nav.html" }}
+            {{ if eq . "blog"}}
+                {{ partial "blog/top-nav.html" . }}
+            {{ else }}
+                {{ partial "top-nav.html" . }}
+            {{ end }}
 
         </div>
         <!-- /.navbar-container -->
