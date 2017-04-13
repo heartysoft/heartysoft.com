@@ -279,6 +279,7 @@ div.code-flash span:nth-child(2)
     font-size:0.8em;
     padding:0;
     width:27em;
+    margin:0;
 }
         
 .nav ul li 
@@ -289,6 +290,9 @@ div.code-flash span:nth-child(2)
     text-align:center;
 }
                 
+#nav-collapse {
+    position: relative
+}
                 
 .nav ul li a {
     text-decoration: none;
