@@ -2,7 +2,7 @@
 title = "title-hello-2"
 description = "Summary of hello-1."
 tags = [ ".NET", "NuGet", "blog", "news" ]
-date = "2017-04-11"
+date = "2013-11-18T19:20:00-05:00"
 categories = [
   "Development",
   "VIM"

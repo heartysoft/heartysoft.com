@@ -1,0 +1,42 @@
+{{ partial "header.html" "blog" }}
+
+<div id="blog" class="page color-1">
+    <div class="row inner-page centered">
+        <!--@{Html.RenderAction("LatestPosts", "Article");}-->
+        <h2>Latest posts go here </h2>
+    </div>
+</div>
+
+<div id="archive" class="page color-4">
+    <div class="row inner-page centered">
+        <h3 class="text-center">Archive</h3>
+        <hr />
+        <!--@if (ViewBag.ShowArchiveLink == true)
+        {
+            <div class="archive-link col-md-12 container">
+                <div class="col-md-offset-8 col-md-4">
+                    <a href='@Url.Action("Index", "Article", new{author = Model.Articles.First().Author})#archive'>Show All</a>
+                </div>
+            </div>
+        }-->
+
+        <ul>
+            <!--@foreach (var article in Model.Articles)-->
+            {{ range $article := .Data.Pages }}
+                <li class="col-md-12 container">
+                    <div class="col-md-8">
+                        <a href="/">
+                            <p>
+                                <h4>{{ $article.Title }}</h4>
+                            </p>
+                        </a>
+                    </div>
+                </li>
+            {{ end }}
+
+        </ul>
+    </div>
+</div>
+
+
+{{ partial "footer.html" }}
