@@ -1,0 +1,345 @@
+
++++
+title = "Encrypted Hidden Redux : Let's Get Salty"
+description = "This article builds on the ideas presented in my earlier article http://www.heartysoft.com/post/2010 ..."
+tags = [ ".NET", "ASP.NET MVC", "ASP.NET", "Security", "blog" ]
+date = "2010-03-13 14:37:16"
+slug = "encrypted-hidden-with-salt"
++++
+<p>This article builds on the ideas presented in my earlier article <a href="http://www.heartysoft.com/post/2010/02/25/Encrypted-Hidden-Inputs-in-ASPNET-MVC.aspx">http://www.heartysoft.com/post/2010/02/25/Encrypted-Hidden-Inputs-in-ASPNET-MVC.aspx</a></p>  <p>If you haven't read that yet, I'd recommend doing so before proceeding.</p>  <h3>Problems with the Previous Approach</h3>  <p>The approach outlined in the previous article is pretty secure and easy to use. However, there are a few issues that can be improved upon:</p>  <ol>   <li><strong>Security: </strong>The approach is using a symmetric encryption process with a fixed private key. Asymmetric encryption would no doubt provide more security, but the performance costs and hassle is probably not worth it. The problem with symmetric encryption is that brute force attacks can potentially break it. As such, using only a fixed encryption key could be a security issue. Given enough time and test pages, the encrypted values could lead to the leaking of the private key. This would result in the whole process being compromised. A couple of people provided feedback on this and were concerned. Still, such brute force attacks could take hundreds of years as the attacker would be required to test at least 2^56 keys. That's not an easy task, but we can use some salting techniques to make it even harder (a lot harder) to break. This would still be within the realms of symmetric encryption but would provide (a LOT of) added security. I'll explain the salting technique later. </li>    <li><strong>CSRFs: </strong>With the previous approach, an attacker could take the encrypted value and submit it as part of another request from his browser. The system would decrypt and use the value as normal. The previous process expected that the developer would use ASP.NET MVC's AntiForgeryToken to prevent CSRFs. In other words, the process did not prevent CSRFs on its own, but expected the developer to handle them by other means. With the new process outlined in this article, this will no longer be necessary. </li>    <li><strong>Encryption and Hashing method: </strong>The previous process used Triple DES for encryption and MD5 for hashing. The new process uses Rijndael encryption and SHA256 hashing. Rijndael is approved by the US government and is natively supported by the .Net framework. If the encryption and decryption are both going to be done on Windows boxes, then Rijndael is definitely the encryption algo to use over TDES. Similarly. SHA256 has a managed implementation and is superior to MD5. </li>    <li><strong>Code Smell: </strong>The previous implementation kind of had some code smells. Stuff was there where it shouldn't have been and it just didn't feel right. I reworked the design and although all smells aren't gone (hey, it's a demo!), a lot of the stench has been removed. </li> </ol>  <h3>So What's Our Salt?</h3>  <p>A salt is basically some random bytes added into our actual data during the encryption process. Having access to the key and the salt enables complete decryption. Having access to one but not the other doesn't. The salt needs to be random enough so that different users have different ones. We still need the salt to facilitate decryption on the server. A common technique is to store part of the salt at the server and part of it in the html sent to the browser. Other techniques generate the salts using some logic and sends some or none of the salt to the client. The bottom line is that the salt needs to be random so that an attacker can't simply take some values from a legitimate page output and then post it himself. The salt still needs to be available on the server when a legitimate user submits the page. ASP.NET MVC actually has such a per user per session value baked right in. It's the AntiForgeryToken. However there are a couple of issues that prevent us from using it directly:</p>  <p>1. The AntiForgeryToken helper uses some internal classes to generate the token data. As it's internal to MVC, we can't directly access the token data. We need to generate the AntiForgeryToken input tag and parse its value.</p>  <p>2. The AntiForgeryToken value is per user per session. If the developer puts an AntiForgeryToken on the page, then that value will be visible to the attacker. That essentially hands the attacker the salt. This is not acceptable. Luckily, the AntiForgeryToken helper can accept any string as its salt (yes, its own salt – not our final salt). We can pass a fixed string as the salt and that would ensure that using AntiForgeryTokens on the page doesn't interfere with or expose our salt.</p>  <p>As I said, the AntiForgeryToken's value is constant for the same user in the same browser session and the same &quot;salt&quot; parameter passed to the helper. But if the user opens another browser window or another user uses the system, then the value would be completely different. With this approach, we don't need to send any of the salt to the browser as all of it can be generated on the server on page submission. Only the encrypted values are ever sent to the client.</p>  <h3>The Project</h3>  <p>Since quite a bit of things have changed since the previous approach, I'll start afresh. First thing to do is create an MVC 2 project called &quot;HiddenEncryptDemo&quot;. </p>  <p><em><font color="#008000">I installed MVC 2 RC 2 before installing VS 2010 RC. If you have some other combination, then slight changes might be necessary, although the core ideas will still work (even with MVC 1.0).</font></em></p>  <p>Create a Models folder and add in a class called Computer:</p>  <p><pre class='brush:c#'>    
+public class Computer     
+{     
+&#160;&#160;&#160; public string Setting { get; set; }     
+}     
+</pre></p>  <p>The reason I'm adding this class is to show that our approach will work not just on simple action parameters, but also on more complex types without a need for a separate model binder.</p>  <p>Next, add this to the Index.aspx view (in the /Views/Home folder):</p>  <p><pre class='brush:xml'>    
+&lt;% Html.BeginForm(&quot;Something&quot;, &quot;Home&quot;, FormMethod.Post); %&gt;     
+&#160;&#160;&#160; &lt;%= Html.Hidden(&quot;computer.Setting&quot;, &quot;hello world!&quot;) %&gt;     
+&#160;&#160;&#160; &lt;input type=&quot;submit&quot; value='submit' /&gt;     
+&lt;% Html.EndForm(); %&gt;     
+</pre></p>  <p>After that, add the following method to the Home controller:</p>  <p><pre class='brush:c#'>    
+[HttpPost]     
+public ActionResult Something(Computer computer)     
+{     
+&#160;&#160;&#160; ViewData[&quot;Message&quot;] = computer.Setting;     
+&#160;&#160;&#160; return View(&quot;Index&quot;);     
+}     
+</pre></p>  <p>Nothing fancy, we're just setting the ViewData[&quot;Message&quot;] to the computer.Setting value. Notice that in the code we added to Index.aspx, the form submitted to &quot;Something&quot; (the name of our action) and the name of the hidden input was &quot;computer.Setting&quot;. The default model binder will find a value for &quot;computer.Something&quot; in the request parameters and upon seeing that it can set the Setting property of the computer parameter, it's going to set computer.Setting to the value it found (in our case, &quot;hello world!&quot;). If you run the project, you should see the index page with a submit button. Clicking the button will result in a post to the server where the Something action will get called. The Something action will then set the ViewData[&quot;Message&quot;] and return the Index view. As such, you will see the words &quot;hello world!&quot; displayed on the page:</p>  <p><a href="/media/default/images/hello_1.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="hello" border="0" alt="hello" src="/media/default/images/hello_thumb_1.png" width="360" height="270" /></a> </p>  <p>On the initial Index page (or the page got after clicking the button), if you right click anywhere and select view source, you should see this (among other things):</p>  <p><a href="/media/default/images/hidden_3.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="hidden" border="0" alt="hidden" src="/media/default/images/hidden_thumb_3.png" width="794" height="83" /></a> </p>  <p>Notice how the helper added a hidden input control, set its id to &quot;computer_Setting&quot; and name to &quot;computer.Setting&quot;. The name is used as the key of the data in the post variables. Also notice how the value is &quot;hello world!&quot;. The value is clearly visible to anyone looking at the source. Our goal is to come up with a way to hide that value from clear sight while at the same time ensuring everything works as smoothly and easily as it just did. A bonus would be if no change was required in the controller's code (i.e. no specific attributes needed on the consuming action or controller, no special model binding needed for the parameter etc.) – it would be unobtrusive. These are the exact requirements of the previous approach, but today, we want to add one more – the encryption should use a different salt for each user's session so that brute force approaches of uncovering the encryption key will fail and CSRFs will be prevented by default.</p>  <h3>The Settings Provider</h3>  <p>In the previous article, we handled settings from within the encryption provider. This seemed kind of messy and I decided to use a separate settings provider. Add a &quot;Helpers&quot; folder to the project and add the interface ISettingsProvider to it:</p>  <p><pre class='brush:c#'>    
+public interface ISettingsProvider     
+{     
+&#160;&#160;&#160; byte[] EncryptionKey { get; }     
+&#160;&#160;&#160; string EncryptionPrefix { get; }     
+&#160;&#160;&#160; string SaltGeneratorKey { get; }     
+}     
+</pre></p>  <p>Next, add an implementation for the interface. The SettingsProvider class looks like this:</p>  <p><pre class='brush:c#'>    
+namespace HiddenEncryptDemo.Helpers     
+{     
+&#160;&#160;&#160; using System.Configuration;     
+&#160;&#160;&#160; using System.Security.Cryptography;     
+&#160;&#160;&#160; using System.Text;    
+&#160;&#160;&#160; 
+&#160;&#160;&#160; public class SettingsProvider : ISettingsProvider     
+&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private static readonly byte[] _encryptionKey;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private static readonly string _encryptionPrefix;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private static readonly string _saltGeneratorKey;    
+    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; static SettingsProvider()     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; //read settings from configuration     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var useHashingString = ConfigurationManager.AppSettings[&quot;UseHashingForEncryption&quot;];     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; bool useHashing = true;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (string.Compare(useHashingString, &quot;false&quot;, true) == 0)     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; useHashing = false;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encryptionPrefix = ConfigurationManager.AppSettings[&quot;EncryptionPrefix&quot;];    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (string.IsNullOrWhiteSpace(_encryptionPrefix))     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encryptionPrefix = &quot;encryptedHidden_&quot;;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _saltGeneratorKey = ConfigurationManager.AppSettings[&quot;EncryptionSaltGeneratorKey&quot;];    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (string.IsNullOrWhiteSpace(_saltGeneratorKey))     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _saltGeneratorKey = &quot;encryptionSaltKey&quot;;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var key = ConfigurationManager.AppSettings[&quot;EncryptionKey&quot;]; 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (useHashing)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var hash = new SHA256Managed();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encryptionKey = hash.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; hash.Clear();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; hash.Dispose();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; else     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encryptionKey = UTF8Encoding.UTF8.GetBytes(key);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; #region ISettingsProvider Members 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public byte[] EncryptionKey    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; get { return _encryptionKey; }     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public string EncryptionPrefix    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; get { return _encryptionPrefix; }     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public string SaltGeneratorKey    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; get { return _saltGeneratorKey; }     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; #endregion    
+&#160;&#160;&#160; }     
+}     
+</pre></p>  <p>Basically, we're just reading in some settings from the web.config file in the static constructor and returning the static values from the instance based getters. Notice that if UseHashingForEncryption setting is set, we first hash the encryption key in web.config using SHA256Managed before using it. The EncryptionPrefix is a prefix used to identify hidden inputs which were previously encrypted. The SaltGeneratorKey is a key used in getting the AntiForgeryToken.</p>  <h3>The Encryption Provider</h3>  <p>Add an interface called IEncryptString:</p>  <p><pre class='brush:c#'>    
+public interface IEncryptString : IDisposable     
+{     
+&#160;&#160;&#160; string Encrypt(string value);     
+&#160;&#160;&#160; string Decrypt(string value);     
+}     
+</pre></p>  <p>And an implementation called RijndaelStringEncrypter:</p>  <p><pre class='brush:c#'>    
+namespace HiddenEncryptDemo.Helpers     
+{     
+&#160;&#160;&#160; using System;     
+&#160;&#160;&#160; using System.Security.Cryptography;     
+&#160;&#160;&#160; using System.Text;    
+    
+&#160;&#160;&#160; public class RijndaelStringEncrypter : IEncryptString     
+&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private RijndaelManaged _encryptionProvider;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private ICryptoTransform _encrypter;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private ICryptoTransform _decrypter;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private byte[] _key;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private byte[] _iv;    
+    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; public RijndaelStringEncrypter(ISettingsProvider settings, string salt)     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encryptionProvider = new RijndaelManaged();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var saltBytes = UTF8Encoding.UTF8.GetBytes(salt);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var derivedbytes = new Rfc2898DeriveBytes(settings.EncryptionKey, saltBytes, 3);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _key = derivedbytes.GetBytes(_encryptionProvider.KeySize / 8);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _iv = derivedbytes.GetBytes(_encryptionProvider.BlockSize / 8);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; #region IEncryptString Members 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public string Encrypt(string value)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var valueBytes = UTF8Encoding.UTF8.GetBytes(value); 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (_encrypter == null)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encrypter = _encryptionProvider.CreateEncryptor(_key, _iv);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var encryptedBytes = _encrypter.TransformFinalBlock(valueBytes, 0, valueBytes.Length);    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var encrypted = Convert.ToBase64String(encryptedBytes); 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; return encrypted;    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public string Decrypt(string value)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var valueBytes = Convert.FromBase64String(value); 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (_decrypter == null)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _decrypter = _encryptionProvider.CreateDecryptor(_key, _iv);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var decryptedBytes = _decrypter.TransformFinalBlock(valueBytes, 0, valueBytes.Length);    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var decrypted = UTF8Encoding.UTF8.GetString(decryptedBytes); 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; return decrypted;    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; #endregion 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; #region IDisposable Members 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public void Dispose()    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (_encrypter != null)     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encrypter.Dispose();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encrypter = null;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (_decrypter != null)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _decrypter.Dispose();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _decrypter = null;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (_encryptionProvider != null)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encryptionProvider.Clear();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encryptionProvider.Dispose();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _encryptionProvider = null;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; #endregion    
+&#160;&#160;&#160; }     
+}     
+</pre></p>  <p>This is a sginificant change from our previous encryption method. Previously, we created a single pair of ICryptoTransforms for encryption and decryption based on the encryption key. Since we need to provide different salts for encryption for different users and different sessions, that approach will no longer work. In the new approach, each instance of the RijndaelStringEncrypter has its own salt value. As a consequence, each instance needs its own pair of ICryptoTransforms. Looking at the constructor code:</p>  <p><pre class='brush:c#'>    
+public RijndaelStringEncrypter(ISettingsProvider settings, string salt)     
+{     
+&#160;&#160;&#160; _encryptionProvider = new RijndaelManaged();     
+&#160;&#160;&#160; var saltBytes = UTF8Encoding.UTF8.GetBytes(salt);     
+&#160;&#160;&#160; var derivedbytes = new Rfc2898DeriveBytes(settings.EncryptionKey, saltBytes, 3);     
+&#160;&#160;&#160; _key = derivedbytes.GetBytes(_encryptionProvider.KeySize / 8);     
+&#160;&#160;&#160; _iv = derivedbytes.GetBytes(_encryptionProvider.BlockSize / 8);     
+}     
+</pre></p>  <p>we see that we're storing the key and iv bytes as instance variables. Please note that simply getting the bytes for the salt string using UTF8Encoding.UTF8.GetBytes(salt) is not good enough. The values generated by AntiForgeryToken - while different for each user and session – can be very similar. As such, if you're encrypting a small word (for example &quot;hello&quot;) and use the encoding derived bytes, the first few bytes may be so similar that the encrypted output of &quot;hello&quot; might appear the same in the html output for different users / sessions. As such, we're using Rfc2898DerivedBytes to ensure that only the exact salt and encryption key produce the same iv bytes. Another thing to notice is that we're using the encryption key itself as the password passed to the Rfc2898DerivedBytes constructor. This essentially means that the encryption key and the passed in salt string is used to derive the actual iv (salt) used for encryption.</p>  <h3>The Html Helper</h3>  <p>Add a file called InputExtensions.cs and add the following code to it:</p>  <p><pre class='brush:c#'>    
+namespace HiddenEncryptDemo.Helpers     
+{     
+&#160;&#160;&#160; using System.Web.Mvc;     
+&#160;&#160;&#160; using System.Web.Mvc.Html;     
+&#160;&#160;&#160; using System.Text.RegularExpressions;    
+    
+&#160;&#160;&#160; public static class InputExtensions     
+&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; public static HeartysoftHtmlHelper Heartysoft(this HtmlHelper helper)     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; return new HeartysoftHtmlHelper(helper);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     
+&#160;&#160;&#160; }    
+    
+&#160;&#160;&#160; public partial class HeartysoftHtmlHelper     
+&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private readonly HtmlHelper _helper;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private readonly ISettingsProvider _settings; 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; private static Regex _valueExtractorRegex = new Regex(&quot;.*value=\&quot;(.+)\&quot;/*&quot;, RegexOptions.Compiled); 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public HeartysoftHtmlHelper(HtmlHelper helper)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; : this(helper, new SettingsProvider())     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public HeartysoftHtmlHelper(HtmlHelper helper, ISettingsProvider settings)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _helper = helper;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _settings = settings;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public string GetAntiForgeryToken(string salt)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var input = _helper.AntiForgeryToken(salt).ToString();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var match = _valueExtractorRegex.Match(input);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; return match.Groups[1].Value;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; public MvcHtmlString EncryptedHidden(string name, object value)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (value == null)     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; value = string.Empty;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var strValue = value.ToString();    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; string salt = GetAntiForgeryToken(_settings.SaltGeneratorKey); 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var encrypter = new RijndaelStringEncrypter(_settings, salt);    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var encryptedValue = encrypter.Encrypt(strValue);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; encrypter.Dispose(); 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var encodedValue = _helper.Encode(encryptedValue);    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var newName = string.Concat(_settings.EncryptionPrefix, name); 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; return _helper.Hidden(newName, encodedValue);    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     
+&#160;&#160;&#160; }     
+}     
+</pre></p>  <p>Let's dissect the helper a bit. There are basically two important methods. The first is GetAntiForgeryToken:</p>  <p><pre class='brush:c#'>    
+public string GetAntiForgeryToken(string salt)     
+{     
+&#160;&#160;&#160; var input = _helper.AntiForgeryToken(salt).ToString();     
+&#160;&#160;&#160; var match = _valueExtractorRegex.Match(input);     
+&#160;&#160;&#160; return match.Groups[1].Value;     
+}     
+</pre></p>  <p>This get's the anti forgery token string given a specific salt. As I mentioned before, the AntiForgeryToken helper gets its value from a class internal to ASP.NET MVC and thus we can't get the value directly. To work around this, I'm using the helper to het the html of the anti forgery token hidden input and using a Regex to parse its value. The other interesting method is the EncryptedHidden function:</p>  <p><pre class='brush:c#'>    
+public MvcHtmlString EncryptedHidden(string name, object value)     
+{     
+&#160;&#160;&#160; if (value == null)     
+&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; value = string.Empty;     
+&#160;&#160;&#160; }    
+    
+&#160;&#160;&#160; var strValue = value.ToString();     
+&#160;&#160;&#160; string salt = GetAntiForgeryToken(_settings.SaltGeneratorKey);     
+    
+&#160;&#160;&#160; var encrypter = new RijndaelStringEncrypter(_settings, salt);     
+&#160;&#160;&#160; var encryptedValue = encrypter.Encrypt(strValue);     
+&#160;&#160;&#160; encrypter.Dispose(); 
+  &#160;&#160;&#160; var encodedValue = _helper.Encode(encryptedValue);    
+&#160;&#160;&#160; var newName = string.Concat(_settings.EncryptionPrefix, name); 
+  &#160;&#160;&#160; return _helper.Hidden(newName, encodedValue);    
+}    
+</pre></p>  <p>This method uses the previous one to get the salt, creates the encrypter and encrypts the input. It then uses the regular Hidden() helper to return the &lt;input&gt; tag with the value set to the encrypted data.</p>  <h3>Configuration</h3>  <p>Go to web.config and ensure that under &lt;configuration&gt;, the following entries are present:</p>  <p><pre class='brush:xml'>    
+&lt;appSettings&gt;     
+&#160;&#160;&#160; &lt;add key=&quot;EncryptionKey&quot; value=&quot;asdjahsdkhaksj dkashdkhak sdhkahsdkha kjsdhkasd&quot;/&gt;     
+&lt;/appSettings&gt;     
+</pre></p>  <h3>The View</h3>  <p>At this point, go to Index.aspx and change the html of the form to:</p>  <p><pre class='brush:xml'>    
+&lt;% Html.BeginForm(&quot;Something&quot;, &quot;Home&quot;, FormMethod.Post); %&gt;     
+&#160;&#160;&#160; &lt;%= Html.Heartysoft().EncryptedHidden(&quot;computer.Setting&quot;, &quot;hello world!&quot;) %&gt;     
+&#160;&#160;&#160; &lt;%--&lt;%= Html.Hidden(&quot;computer.Setting&quot;, &quot;hello world!&quot;) %&gt;--%&gt;     
+&#160;&#160;&#160; &lt;input type=&quot;submit&quot; value='submit' /&gt;     
+&lt;% Html.EndForm(); %&gt;     
+</pre></p>  <p>I've just commented out the old helper and used our new helper. If you run the page and view the source, you should see this:</p>  <p><pre class='brush:xml'>    
+&lt;input id=&quot;encryptedHidden_computer_Setting&quot; name=&quot;encryptedHidden_computer.Setting&quot; type=&quot;hidden&quot; value=&quot;GlafeVH/jrfim7gXfqhSHg==&quot; /&gt;     
+</pre></p>  <p>If you refresh the page and view source, you should see this:</p>  <p><pre class='brush:xml'>    
+&lt;input id=&quot;encryptedHidden_computer_Setting&quot; name=&quot;encryptedHidden_computer.Setting&quot; type=&quot;hidden&quot; value=&quot;GlafeVH/jrfim7gXfqhSHg==&quot; /&gt;     
+</pre></p>  <p>i.e. the value of the hidden input has not changed. If you open the same page in a different browser or close and open the browser or open the same page in a new window (not tab as sessions are shared across tabs), then you should see this:</p>  <p><pre class='brush:xml'>    
+&lt;input id=&quot;encryptedHidden_computer_Setting&quot; name=&quot;encryptedHidden_computer.Setting&quot; type=&quot;hidden&quot; value=&quot;IM94hlaZP4HmqOhxw7Ewyg==&quot; /&gt;     
+</pre></p>  <p>Notice how the value is different from the previous value. If you kept the previous browser open, then refreshing the page and viewing source, you should see this:</p>  <p><pre class='brush:xml'>    
+&lt;input id=&quot;encryptedHidden_computer_Setting&quot; name=&quot;encryptedHidden_computer.Setting&quot; type=&quot;hidden&quot; value=&quot;GlafeVH/jrfim7gXfqhSHg==&quot; /&gt;     
+</pre></p>  <p>In other words, each session is getting a unique value that's different from the value got in a different session. As such, we can say that the encryption is using a per session salt which makes brute force attacks that much harder.</p>  <p><em><font color="#008000">Please note that since the salt is per session, the exact values of the hidden inputs will vary greatly from the ones shown here. What's important is that in the same session, the value is the same, but the value differs from session to session.</font></em></p>  <h3>The Controller Factory</h3>  <p>We now need to actually decrypt values when the page is posted back. We do this via a custom ControllerFactory. Our controller factory will look for any encrypted input parameters, decrypt them and add them to RouteData using their original names so that they're available to the model binder. Add a class called DecryptingControllerFactory:</p>  <p><pre class='brush:c#'>    
+namespace HiddenEncryptDemo.Helpers     
+{     
+&#160;&#160;&#160; using System.Linq;     
+&#160;&#160;&#160; using System.Web.Mvc;     
+&#160;&#160;&#160; using System.IO;&#160; 
+&#160;&#160;&#160; 
+&#160;&#160;&#160; public class DecryptingControllerFactory : DefaultControllerFactory     
+&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; private ISettingsProvider _settings = new SettingsProvider();    
+    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; public override IController CreateController(System.Web.Routing.RequestContext requestContext, string controllerName)     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var parameters = requestContext.HttpContext.Request.Params;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var encryptedParamKeys = parameters.AllKeys.Where(x =&gt; x.StartsWith(_settings.EncryptionPrefix)).ToList();&#160; 
+    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; IEncryptString decrypter = null; 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foreach (var key in encryptedParamKeys)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (decrypter == null)     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; decrypter = GetDecrypter(requestContext);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var oldKey = key.Replace(_settings.EncryptionPrefix, string.Empty);    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var oldValue = decrypter.Decrypt(parameters[key]);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; requestContext.RouteData.Values[oldKey] =&#160; oldValue;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (decrypter != null)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; decrypter.Dispose();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; return base.CreateController(requestContext, controllerName);    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; private IEncryptString GetDecrypter(System.Web.Routing.RequestContext requestContext)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var salt = GetCurrentSalt(requestContext);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var decrypter = new RijndaelStringEncrypter(_settings, salt);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; return decrypter;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; } 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160; private string GetCurrentSalt(System.Web.Routing.RequestContext requestContext)    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var controllerContext = new ControllerContext();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; controllerContext.RequestContext = requestContext;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var viewContext = new ViewContext(controllerContext, new WebFormView(&quot;dummy&quot;),     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; new ViewDataDictionary(), new TempDataDictionary(), TextWriter.Null); 
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var helper = new HtmlHelper(viewContext, new ViewPage());    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var afToken = helper.Heartysoft().GetAntiForgeryToken(_settings.SaltGeneratorKey);     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; return afToken;     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     
+&#160;&#160;&#160; }     
+}     
+</pre></p>  <p>The controller factory is quite simple. It first checks the request parameters to see if there are any that have a key with a prefix equal to the EncryptionPrefix provided by the settings provider. If there are, we cycle through each and add an entry into RouteData with the key set to the parameter's key minus the prefix and the value set to the decrypted value. We create the decrypter only if needed so that if there aren't any encrypted hidden inputs, we don't waste any resources. Furthermore, if we do need a decrypter, we create an instance and reuse it for all the encrypted parameters for the request. Since the salt is per session, reusing the decrypter for all the encrypted parameters in the request is safe and reduces resource usage. To create the decrypter, we need the salt value that has to be equal to the salt used for encrypting. This is where the very interesting GetCurrentSalt method comes in:</p>  <p><pre class='brush:c#'>    
+private string GetCurrentSalt(System.Web.Routing.RequestContext requestContext)     
+{     
+&#160;&#160;&#160; var controllerContext = new ControllerContext();     
+&#160;&#160;&#160; controllerContext.RequestContext = requestContext;     
+&#160;&#160;&#160; var viewContext = new ViewContext(controllerContext, new WebFormView(&quot;dummy&quot;),     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; new ViewDataDictionary(), new TempDataDictionary(), TextWriter.Null);    
+    
+&#160;&#160;&#160; var helper = new HtmlHelper(viewContext, new ViewPage());     
+&#160;&#160;&#160; var afToken = helper.Heartysoft().GetAntiForgeryToken(_settings.SaltGeneratorKey);     
+&#160;&#160;&#160; return afToken;     
+}     
+</pre></p>  <p>What this method is doing is it's faking a view context and controller context, setting the controller context's request context to that of the current request and using the fake view context and controller context to create a new instance of the HtmlHelper class. Then, it calls our previously coded GetAntiForgeryToken helper to get the value of the salt string. This is a very useful technique of creating an instance of the HtmlHelper class and can be used to create helpers outside of view code. Over at the ASP.NET forums, Brad Wilson expressed concerns that passing in TextWriter.Null may cause problems, but I believe this is not so. TextWriter.Null provides a TextWriter instance that can be written to but not read from. I don't think any Html helpers should be reading from the TextWriter – they should only be writing to it. And even if there are such helpers, AntiForgeryToken() and our GetAntiForgeryToken() do not read from the TextWriter, so this is perfectly safe for our purposes. </p>  <p>The end result of all of this is that if there are encrypted hidden inputs, then they are decrypted and the entries with original names (i.e. wothout the prefix) are added to RouteData. This ensures the original entries are available for ModelBinding purposes. The last change you need to do is open up the global.asax.cs file and ensure the Application_Start looks like this:</p>  <p><pre class='brush:c#'>    
+protected void Application_Start()     
+{     
+&#160;&#160;&#160; AreaRegistration.RegisterAllAreas();     
+&#160;&#160;&#160; RegisterRoutes(RouteTable.Routes);     
+&#160;&#160;&#160; ControllerBuilder.Current.SetControllerFactory(typeof(DecryptingControllerFactory));     
+}     
+</pre></p>  <h3>Running the Page</h3>  <p>We'll need to stop the dev server (if you're using IIS, simply restart it). We need to do this because we made changes to the global.asax.cs page. Right click the dev server's icon in your traybar and click stop:</p>  <p><a href="/media/default/images/stop-server_1.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="stop-server" border="0" alt="stop-server" src="/media/default/images/stop-server_thumb_1.png" width="243" height="180" /></a> </p>  <p>You can now simply hit ctrl + F5 in VS to run the page. Click the button and you should see this:</p>  <p><a href="/media/default/images/result_1.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="result" border="0" alt="result" src="/media/default/images/result_thumb_1.png" width="410" height="310" /></a> </p>  <p>Run the page in another browser and click the button. You should see the same results. Viewing the source, you'll see that while pages processed in the same session always has the same encrypted value, a different session in a different browser produces a different encrypted value. Still, when either value is posted to the server, the decrypting controller factory correctly decrypts the values and we get our original value in RouteData. Neither the encryption key nor the encryption iv is ever passed to the client and thus the process is much more secure than our previous approach.</p>  <p>And that's all there is to enable an unobtrusive, easy to use, secure, reusable and salted hidden inputs in ASP.NET MVC. On top of that, it should perform better since we're using managed Rijndael encryption which does not call out to non-managed resources like TDES does.</p>  <h3>Possible Questions</h3>  <p>I would recommend you first read the &quot;possible questions&quot; section of the previous article. Other than those:</p>  <p><strong>3. Is the data really secure?      <br /></strong>The previous approach was pretty secure. As I mentioned, an attacker would need at least 2^56 attempts. This new approach makes it much much more harder for the attacker to succeed. So, it's even more secure. The previous approach didn't tackle CSRFs but relied on the developer using AntiForgeryToken on the pages and the associated ValidateAntiForgeryToken attribute on the controller action being posted to. This approach handles CSRFs itself.</p>  <p><strong>8. How is the performance?      <br /></strong>The performance is pretty good. The controller factory only creates a decrypter when needed and reuses it for decrypting all encrypted parameters. We do, however, need to create an encrypter for each call to Html.Heartyfoft().EncryptedHidden(). A way to negate this would be to use some sort of per request IOC container so that one instance is used for processing a whole request. In my opinion, helpers should not have state, but if you want, implementing that part should be easy.</p>  <h3>Source Code</h3>  <p><a href="http://cid-9d8a7728356393b1.skydrive.live.com/self.aspx/.Public/code/HiddenEncryptDemo2.zip">Download</a></p>  <p><a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fwww.heartysoft.com%2fpost%2f2010%2f03%2f13%2fencrypted-hidden-with-salt.aspx"><img border="0" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fwww.heartysoft.com%2fpost%2f2010%2f03%2f13%2fencrypted-hidden-with-salt.aspx" /></a>&#160;<a href="http://dotnetshoutout.com/Heartysoftcom-Encrypted-Hidden-Redux-Lets-Get-Salty" rev="vote-for"><img style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" alt="Shout it" src="http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fwww.heartysoft.com%2Fpost%2F2010%2F03%2F13%2Fencrypted-hidden-with-salt.aspx" /></a></p>  <p><em>---------------------------------------------------------</em></p>  <p><em><font color="#ff0000">Questions&#160; and comments relating to this article are welcome. Comments completely unrelated to the article and posted with the sole intention of putting your link here are not.        <br /></font></em><em><font color="#ff0000">       <br />If you spam, your comment will not be approved, will be deleted and your IP blocked. I maintain my site almost daily and such comments – even if they pass the spam filter – will get removed as soon as possible. If this gets too tedious, I may disable comments entirely. Please don't ruin it for everybody else.</font></em></p>  <p><em>---------------------------------------------------------</em></p>
+        

@@ -1,0 +1,17 @@
+
++++
+title = "Kaspersky and ‘Banner’s"
+description = "What a coincidence...my second post on my blog is also about Kaspersky. Why do I keep running into t ..."
+tags = [ "ASP.NET", "General Software Development", "blog" ]
+date = "2008-07-28 05:10:00"
+slug = "Kaspersky-and-e28098Bannere28099s"
++++
+<p>What a coincidence...my second post on my blog is also about Kaspersky. Why do I keep running into the weird things? Anyway, this should also hold for many web content filters.</p>
+<p>Last night I was finally playing around with the most excellent <a href="http://urlrewriter.net/">urlrewriter.net</a>. I'm on IIS7 on Vista x64 SP1. I'd always thought (for unknown reasons) that this thing would be tough and would give me a headache with my images and stuff. I followed the Gu's awesome tutorial over <a href="http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx">here</a> , and as usual, the hard thing became easier (thanks Scott). I wanted extensionless urls and I had IIS7 - just to get over my php faithful friends who always sneered at us for those .aspx extensions.</p>
+<p>Well...I added the reference, created the form control provider, hooked it up with the browser file and put the stuff needed in web.config. It worked great, except for themes. More on that in my <a title="UrlRewriting.Net and Themes" href="/ashicmahtab/archive/2008/07/28/urlrewriter-net-and-themes.aspx">next post</a>.</p>
+<p>Well...great except for one thing: everything was turning out exactly as I wanted after initial tweaking (again, <a title="Url Rewriting.net and Themes" href="/ashicmahtab/archive/2008/07/28/urlrewriter-net-and-themes.aspx">next post</a>), but for some god forsaken reason, the three images that make up my site banner were not getting displayed. They displayed fine when browsed through the VS dev server, not so after deploying to IIS.</p>
+<p>This took a few hours of hair pulling, as I could see no logical reason why it'd display bucket.png, but not banner.png. I even tried putting an image tag of the files on the page. Nope. Didn't work. And worst thing was that there wasn't even a red cross. How could the browser "find" the file (no red cross), and yet display nothing?</p>
+<p>I created another test site, this one without <a href="http://urlrewriter.net/">urlrewriter.net</a>. Same problem. Banner_left.png displays when viewed from the dev server, doesn't when viewed from IIS.</p>
+<p>Another whole hour, and for some reason, I thought of my dear old friend and protector, Kaspersky. I go into settings&gt;&gt;content filtering. I see that Banner Add Blocker is running. I see I have nothing under white lists and blacklist. I click the link 0(total 0). And sure enough, I get displayed a LOT of default filtration rules. Quite a few rules are dedicated to remove anything and everything that has anything remotely connected to the specific word "banner" (ban, banners, bann, bannerz...). I go to the whitelist tab and add "localhost". Everything works :)</p>
+<p>In the end, I decided to change the images' names, as I highly doubt any Kaspersky user would actually add my site to their whitelist to see my site banner. Still, if you're having similar trouble with your web filtering software, I hope this helps. It would've certainly saved me a few hours of playing around with IIS settings.</p>
+        

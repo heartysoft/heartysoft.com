@@ -1,0 +1,49 @@
+
+{{ partial "header.html" "blog" }}
+   <!--  @RenderBody() -->
+
+<!--<div id="services">Services</div>
+<div id="community">Services</div>
+<div id="hsft">Services</div>
+<div id="technology">Services</div>-->
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>{{ .Title }}</h1>
+        {{ partial "blog/tag-list" .}}
+        <div class="clear"></div>
+        <div class="article-date">
+            {{ .Date.Format "2 Jan, 2006" }}
+        </div>
+        {{ partial "share.html" }}
+        <div class="clear"></div>
+        <div class="article-text">
+            {{ .Content }}
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            {{ partial "blog/disqus.html" }}
+        </p>
+    </div>
+</div>
+
+
+{{ partial "footer.html" }}

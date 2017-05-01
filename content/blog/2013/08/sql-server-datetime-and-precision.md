@@ -1,0 +1,10 @@
+
++++
+title = "SQL Server, DateTime, and Precision"
+description = "Sql Server’s DateTime type is quite often used to represent dates (and err…times). It’s so common th ..."
+tags = [ ".NET", "blog", "SQL" ]
+date = "2013-08-06 05:59:03.813000"
+slug = "sql-server-datetime-and-precision"
++++
+<p>Sql Server’s DateTime type is quite often used to represent dates (and err…times). It’s so common that that’s the default mapping for some ORMs. The “new” MVC Web Security stuff’s tables use DateTime as well. Here’s a quick question – did you know that DateTime is accurate to about 3.33 milliseconds? In other words, if three DateTimes happened to be within 3.33 milliseconds of each other, they may be deemed equal due to precision issues. Most of the time, this is not a problem as you don’t care that much about milliseconds. For some cases, we do need to resort to millisecond comparison, and in these cases, DateTime simple doesn’t cut it. </p> <p>What are the alternatives? One is a bit icky – you can store the Ticks in a bigint and compare on ticks. While having a nice bigint to look at, deciphering dates requires a little additional work. If you’re ok with that, great!</p> <p>The other option is to use datetime2 – a type that&nbsp; was introduced in Sql Server 2008. DateTime2 has higher precision – in fact, it lets you choose the precision level. You declare datetime2 fields as datetime2(n) where n represents the number of decimal places of the second value to retain for precision. So, datetime2(1) would be accurate to 0.1 seconds, and datetime2(3) would be accurate to the millisecond. datetime2(7) is accurate to 100 nanoseconds, and that’s as accurate as you can go with datetime2. So what does this extra precision cost? More storage, surely? Nope. While datetime takes 8 bytes, datetime2 takes between 6 to 8 bytes. So, it can potentially save some space as well. In other words, if you’re on Sql Server 2008 or a later version, you should consider defaulting to datetime2.</p>
+        

@@ -1,0 +1,23 @@
+<div id="blog" class="page color-1">
+    <div class="row inner-page centered">
+
+        <h3 class="text-center">Latest Blog Entries</h3>
+        <hr /> {{ range first 3 .Data.Pages.ByDate.Reverse }}
+        <div class="container col-md-4 blog-post-summary">
+            <div>
+                <a href="{{ .Permalink }}">
+                    <h4 class="text-center ">{{ .Title }}</h4>
+                    <p class="container justify">
+                        {{ .Description }}
+                    </p>
+                    <p class="text-right">
+                        {{ .Date.Format "02-01-2006" }}
+                    </p>
+                </a>
+            </div>
+        </div>
+        <p class="hidden-md"></p>
+        {{ end }}
+
+    </div>
+</div>

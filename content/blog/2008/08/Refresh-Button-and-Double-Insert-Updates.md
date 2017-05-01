@@ -1,0 +1,15 @@
+
++++
+title = "Refresh Button and Double Insert / Updates"
+description = "I saw a few questions on the forums about double posting of data because of users using the refresh  ..."
+tags = [ "ASP.NET", "blog" ]
+date = "2008-08-01 19:33:00"
+slug = "Refresh-Button-and-Double-Insert-Updates"
++++
+<p>I saw a few questions on the forums about double posting of data because of users using the refresh buttons in the browser.</p>
+<p>Ideally, I'd want to have my insert / update mechanisms be done by AJAX calls to a web service. While this will work nicely regardless of back / refresh buttons being pressed, there is a necessary overhead, and a lot of people (including me, in a hurry) find the default features of a gridview very attractive. Granted, I could just put the gridview in an update panel and be done with it, but there's a quick fix in case you're not using AJAX:</p>
+<p>After the insert/update is done, if it was successful, just do a Response.Redirect to the same page.</p>
+<p>&nbsp;UPDATE: As pointed out by the always helpful <a title="Anas, from the West Bank" href="http://weblogs.asp.net/anasghanem/">anas</a>, tmorton has an excellent and in <a href="http://aspalliance.com/687">depth article</a> on this topic. She presents various commonly used methods that DON'T WORK, and also some that do. It seems like the only viable options are doing what I suggested above, or actually changing the db so that it doesn't allow duplicates by using unique constraints&nbsp;(which isn't always what we want) or to check the db before indexing to see if the insert/update does something we don't want. The last option is ideally the best, but would require quite a bit of code for each and every insert. I'm as surprised as she was that the last method achieved the best performance in her tests. I could be wrong, but it seemed that her tests were made taking into account that users would be hitting the refresh button after insert most, if not all of the time. I wonder if the last method would be as fast compared to the others if most inserts were just inserts and no refresh button were clicked (as would be the most expected case). If the checks are always made, then they would be redundant only when the checks weren't needed. And most of the time, they would not be needed.</p>
+<p>The problem with the method I suggested has the problem that the ViewState is cleared for the controls. If there is no problem with that, then it can work very well, while maintaining a lot of simplicity. If we wanted some controls to retain their values, we could easily save them in Session, and retrieve them after redirect. This would add complexity, but nowhere near the complexity needed to make all the checks everytime. Still, ideally, we should all be checking the db everytime. But when we want a quick solution, the redirect would work great.</p>
+<p>Of course, on my pages, I always use AJAX to handle the inserts, whether in an updatepanel or by calling a webservice. That, IMO is the best way and it doesn't have to deal with that pesky double posting thing at all.</p>
+        

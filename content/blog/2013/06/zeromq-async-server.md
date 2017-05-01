@@ -1,0 +1,10 @@
+
++++
+title = "ZeroMQ London–Async Server Client Platform"
+description = "A write up of our latest meetup, and link to code."
+tags = [ "ZeroMQ", ".NET", "C#", "Community", "blog" ]
+date = "2013-06-24 09:58:00.517000"
+slug = "zeromq-async-server"
++++
+<p>Here’s the code from our latest meetup. Here’s what we (almost) built:</p> <ul> <li>An async client server platform where clients and servers can be added dynamically.</li> <li>Communication is done over TCP.</li> <li>The platform takes care of intermittent network connectivity (but not long outages).</li></ul> <p>While James got it running, mine fell at the final hurdle – when trying to finish the final bits in next to no time, I managed to invert the condition of a while loop <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/otnfrioh135dxh1fgic3rjje/wlEmoticon-smile%5B2%5D.png">. Hey, I was building everything from scratch, while explaining zero to a bunch of newcomers, some of them non-.NET – and all in less than 90 minutes. (It’s been fixed in the code). You can find the source code here:</p> <p><a href="https://github.com/ZeroMQLondon/AsyncServer">https://github.com/ZeroMQLondon/AsyncServer</a></p> <p>We also discussed about the characteristics of various sockets, how zero works, about topologies, a moderately complex real world example where I’m using it, nuances etc. Slaughtered Lamb afterwards was fun as usual.</p> <p>We’ll have another one in August (we meet every two months). We *might* start touching on things like fault tolerance (theory and practice). Remember your laptops <img class="wlEmoticon wlEmoticon-smile" style="border-top-style: none; border-left-style: none; border-bottom-style: none; border-right-style: none" alt="Smile" src="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/otnfrioh135dxh1fgic3rjje/wlEmoticon-smile%5B2%5D.png"></p>
+        

@@ -1,0 +1,10 @@
+
++++
+title = "ASP.NET MVC 3 CTP1 View Improvements"
+description = "ASP.NET MVC 3 CTP1 has introduced many improvements, not least of which is in the View. This screenc ..."
+tags = [ ".NET", "ASP.NET", "ASP.NET MVC", "blog" ]
+date = "2010-09-15 21:12:40"
+slug = "aspnet-mvc-3-ctp1-view-improvements"
++++
+<p>ASP.NET MVC 3 CTP1 has introduced many improvements, not least of which is in the View. This screencast explores the improvements in the View, specially looking at the awesome new ViewEngine – Razor. It covers Razor syntax, layouts, templates, issues with namespaces etc. It also looks at the new dynamic viewmodel and shows how it can be used to clean up view code. It's just over 45 minutes long and we do go into a little depth. Hope you enjoy it :)</p>  <div><iframe height="500" src="/videos/Mvc3Ctp1ViewImprovements/default.html" frameborder="0" width="740" scrolling="no"></iframe></div>  <p><em>PS: This is my first ever screencast. If you have any tips regarding recording, hosting video etc. I'd be happy for pointers. </em></p>  <p><em>PPS: I recently was invited to take a session on ASP.NET MVC 3 CTP1 for the virtual techdays hosted by Microsoft India recently. I got about 2 days notice and due to communication problems resulting in my gaining access to the virtual meet 30 minutes into a one hour session, I had to cut it way short. I later discovered that I had my monitor set to its 1920x1200 native resolution, so I don't think anyone got anything visual out of it. I was surprised I got a 6.71 (out of 9) rating from the attendees – I was expecting something like 1 or 2 ;). I hope this video makes up for at least part of that dreadful session.</em></p>  <p><em>PPPS: The video doesn't seem to be progressive-downloading in Chrome. I'll try to fix this tomorrow. For now, please use IE or FF.</em></p>
+        

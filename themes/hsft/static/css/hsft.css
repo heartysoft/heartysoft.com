@@ -111,6 +111,10 @@ div#archive-content-holder ul {
     list-style: none;
 }
 
+div#archive li:nth-child(odd) {
+    background-color: #ecf9ff;
+}
+
 div#archive-content-holder>div>ul>li {
     clear: both;
     margin: 1.5em 1em 1em 1em;
@@ -271,7 +275,6 @@ div.code-flash span:nth-child(2)
     position:absolute;
     right:1em;
     top:0.1em;
-    height:20em;
 }
         
 .nav ul{
@@ -449,4 +452,44 @@ div.inner-page {
 .reference blockquote small {
     font-weight: bold;
     color: #fff
+}
+
+.blog-post-summary div {
+    background: #ecf9ff;
+    padding: 0.5em
+}
+.blog-post-summary div p {
+    color: #000;
+    width: auto;
+    max-width: 740px;
+}
+
+.blog-post-summary div p:first-of-type {
+    min-height: 100px;
+}
+
+.blog-post-summary div h4 {
+    min-height: 60px;
+}
+
+#archive ul.tag-links li {
+    margin: .75em .25em .25em .5em;
+    float: right;
+    font-weight: bold;
+}
+
+#archive ul.tag-links li:nth-child(odd) {
+    background: #d3d3d3;
+}
+
+#archive ul.tag-links li:nth-child(odd) a {
+    color: #fff;
+}
+
+#archive ul.tag-links li:nth-child(even) a {
+    color: #000;
+}
+
+#archive li {
+    padding: .05em .5em;
 }

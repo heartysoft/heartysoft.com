@@ -1,0 +1,30 @@
+
++++
+title = "Simple Username / Password Authentication WITHOUT Membership Providers"
+description = "The Membership provider in asp.net is great. As is the Roles support. You can do some very nifty thi ..."
+tags = [ "ASP.NET", "ASP.NET", "blog" ]
+date = "2009-06-19 05:44:00"
+slug = "Simple-Username-Password-Authentication-WITHOUT-Membership-Providers"
++++
+<p>The Membership provider in asp.net is great. As is the Roles support. You can do some very nifty things with it with a considerable amount of ease. You can get hashed or encrypted passwords and a whole host of features that&rsquo;s pretty much enterprise grade. And you get it for free. Well, not free, but it is pretty easy to set up.</p>
+<p>But what if your website only needed two or three user accounts? What if you didn&rsquo;t need all that fancy stuff. You just want to use a login system that&rsquo;ll just block off an admin area or something and you want to do it quick and dirty. Maybe it&rsquo;s a prototype. Maybe it&rsquo;s your own little site where you just want simplicity for authentication. I&rsquo;ve actually went through all the aspnet_regsql.exe trouble for a very simple site that would have just one user. Sounds like overkill? It is.</p>
+<p>The login controls provided in asp.net 2.0 are quite handy, but they mostly work with a membership provider. The &lt;asp:Login&gt; control is specially helpful for creating a login screen in no time. But it too works with a Membership provider.</p>
+<p>So how can we quickly setup a login system without using a Membership provider? And how can we use the &lt;asp:Login&gt; control to set up the login screen when using such a system? Read on&hellip;</p>
+<p>Forms authentication actually allows you to store usernames and passwords in the web.config file. A typical web.config file doing this is shown here:</p>
+<p>&nbsp;</p>
+<p><a href="http://www.heartysoft.com/image.axd?picture=login-1.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="login-1" src="http://www.heartysoft.com/image.axd?picture=login-1_thumb.png" border="0" alt="login-1" width="607" height="617" /></a></p>
+<p>I&rsquo;ve highlighted the important parts. The authentication mode needs to be Forms. The PasswordFormat is left as &ldquo;Cleared&rdquo; here. It can also be hashed or encrypted. I&rsquo;ll make a post in the future about hashed and encrypted passwords. I&rsquo;ve added a single &lt;user&gt; to the credentials node. You could easily add more. In the &lt;authorization&gt; node, I&rsquo;ve allowed all users. In the &lt;location&gt; node for the &ldquo;admin&rdquo; folder, I&rsquo;ve set it to deny all unauthenticated users. So, if a user is logged in, they can access the admin folder. If not, they&rsquo;re asked to login.</p>
+<p>Now, with this in place, if you were to put an &lt;asp:Login&gt; control on a page and expect it to work just like when using a Membership provider, then you&rsquo;re in for a nasty surprise. Even if you enter the correct username and password, it&rsquo;ll tell you the login has failed. Why? The reason is pretty simple. We&rsquo;ve not mentioned a Membership provider to use, so asp.net defaults to the Membership provider in the machine.config, which usually is an asp.net sql membership provider drawing info from a database in App_Data. That database has no info about our user named admin with the password &ldquo;pa$$w0rd!&rdquo;. So, logging in fails. How do we overcome this? Simple. Just add a handler for the OnLoogingIn (NOT OnLoggedIn) event of the &lt;asp:Login&gt; control and in that handler, do this:</p>
+<p><a href="http://www.heartysoft.com/image.axd?picture=login-2.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="login-2" src="http://www.heartysoft.com/image.axd?picture=login-2_thumb.png" border="0" alt="login-2" width="612" height="143" /></a></p>
+<p>[If you don&rsquo;t want the authentication cookie to persist between requests, set the second parameter of RedirectFromLoginPage to false.]</p>
+<p>&nbsp;</p>
+<p>That&rsquo;s all there is to it.</p>
+<p>Now, that was very simple, but the question that pops up is <em>is it secure?</em></p>
+<p>Well, the answer is both a yes and a no. It&rsquo;s yes in the sense that IIS will never serve anything with a .config extension from an outside request. So, users on your site will never be able to download the web.config and look at the username and passwords. The &ldquo;no&rdquo; part of the answer comes from the fact that if someone can look inside the web.config file, they&rsquo;d be able to see the usernames and passwords. If you run your own server or have a hosted account that only you access, this is not that big a problem. [I add the latter coz no hosting company is ever going to go through the risk of looking inside of clients&rsquo; files for passwords.] For extra security though, you can use hashed or encrypted passwords in this system too, which I&rsquo;ll cover in a future post.</p>
+<p>A drawback to this is that the web.config file can get very big for a lot of users. But then again, this isn&rsquo;t meant to be used for a lot of users. This is meant for very simple sites woth very few users. There are sites out there that are like this and don&rsquo;t need all the Membership gloss. If your site&rsquo;s like that, you can easily use this method.</p>
+<p>&nbsp;</p>
+<p>Hope that helps.</p>
+<div class="wlWriterHeaderFooter" style="margin:0px; padding:0px 0px 0px 0px;">
+<div class="shoutIt"><a rev="vote-for" href="http://dotnetshoutout.com/Submit?url=http%3a%2f%2fwww.heartysoft.com%2fpost%2f2009%2f06%2f19%2fSimple-Username-Password-Authentication-WITHOUT-Membership-Providers.aspx&amp;title=Simple+Username+%2f+Password+Authentication+WITHOUT+Membership+Providers"><img style="border:0px" src="http://dotnetshoutout.com/image.axd?url=http://www.heartysoft.com/post/2009/06/19/Simple-Username-Password-Authentication-WITHOUT-Membership-Providers.aspx" alt="Shout it" /></a></div>
+</div>
+        

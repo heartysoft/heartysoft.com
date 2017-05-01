@@ -1,0 +1,10 @@
+
++++
+title = "ZeroMQ .NET Gotcha – Remember the VC++ Runtime"
+description = "A look at a common deployment problem for .NET applications using ZeroMQ."
+tags = [ ".NET", "ZeroMQ", "blog" ]
+date = "2013-01-28 17:59:02.120000"
+slug = "zeromq-vc-runtime"
++++
+<p>ZeroMQ has an excellent NuGet package – clrzmq. It works pretty well, except for the fact that it requires the VC++ runtime. If that’s not installed, then you get an error saying MSVCP100.dll wasn’t found. And if you happen to be running in a windows service hosted by TopShelf, you get a cryptic error message saying Access is Denied (not really Topshelf’s fault). Details seem to suggest that the libzmq.dll file could not be found – or something along those lines. This is a common problem when deploying ZeroMQ based applications to fresh servers.  <p>The solution is quite simple:</p> <p>For 32 bit systems, install the <a href="http://www.microsoft.com/en-us/download/details.aspx?id=5555">Microsoft Visual C++ 2010 Redistributable Package (x86)</a><br>For 64 bit systems, install the <a href="http://www.microsoft.com/en-us/download/details.aspx?id=14632">Microsoft Visual C++ 2010 Redistributable Package (x64)</a></p> <p>There’s another little caveat. If you’re using “Any CPU” as the build output but have “32 bit preferred”, then you will need the x86 bits regardless of whether or not the OS is x86 or x64. If “32 bit preferred” is not selected, then you need the binaries that correspond to your OS.</p> <p><a href="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/ngl1a1hxtttgd1myckza1aap/image%5B3%5D.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/ektvj5fienct4amoixqyx2jp/image_thumb%5B1%5D.png" width="507" height="88"></a> </p> <p>Hope that helps.</p>
+        
