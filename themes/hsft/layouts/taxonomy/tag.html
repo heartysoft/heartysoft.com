@@ -1,3 +1,4 @@
+
 {{ partial "header.html" "blog" }}
 
 {{ partial "blog/latest-posts.html" . }}
@@ -33,7 +34,7 @@
                             {{range $t := $article.Params.tags }}
                                 {{if (and (ne $t "blog") (ne $t "news") ) }}
                                     <li>
-                                        <a href="{{/tags/{{$t | urlize }}/">{{ $t }}</a>
+                                        <a href="/tags/{{$t | urlize}}/">{{ $t }}</a>
                                     </li>
                                 {{ end }}
                             {{ end }}

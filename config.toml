@@ -2,6 +2,7 @@ title = "Heartysoft Solutions Limited"
 baseURL = "http://localhost:1313/"
 languageCode = "en"
 theme = "hsft"
+preserveTaxonomyNames = false
 
 [permalinks]
 "blog" = "/ashic/blog/:year/:month/:slug/"
