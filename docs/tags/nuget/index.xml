@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nuget on Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/tags/nuget/</link>
+    <link>http://hsft.co/tags/nuget/</link>
     <description>Recent content in Nuget on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 03 Sep 2015 21:09:19 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/nuget/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/tags/nuget/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Please Don’t Strong Name NuGet Packages that Aren’t</title>
-      <link>http://localhost:1313/ashic/blog/2015/09/dont-strong-name-existing-nuget-packages/</link>
+      <link>http://hsft.co/ashic/blog/2015/09/dont-strong-name-existing-nuget-packages/</link>
       <pubDate>Thu, 03 Sep 2015 21:09:19 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/09/dont-strong-name-existing-nuget-packages/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/09/dont-strong-name-existing-nuget-packages/</guid>
       <description>We’ve seen the fights on twitter about strong naming of assemblies. There are arguments from both parties. Strong named assemblies can be GAC-ed; but hey, the trend is pretty much anti-GAC – dnx lets you ship the runtime with your app. Right? Right? I’ve not bothered much with strong naming – a) I can’t see what it gives you, b) it’s a hassle that’ll take time (however little) to set up.</description>
     </item>
     
     <item>
       <title>The Other Side of NuGet</title>
-      <link>http://localhost:1313/ashic/blog/2011/10/the-other-side-of-nuget/</link>
+      <link>http://hsft.co/ashic/blog/2011/10/the-other-side-of-nuget/</link>
       <pubDate>Fri, 28 Oct 2011 03:37:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/10/the-other-side-of-nuget/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/10/the-other-side-of-nuget/</guid>
       <description>NuGet is a very nice addition to the .NET developers’ arsenal. It is a central place for every library and framework in .NET. It has pretty good tooling integrated into Visual Studio and the command line options are pretty sweet too. It can pull down specific libraries including their own dependencies saving the developer a lot of time and effort in figuring them out manually. For the continued growth of the open source .</description>
     </item>
     

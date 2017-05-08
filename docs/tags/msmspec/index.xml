@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Msmspec on Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/tags/msmspec/</link>
+    <link>http://hsft.co/tags/msmspec/</link>
     <description>Recent content in Msmspec on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 07 Mar 2011 02:35:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/msmspec/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/tags/msmspec/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introducing MSMSpec</title>
-      <link>http://localhost:1313/ashic/blog/2011/03/introducing-msmspec/</link>
+      <link>http://hsft.co/ashic/blog/2011/03/introducing-msmspec/</link>
       <pubDate>Mon, 07 Mar 2011 02:35:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/03/introducing-msmspec/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/03/introducing-msmspec/</guid>
       <description>http://msmspec.codeplex.com/ MSMSpec is a T4 based tool that can generate MSTest code to extend your MSpec (Machine.Specifications) tests so that they can run under anything that runs MSTest. This means all the Visual Studio testing features become available for your MSpec tests without the need for Resharper, TDD.NET or setting up an external tool. This can be useful in scenarios where you need to / require / are forced to use certain technologies.</description>
     </item>
     

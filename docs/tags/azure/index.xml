@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Azure on Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/tags/azure/</link>
+    <link>http://hsft.co/tags/azure/</link>
     <description>Recent content in Azure on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 13 Apr 2014 21:41:14 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Azure Website Instances Share the Same Files</title>
-      <link>http://localhost:1313/ashic/blog/2014/04/azure-websites-share-files/</link>
+      <link>http://hsft.co/ashic/blog/2014/04/azure-websites-share-files/</link>
       <pubDate>Sun, 13 Apr 2014 21:41:14 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2014/04/azure-websites-share-files/</guid>
+      <guid>http://hsft.co/ashic/blog/2014/04/azure-websites-share-files/</guid>
       <description>During a conversation on twitter, I learnt something that kind of surprised me. You know the fancy feature where you can drag a slider and increase the number of instances of your website that serves your customers?  Well, it turns out that all the instances are served off the same copy of the files. Obviously these files are served off virtualised drives, so it’s not like a disk failure is going to wipe away your websites.</description>
     </item>
     

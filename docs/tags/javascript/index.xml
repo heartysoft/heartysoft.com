@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/tags/javascript/</link>
+    <link>http://hsft.co/tags/javascript/</link>
     <description>Recent content in Javascript on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 02 Jan 2012 05:27:23 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Formatting JavaScript Date</title>
-      <link>http://localhost:1313/ashic/blog/2012/01/formatting-javascript-date/</link>
+      <link>http://hsft.co/ashic/blog/2012/01/formatting-javascript-date/</link>
       <pubDate>Mon, 02 Jan 2012 05:27:23 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2012/01/formatting-javascript-date/</guid>
+      <guid>http://hsft.co/ashic/blog/2012/01/formatting-javascript-date/</guid>
       <description>Formatting DateTime in C# is dead simple – just call ToString() passing in the format string you desire. Doing the same in JavaScript is annoyingly cumbersome. Today, I came across a nice little jQuery plugin that can carry out this mundane task. It’s the jQuery-dateFormat plugin and can be found at http://archive.plugins.jquery.com/project/jquery-dateFormat Using it is quite simple:
 
 I can think of more than one time where this would&#39;ve saved me some drudgery </description>

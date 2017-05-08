@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cqrs on Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/tags/cqrs/</link>
+    <link>http://hsft.co/tags/cqrs/</link>
     <description>Recent content in Cqrs on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Apr 2012 15:16:57 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/cqrs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/tags/cqrs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Speaking at NxtGenUG Coventry</title>
-      <link>http://localhost:1313/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</link>
+      <link>http://hsft.co/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</link>
       <pubDate>Sun, 15 Apr 2012 15:16:57 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</guid>
+      <guid>http://hsft.co/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</guid>
       <description>I&#39;ll be speaking about CQRS, Event Sourcing and Related Patterns at NxtGenUG Conventry on June 26, 2012.</description>
     </item>
     
     <item>
       <title>Speaking at NxtGenUG Southampton</title>
-      <link>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</link>
+      <link>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</link>
       <pubDate>Tue, 06 Dec 2011 21:30:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</guid>
       <description>I&#39;ll be speaking on CQRS, Event Sourcing and related patterns at NxtGenUG Southampton on January 19.</description>
     </item>
     
     <item>
       <title>Speaking at NxtGenUG Hereford</title>
-      <link>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</link>
+      <link>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</link>
       <pubDate>Tue, 06 Dec 2011 19:15:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</guid>
       <description>I&#39;ll be speaking on CQRS, Event Sourcing and related patterns at NxtGenUG Hereford on January 09, 2012.</description>
     </item>
     
     <item>
       <title>My CQRS Session at the Canary Wharf Dot Net User Group</title>
-      <link>http://localhost:1313/ashic/blog/2011/06/canary-wharf-cqrs/</link>
+      <link>http://hsft.co/ashic/blog/2011/06/canary-wharf-cqrs/</link>
       <pubDate>Mon, 20 Jun 2011 07:14:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/06/canary-wharf-cqrs/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/06/canary-wharf-cqrs/</guid>
       <description>About a couple of weeks ago, I presented some very basic CQRS and Event Sourcing concepts to the Canary Wharf Dot Net User Group. It was an interesting experience to say the least. About everybody there had heard of CQRS (hmmm), about a quarter knew a bit about how it works (wow) and only one guy there actually uses it (ah well). This confusing spread in the audience made it quite challenging as to which bits to focus on and what to consider “advanced”.</description>
     </item>
     

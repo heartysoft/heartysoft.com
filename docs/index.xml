@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/</link>
+    <link>http://hsft.co/</link>
     <description>Recent content on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 21 May 2016 15:02:34 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OpenVPN Disconnecting on Windows - Reset WinSock</title>
-      <link>http://localhost:1313/ashic/blog/2016/05/open-vpn-disconnecting-reset-winsock/</link>
+      <link>http://hsft.co/ashic/blog/2016/05/open-vpn-disconnecting-reset-winsock/</link>
       <pubDate>Sat, 21 May 2016 15:02:34 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2016/05/open-vpn-disconnecting-reset-winsock/</guid>
+      <guid>http://hsft.co/ashic/blog/2016/05/open-vpn-disconnecting-reset-winsock/</guid>
       <description>For the last few days, I just couldn’t connect to work VPN from my Windows 10 laptop. Rather, I could connect, and authenticate successfully, but as soon as I accessed anything, it would disconnect stating a tls-error, or decrypt-error. I tried numerous things – uninstalling VirtualBox, lowering MTUs to 1492, then to 1472, cleared out OpenVPN registry settings, tried Viscosity (which looks quite nice, and is very cheap – but not free).</description>
     </item>
     
     <item>
       <title>NDepend 6 is Awesome</title>
-      <link>http://localhost:1313/ashic/blog/2015/11/ndepend-6-is-awesome/</link>
+      <link>http://hsft.co/ashic/blog/2015/11/ndepend-6-is-awesome/</link>
       <pubDate>Fri, 06 Nov 2015 08:02:21 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/11/ndepend-6-is-awesome/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/11/ndepend-6-is-awesome/</guid>
       <description>I’m a fan of tools giving you insight into various code metrics, some of which can be worth keeping an eye on for long lived complex projects. In the .NET side of things, NDepend is one of the best in this regard. Until recently however, NDepend could not deal with C#’s compiler driven async-await stuff for a few metrics. NDepend 6 rectifies that.
 The Problem C#’s async-await features does a lot of things under the hood.</description>
     </item>
     
     <item>
       <title>Please Don’t Strong Name NuGet Packages that Aren’t</title>
-      <link>http://localhost:1313/ashic/blog/2015/09/dont-strong-name-existing-nuget-packages/</link>
+      <link>http://hsft.co/ashic/blog/2015/09/dont-strong-name-existing-nuget-packages/</link>
       <pubDate>Thu, 03 Sep 2015 21:09:19 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/09/dont-strong-name-existing-nuget-packages/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/09/dont-strong-name-existing-nuget-packages/</guid>
       <description>We’ve seen the fights on twitter about strong naming of assemblies. There are arguments from both parties. Strong named assemblies can be GAC-ed; but hey, the trend is pretty much anti-GAC – dnx lets you ship the runtime with your app. Right? Right? I’ve not bothered much with strong naming – a) I can’t see what it gives you, b) it’s a hassle that’ll take time (however little) to set up.</description>
     </item>
     
     <item>
       <title>Deleting stuff older than date</title>
-      <link>http://localhost:1313/ashic/blog/2015/07/deleting-stuff-older-than-date/</link>
+      <link>http://hsft.co/ashic/blog/2015/07/deleting-stuff-older-than-date/</link>
       <pubDate>Mon, 06 Jul 2015 14:27:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/07/deleting-stuff-older-than-date/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/07/deleting-stuff-older-than-date/</guid>
       <description>I seem to be looking for this frequently, and can never remember it. So, more of a reminder for me (and for others!)
 &amp;nbsp;
 find ./ –not –newermt 2015-06-23 | xargs rm –rf
@@ -54,10 +54,10 @@ This finds all the stuff in the current path (./) that hasn’t changed after 20
     
     <item>
       <title>CommandQueryExample Feedback 2: Alternative Implementation</title>
-      <link>http://localhost:1313/ashic/blog/2015/02/command-query-example-part2/</link>
+      <link>http://hsft.co/ashic/blog/2015/02/command-query-example-part2/</link>
       <pubDate>Fri, 13 Feb 2015 01:42:48 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/02/command-query-example-part2/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/02/command-query-example-part2/</guid>
       <description>This is the second part (of n) in my look into Alan’s example implementation of having a project that doesn’t use a repository. As a reminder, the goal is not CQRS, or DDD, but to see how applications can be built that do data access san repositories.
 Show Me Ze Codez The code for the (maybe first?) alternative implementation can be found here: https://github.com/ashic/CommandQueryExample
 In the root folder, there’s a src2 folder, with Alan’s original implementation in the src folder.</description>
@@ -65,10 +65,10 @@ In the root folder, there’s a src2 folder, with Alan’s original implementati
     
     <item>
       <title>CommandQueryExample Feedback 1: Overview</title>
-      <link>http://localhost:1313/ashic/blog/2015/02/command-query-example-part1/</link>
+      <link>http://hsft.co/ashic/blog/2015/02/command-query-example-part1/</link>
       <pubDate>Wed, 11 Feb 2015 01:41:20 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/02/command-query-example-part1/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/02/command-query-example-part1/</guid>
       <description>My twitter buddy, and a person I quite admire, Alan Stevens has been looking into the latest “fad” of repository hate. He’s been looking at alternatives, and has created a simple sample application, available at https://github.com/alanstevens/CommandQueryExample . He’s asked for feedback, and seeing that these are often common questions, with his permission, I’m giving mine in the form of a few posts. So, let’s get started.
 &amp;nbsp;
 What It’s Not The sample is not an attempt at CQRS – Alan mentions that in the readme.</description>
@@ -76,101 +76,101 @@ What It’s Not The sample is not an attempt at CQRS – Alan mentions that in t
     
     <item>
       <title>Sample and Population Parameters</title>
-      <link>http://localhost:1313/ashic/blog/2015/01/sample-and-population-parameters/</link>
+      <link>http://hsft.co/ashic/blog/2015/01/sample-and-population-parameters/</link>
       <pubDate>Wed, 07 Jan 2015 00:39:41 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/01/sample-and-population-parameters/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/01/sample-and-population-parameters/</guid>
       <description>A population of interest consists of every data point in a...well... &#34;population&#34;. For example, say you want to figure out if a certain product is popular (by a &#34;rating&#34; variable) among 20 to 30 year old males living in the United Kingdom. Your population in this case is all males aged 20 to 30 years living in the United Kingdom. Assume (for simplicity) that every body in the population has rated the product.</description>
     </item>
     
     <item>
       <title>On Cassandra</title>
-      <link>http://localhost:1313/ashic/blog/2015/01/on-cassandra/</link>
+      <link>http://hsft.co/ashic/blog/2015/01/on-cassandra/</link>
       <pubDate>Mon, 05 Jan 2015 23:14:33 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/01/on-cassandra/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/01/on-cassandra/</guid>
       <description>New year; renewed attempt to kickstart blogging. 2014 has been quite awesome for me. I’ve gone deeper and deeper into data – data engineering, data science, data analytics, data munging, R, Spark, Cassandra, machine learning, statistical inference… yum yum…yum yum yum. I’ve been meaning to write about these lovely adventures, but ran into perfectionist syndrome. To hell with it… I’ll put out all the imperfections coz why not? First up, Cassandra.</description>
     </item>
     
     <item>
       <title>Statistical Inference, Bias, and the Scottish Referendum</title>
-      <link>http://localhost:1313/ashic/blog/2014/09/scottish-referendum-bias-statistical-inference/</link>
+      <link>http://hsft.co/ashic/blog/2014/09/scottish-referendum-bias-statistical-inference/</link>
       <pubDate>Sun, 07 Sep 2014 14:02:28 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2014/09/scottish-referendum-bias-statistical-inference/</guid>
+      <guid>http://hsft.co/ashic/blog/2014/09/scottish-referendum-bias-statistical-inference/</guid>
       <description>I’ll start this post off by first saying I’m a foreign national living and working in London for a few years. I have no stake in whether or not Scotland votes “yay” or “nay” in the upcoming independence referendum. I’ve been to Scotland a few times, and it’s a lovely place. Whether or not it makes political, economic, or any other form of sense to break up a union lasting a few hundred years?</description>
     </item>
     
     <item>
       <title>IntelliJ, Coursera, Scala, Sbt, Madness</title>
-      <link>http://localhost:1313/ashic/blog/2014/05/intellij-coursera-scala-sbt-madness/</link>
+      <link>http://hsft.co/ashic/blog/2014/05/intellij-coursera-scala-sbt-madness/</link>
       <pubDate>Sat, 03 May 2014 14:44:39 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2014/05/intellij-coursera-scala-sbt-madness/</guid>
+      <guid>http://hsft.co/ashic/blog/2014/05/intellij-coursera-scala-sbt-madness/</guid>
       <description>I’m revisiting Martin Odersky’s Scala course at Coursera. This is the second running of the course. Last time, I tried to get things running with IntelliJ IDEA, and reluctantly reverted to Eclipse as nothing seemed to work properly. As this is my second time doing the course, and also as I would like to actually work with Scala (despite its sluggish dev experience in IDEs…but that’s another story), I was determined to get things running in IntelliJ no matter what.</description>
     </item>
     
     <item>
       <title>Per Controller Settings for Web Api</title>
-      <link>http://localhost:1313/ashic/blog/2014/04/webapi-per-controller-settings/</link>
+      <link>http://hsft.co/ashic/blog/2014/04/webapi-per-controller-settings/</link>
       <pubDate>Wed, 16 Apr 2014 23:40:47 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2014/04/webapi-per-controller-settings/</guid>
+      <guid>http://hsft.co/ashic/blog/2014/04/webapi-per-controller-settings/</guid>
       <description>ASP.NET ViewModels typically follow the C# convention of Pascal casing property names. By default, the Json serializer spits out Json objects with field names matching the property names. In JavaScript, it is conventional to use camel casing for almost everything – if something starts with a capital letter and is not all caps, then it denotes that new must be used to instantiate an instance. Not using new in this case causes weird problems, so the capital letter at the start serves as a mechanism to make this immediately visible.</description>
     </item>
     
     <item>
       <title>Azure Website Instances Share the Same Files</title>
-      <link>http://localhost:1313/ashic/blog/2014/04/azure-websites-share-files/</link>
+      <link>http://hsft.co/ashic/blog/2014/04/azure-websites-share-files/</link>
       <pubDate>Sun, 13 Apr 2014 21:41:14 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2014/04/azure-websites-share-files/</guid>
+      <guid>http://hsft.co/ashic/blog/2014/04/azure-websites-share-files/</guid>
       <description>During a conversation on twitter, I learnt something that kind of surprised me. You know the fancy feature where you can drag a slider and increase the number of instances of your website that serves your customers?  Well, it turns out that all the instances are served off the same copy of the files. Obviously these files are served off virtualised drives, so it’s not like a disk failure is going to wipe away your websites.</description>
     </item>
     
     <item>
       <title>Configure P4Merge as Git Mergetool</title>
-      <link>http://localhost:1313/ashic/blog/2014/03/git-p4merge-mergetool/</link>
+      <link>http://hsft.co/ashic/blog/2014/03/git-p4merge-mergetool/</link>
       <pubDate>Tue, 04 Mar 2014 00:56:45 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2014/03/git-p4merge-mergetool/</guid>
+      <guid>http://hsft.co/ashic/blog/2014/03/git-p4merge-mergetool/</guid>
       <description>I’ve been using p4merge as my mergetool for a while now. Yet, every time I need to configure it, I seem to be doing google searches with lots of different “ways” to do so. This is a handy lookup for the future :)
 P4merge is now natively supported by Git (as of March, 2014). The latest version available from the p4merge download site automatically adds the binary path to your environment’s PATH.</description>
     </item>
     
     <item>
       <title>Oredev 2013</title>
-      <link>http://localhost:1313/ashic/blog/2013/11/oredev-2013/</link>
+      <link>http://hsft.co/ashic/blog/2013/11/oredev-2013/</link>
       <pubDate>Sat, 09 Nov 2013 09:06:29 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/11/oredev-2013/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/11/oredev-2013/</guid>
       <description>So, Oredev 2013 just finished. And what an awesome conference. So many great talks, and so many more awesome people. My fun started a day before the conference. Jez Humble graciously allowed me to sit in on his pre conference workshop on Continuous Delivery. As a fan of the concept, and of the book, it was a nice to finally see the man himself talk about it. And of course, he didn’t disappoint.</description>
     </item>
     
     <item>
       <title>SQL Server, DateTime, and Precision</title>
-      <link>http://localhost:1313/ashic/blog/2013/08/sql-server-datetime-and-precision/</link>
+      <link>http://hsft.co/ashic/blog/2013/08/sql-server-datetime-and-precision/</link>
       <pubDate>Tue, 06 Aug 2013 05:59:03 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/08/sql-server-datetime-and-precision/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/08/sql-server-datetime-and-precision/</guid>
       <description>Sql Server’s DateTime type is quite often used to represent dates (and err…times). It’s so common that that’s the default mapping for some ORMs. The “new” MVC Web Security stuff’s tables use DateTime as well. Here’s a quick question – did you know that DateTime is accurate to about 3.33 milliseconds? In other words, if three DateTimes happened to be within 3.33 milliseconds of each other, they may be deemed equal due to precision issues.</description>
     </item>
     
     <item>
       <title>Sql Integrated Security, IIS App Pools, and Permissions</title>
-      <link>http://localhost:1313/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</link>
+      <link>http://hsft.co/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</link>
       <pubDate>Wed, 31 Jul 2013 06:28:25 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</guid>
       <description>Integrated Security is quite nice in the sense that you don’t need to configure login names in config files for various servers. And there are some other benefits in terms of manageability, etc: http://serverfault.com/questions/13292/is-using-integrated-security-sspi-for-accessing-sql-server-better-for-web-appl . And while it will take a bit of administration to configure proper impersonation, etc. to get Integrated Security working properly, for simple cases (or even test boxes) where you can have IIS and the database on the same box, it’s quite easy to set up.</description>
     </item>
     
     <item>
       <title>Git Ignore Files and Powershell</title>
-      <link>http://localhost:1313/ashic/blog/2013/07/gitignore-powershell-unicode/</link>
+      <link>http://hsft.co/ashic/blog/2013/07/gitignore-powershell-unicode/</link>
       <pubDate>Tue, 16 Jul 2013 20:48:24 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/07/gitignore-powershell-unicode/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/07/gitignore-powershell-unicode/</guid>
       <description>Powershell’s cool. The syntax may be opinionated, but having a proper scripting environment in Windows is excellent. Git is cool. If you don’t use git, you’re @£$££!###. Typically, I create .gitignore files from the git bash. The way I do it is:
 touch .gitignore
 The main reason for doing this is because Windows Explorer (or File Explorer as it’s known these days) won’t let me create the .gitignore file – “YOU MUST TYPE A FILENAME”.</description>
@@ -178,86 +178,86 @@ The main reason for doing this is because Windows Explorer (or File Explorer as 
     
     <item>
       <title>ZeroMQ London–Async Server Client Platform</title>
-      <link>http://localhost:1313/ashic/blog/2013/06/zeromq-async-server/</link>
+      <link>http://hsft.co/ashic/blog/2013/06/zeromq-async-server/</link>
       <pubDate>Mon, 24 Jun 2013 09:58:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/06/zeromq-async-server/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/06/zeromq-async-server/</guid>
       <description>Here’s the code from our latest meetup. Here’s what we (almost) built:
  An async client server platform where clients and servers can be added dynamically. Communication is done over TCP. The platform takes care of intermittent network connectivity (but not long outages). While James got it running, mine fell at the final hurdle – when trying to finish the final bits in next to no time, I managed to invert the condition of a while loop .</description>
     </item>
     
     <item>
       <title>Martin Thompson’s Writing Concurrent Code with Lock Free Algorithms Course</title>
-      <link>http://localhost:1313/ashic/blog/2013/06/martin-thompson-lock-free-algos/</link>
+      <link>http://hsft.co/ashic/blog/2013/06/martin-thompson-lock-free-algos/</link>
       <pubDate>Mon, 10 Jun 2013 11:57:03 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/06/martin-thompson-lock-free-algos/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/06/martin-thompson-lock-free-algos/</guid>
       <description>I had the opportunity to attend Martin Thompson’s Writing Concurrent Code with Lock Free Algorithms Course ( http://skillsmatter.com/course/java-jee/martin-thompsons-writing-concurrent-code-with-lock-free-algorithms ) at SkillsMatter last week. Here is a brief summary of my experience.
 The course starts off with Martin talking about mechanical sympathy, and describing how the innards of modern processors work from a conceptual point of view. This includes various level of caches, buffers, memory controllers, processor architecture, cache lines and what not.</description>
     </item>
     
     <item>
       <title>Specifying Processor Affinity on Windows (Taskset for Windows)</title>
-      <link>http://localhost:1313/ashic/blog/2013/06/processor-affinity-windows-taskset/</link>
+      <link>http://hsft.co/ashic/blog/2013/06/processor-affinity-windows-taskset/</link>
       <pubDate>Thu, 06 Jun 2013 08:48:21 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/06/processor-affinity-windows-taskset/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/06/processor-affinity-windows-taskset/</guid>
       <description>Applications that use multiple threads can benefit greatly in terms of performance by specifying the processors which should be available to it. By default, the OS scheduler can do an OK job of this, however if you know how you’re using threads, being able to specify which processors to run on can significantly increase performance. Let’s consider an example:
 You have an application that has two threads sharing one or more variables.</description>
     </item>
     
     <item>
       <title>Building F# 3.0 Projects on a Build Server WITHOUT Visual Studio</title>
-      <link>http://localhost:1313/ashic/blog/2013/03/build-fsharp-3-on-build-server-without-vs/</link>
+      <link>http://hsft.co/ashic/blog/2013/03/build-fsharp-3-on-build-server-without-vs/</link>
       <pubDate>Tue, 12 Mar 2013 16:31:50 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/03/build-fsharp-3-on-build-server-without-vs/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/03/build-fsharp-3-on-build-server-without-vs/</guid>
       <description>We added an F# project in our solution and builds started failing. It was the same with Team City and TFS (don’t ask why we have both). The reason was simple – the F# tools weren’t on the build server. A quick tweet suggested the general approach is to install VS on the build server. For irrational and non-sensical hygiene issues, I prefer not to. So, I started a little experiment…</description>
     </item>
     
     <item>
       <title>ZeroMQLondon – And Away We Go</title>
-      <link>http://localhost:1313/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</link>
+      <link>http://hsft.co/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</link>
       <pubDate>Thu, 21 Feb 2013 23:19:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</guid>
       <description>On Wednesday, we had our first hands on session of the London ZeroMQ User Group. It was nice to see such an enthusiastic bunch of people come along to find out what Zero is all about.
 As our first technical session, it covered some of the basic concepts – contexts, sockets, and “sockets”. We got started with some of the theory, and then moved onto getting a basic REQ-REP pair up and running over TCP – across threads, across processes, and then (with some difficulty overcoming network issues but hey – what’s a dive into network programming without network issues, eh?</description>
     </item>
     
     <item>
       <title>ZeroMQ .NET Gotcha – Remember the VC&#43;&#43; Runtime</title>
-      <link>http://localhost:1313/ashic/blog/2013/01/zeromq-vc-runtime/</link>
+      <link>http://hsft.co/ashic/blog/2013/01/zeromq-vc-runtime/</link>
       <pubDate>Mon, 28 Jan 2013 17:59:02 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/01/zeromq-vc-runtime/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/01/zeromq-vc-runtime/</guid>
       <description>ZeroMQ has an excellent NuGet package – clrzmq. It works pretty well, except for the fact that it requires the VC++ runtime. If that’s not installed, then you get an error saying MSVCP100.dll wasn’t found. And if you happen to be running in a windows service hosted by TopShelf, you get a cryptic error message saying Access is Denied (not really Topshelf’s fault). Details seem to suggest that the libzmq.dll file could not be found – or something along those lines.</description>
     </item>
     
     <item>
       <title>NDepend – Data Mining for your Codebase</title>
-      <link>http://localhost:1313/ashic/blog/2013/01/ndepend/</link>
+      <link>http://hsft.co/ashic/blog/2013/01/ndepend/</link>
       <pubDate>Mon, 28 Jan 2013 01:36:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2013/01/ndepend/</guid>
+      <guid>http://hsft.co/ashic/blog/2013/01/ndepend/</guid>
       <description>I’ve been meaning to write something about NDepend for a while now. It is essentially a tool to give you deep insight as to various aspects of your codebase. It has lots of features, can provide a tonne of metrics, and has very good Visual Studio integration. Any engineering discipline puts a lot of emphasis on metrics, and NDepend is a tool which can give you these in an easy to use manner.</description>
     </item>
     
     <item>
       <title>ZeroMQLondon Launch</title>
-      <link>http://localhost:1313/ashic/blog/2012/12/zeromq-london-launch/</link>
+      <link>http://hsft.co/ashic/blog/2012/12/zeromq-london-launch/</link>
       <pubDate>Fri, 07 Dec 2012 02:06:18 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2012/12/zeromq-london-launch/</guid>
+      <guid>http://hsft.co/ashic/blog/2012/12/zeromq-london-launch/</guid>
       <description>We launched the London ZeroMQ User Group (ZeroMQLondon) on Wednesday, the 5th of December, 2012. We were extremely lucky to have one of the founders of 0mq, Pieter Hintjens, in town for TechMeshConf 2012 – and to agree to do a talk to launch the group. This was our first meetup, and it got a bit hectic towards the start… Hopefully we’ll do better in future ones. We are extremely grateful to Skillsmatter for providing us with a large enough place to hold the 50+ people that came (and with Udi speaking downstairs and “hogging” a large part of the London .</description>
     </item>
     
     <item>
       <title>Roughing It Session at the Canary Wharf Dot Net User Group</title>
-      <link>http://localhost:1313/ashic/blog/2012/05/roughing-it-canary-wharf/</link>
+      <link>http://hsft.co/ashic/blog/2012/05/roughing-it-canary-wharf/</link>
       <pubDate>Mon, 07 May 2012 14:05:09 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2012/05/roughing-it-canary-wharf/</guid>
+      <guid>http://hsft.co/ashic/blog/2012/05/roughing-it-canary-wharf/</guid>
       <description>Here are the slides and code from my recent talk at the Canary Wharf Dot Net User Group (lots of code….few slides).
 Roughing It View more presentations from Ashic Mahtab. Code:
 https://github.com/ashic/RoughingItCanaryWharf
@@ -267,28 +267,28 @@ Enjoy!</description>
     
     <item>
       <title>Speaking at NxtGenUG Coventry</title>
-      <link>http://localhost:1313/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</link>
+      <link>http://hsft.co/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</link>
       <pubDate>Sun, 15 Apr 2012 15:16:57 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</guid>
+      <guid>http://hsft.co/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</guid>
       <description>I&#39;ll be speaking about CQRS, Event Sourcing and Related Patterns at NxtGenUG Conventry on June 26, 2012.</description>
     </item>
     
     <item>
       <title>Yes, I Use a Text Editor for Demonstrating Code</title>
-      <link>http://localhost:1313/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</link>
+      <link>http://hsft.co/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</link>
       <pubDate>Thu, 15 Mar 2012 05:51:52 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</guid>
+      <guid>http://hsft.co/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</guid>
       <description>I was in Southampton recently for a talk titled “An Introduction to CQRS, Event Sourcing and their Benefits”. I’ve got some nice feedback suggesting people generally liked it. I also got some nice criticism – some to do with the focus of the talk (which I’ll cover in another post) but one particular one that brought up the issue of my coding in a text editor - “Dropping out many times to a text editor to write code that was never compiled let alone executed.</description>
     </item>
     
     <item>
       <title>Formatting JavaScript Date</title>
-      <link>http://localhost:1313/ashic/blog/2012/01/formatting-javascript-date/</link>
+      <link>http://hsft.co/ashic/blog/2012/01/formatting-javascript-date/</link>
       <pubDate>Mon, 02 Jan 2012 05:27:23 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2012/01/formatting-javascript-date/</guid>
+      <guid>http://hsft.co/ashic/blog/2012/01/formatting-javascript-date/</guid>
       <description>Formatting DateTime in C# is dead simple – just call ToString() passing in the format string you desire. Doing the same in JavaScript is annoyingly cumbersome. Today, I came across a nice little jQuery plugin that can carry out this mundane task. It’s the jQuery-dateFormat plugin and can be found at http://archive.plugins.jquery.com/project/jquery-dateFormat Using it is quite simple:
 
 I can think of more than one time where this would&#39;ve saved me some drudgery </description>
@@ -296,66 +296,66 @@ I can think of more than one time where this would&#39;ve saved me some drudgery
     
     <item>
       <title>Speaking at NxtGenUG Southampton</title>
-      <link>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</link>
+      <link>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</link>
       <pubDate>Tue, 06 Dec 2011 21:30:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</guid>
       <description>I&#39;ll be speaking on CQRS, Event Sourcing and related patterns at NxtGenUG Southampton on January 19.</description>
     </item>
     
     <item>
       <title>Speaking at NxtGenUG Hereford</title>
-      <link>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</link>
+      <link>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</link>
       <pubDate>Tue, 06 Dec 2011 19:15:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</guid>
       <description>I&#39;ll be speaking on CQRS, Event Sourcing and related patterns at NxtGenUG Hereford on January 09, 2012.</description>
     </item>
     
     <item>
       <title>Agile Fragile</title>
-      <link>http://localhost:1313/ashic/blog/2011/11/agile-fragile/</link>
+      <link>http://hsft.co/ashic/blog/2011/11/agile-fragile/</link>
       <pubDate>Thu, 24 Nov 2011 09:07:44 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/11/agile-fragile/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/11/agile-fragile/</guid>
       <description>I’m going to indulge myself by having a nice old fashioned rant. The topic of choice is “Agile”. A few experiences and conversations of the recent past have compelled me to write something on this topic. So here goes nothing I’ve recently come across a quite senior person with an obscenely large number of years of experience during which time he has been involved in very large projects (think multi million pound) for very large organisations (think the likes of British Airways).</description>
     </item>
     
     <item>
       <title>The Other Side of NuGet</title>
-      <link>http://localhost:1313/ashic/blog/2011/10/the-other-side-of-nuget/</link>
+      <link>http://hsft.co/ashic/blog/2011/10/the-other-side-of-nuget/</link>
       <pubDate>Fri, 28 Oct 2011 03:37:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/10/the-other-side-of-nuget/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/10/the-other-side-of-nuget/</guid>
       <description>NuGet is a very nice addition to the .NET developers’ arsenal. It is a central place for every library and framework in .NET. It has pretty good tooling integrated into Visual Studio and the command line options are pretty sweet too. It can pull down specific libraries including their own dependencies saving the developer a lot of time and effort in figuring them out manually. For the continued growth of the open source .</description>
     </item>
     
     <item>
       <title>DDD North 2011</title>
-      <link>http://localhost:1313/ashic/blog/2011/10/ddd-north-2011/</link>
+      <link>http://hsft.co/ashic/blog/2011/10/ddd-north-2011/</link>
       <pubDate>Fri, 14 Oct 2011 04:22:40 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/10/ddd-north-2011/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/10/ddd-north-2011/</guid>
       <description>One week after DDD Belfast, I was up in Sunderland for the first ever DDD North. The session line-up looked fantastic and it geared up to be a fantastic day.
 My Session Clean Up Your JavaScript Act I wasn’t expecting too much of a turnout for the session as Mark Rendle’s CoffeeScript was on at the same time. Apparently, I wasn’t the only one with that perception as Andrew mentioned scrambling in more and more chairs I was surprised to see the room filled.</description>
     </item>
     
     <item>
       <title>DDD Belfast 2011</title>
-      <link>http://localhost:1313/ashic/blog/2011/10/ddd-belfast-2011/</link>
+      <link>http://hsft.co/ashic/blog/2011/10/ddd-belfast-2011/</link>
       <pubDate>Wed, 12 Oct 2011 03:40:07 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/10/ddd-belfast-2011/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/10/ddd-belfast-2011/</guid>
       <description>After repeated attempts to resume blogging, I think I’m pretty much determined to end my hiatus. And I’ll start off with my experience at DDD Belfast.
 Apart from a Scott Gu special event last year, this was my first DDD event. The travel up to Belfast was a bit hectic&amp;nbsp; - the “journey” from the security gates to the EasyJet gates at Gatwick seemed like a mile long trek. Note to self: if flying out of Gatwick, leave an extra hour in your schedule.</description>
     </item>
     
     <item>
       <title>2011 MVP Hat Trick</title>
-      <link>http://localhost:1313/ashic/blog/2011/07/2011-mvp-hat-trick/</link>
+      <link>http://hsft.co/ashic/blog/2011/07/2011-mvp-hat-trick/</link>
       <pubDate>Sat, 02 Jul 2011 03:30:59 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/07/2011-mvp-hat-trick/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/07/2011-mvp-hat-trick/</guid>
       <description>Got this email today:
 &#34;Congratulations! We are pleased to present you with the 2011 Microsoft&amp;reg; MVP Award! This award is given to exceptional technical community leaders who actively share their high quality, real world expertise with others. We appreciate your outstanding contributions in ASP.NET/IIS technical communities during the past year.&#34;
 That&#39;s three on the trot and it feels great to have done it before the 25 year milestone :)
@@ -364,19 +364,19 @@ And so begins another year of contributing to the community.</description>
     
     <item>
       <title>My CQRS Session at the Canary Wharf Dot Net User Group</title>
-      <link>http://localhost:1313/ashic/blog/2011/06/canary-wharf-cqrs/</link>
+      <link>http://hsft.co/ashic/blog/2011/06/canary-wharf-cqrs/</link>
       <pubDate>Mon, 20 Jun 2011 07:14:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/06/canary-wharf-cqrs/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/06/canary-wharf-cqrs/</guid>
       <description>About a couple of weeks ago, I presented some very basic CQRS and Event Sourcing concepts to the Canary Wharf Dot Net User Group. It was an interesting experience to say the least. About everybody there had heard of CQRS (hmmm), about a quarter knew a bit about how it works (wow) and only one guy there actually uses it (ah well). This confusing spread in the audience made it quite challenging as to which bits to focus on and what to consider “advanced”.</description>
     </item>
     
     <item>
       <title>ASP.NET MVC Gotcha – String as Model</title>
-      <link>http://localhost:1313/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</link>
+      <link>http://hsft.co/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</link>
       <pubDate>Tue, 19 Apr 2011 04:25:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</guid>
       <description>A very common task in ASP.NET MVC is to return a ViewResult from a controller Action. This is usually achieved by a simple:
 return View(“ViewName”, modelForTheView); 
 And this works fine…usually. Have you ever had a view where the model is simply a string? In that case, your code may look like this:
@@ -386,150 +386,150 @@ Only in this case, it won’t work. Don’t believe me?</description>
     
     <item>
       <title>Ninja Coding: Composition over Inheritance–Even when Overriding</title>
-      <link>http://localhost:1313/ashic/blog/2011/03/composition-when-overriding/</link>
+      <link>http://hsft.co/ashic/blog/2011/03/composition-when-overriding/</link>
       <pubDate>Thu, 17 Mar 2011 22:08:45 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/03/composition-when-overriding/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/03/composition-when-overriding/</guid>
       <description>We’ve all heard it a million times – composition is favourable to inheritance. But inheritance can sometimes come with its own charms. One of its main attractions is to do some grunt work in a base class and have the ability to override that behaviour in a derived class. Framework developers favour an abstract base class as it leaves the potential to add features in the future without breaking all client code.</description>
     </item>
     
     <item>
       <title>ViewBag can be good…honestly</title>
-      <link>http://localhost:1313/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</link>
+      <link>http://hsft.co/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</link>
       <pubDate>Sun, 13 Mar 2011 09:47:22 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</guid>
       <description>A lot of people seem to have an allergic reaction towards anything not “strongly typed”. They abhor ViewBag and resent ViewData[“key”] for passing values from the controller to the view. They write viewmodels that aggregate a few other viewmodels or worse, use inheritance to generate complex hierarchies. And in order to try and keep all that clean, they use design patterns and what not to achieve “compile time checking”, “testability” and a few other mirages of “good code”.</description>
     </item>
     
     <item>
       <title>Introducing MSMSpec</title>
-      <link>http://localhost:1313/ashic/blog/2011/03/introducing-msmspec/</link>
+      <link>http://hsft.co/ashic/blog/2011/03/introducing-msmspec/</link>
       <pubDate>Mon, 07 Mar 2011 02:35:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/03/introducing-msmspec/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/03/introducing-msmspec/</guid>
       <description>http://msmspec.codeplex.com/ MSMSpec is a T4 based tool that can generate MSTest code to extend your MSpec (Machine.Specifications) tests so that they can run under anything that runs MSTest. This means all the Visual Studio testing features become available for your MSpec tests without the need for Resharper, TDD.NET or setting up an external tool. This can be useful in scenarios where you need to / require / are forced to use certain technologies.</description>
     </item>
     
     <item>
       <title>Introducing SeleniuMspec</title>
-      <link>http://localhost:1313/ashic/blog/2011/01/introducing-seleniumspec/</link>
+      <link>http://hsft.co/ashic/blog/2011/01/introducing-seleniumspec/</link>
       <pubDate>Mon, 03 Jan 2011 20:02:29 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/01/introducing-seleniumspec/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/01/introducing-seleniumspec/</guid>
       <description>Happy new year to you all. And to celebrate, I’ve just published my first codeplex project. SeleniuMspec is a template that you can use to generate MSpec BDD tests from Selenium IDE. I’ve been using both Selenium and MSpec for a while now and thought this might save a few seconds when writing some integration tests.
 I’d welcome any ideas / help on improving it. Check it out at http://seleniumspec.codeplex.com</description>
     </item>
     
     <item>
       <title>Ninja Coding: Code Comments and Self Explanatory Code</title>
-      <link>http://localhost:1313/ashic/blog/2010/12/ninja-coding-code-comments/</link>
+      <link>http://hsft.co/ashic/blog/2010/12/ninja-coding-code-comments/</link>
       <pubDate>Mon, 20 Dec 2010 07:06:41 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/12/ninja-coding-code-comments/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/12/ninja-coding-code-comments/</guid>
       <description>It’s been a while since I last blogged and thought I would get back into the habit by starting off a new category of posts. The title for this category is “Ninja Coding” and will cover topics from software craftsmanship and better design to very simple tricks and tricks. Today, we will be visiting code comments.
 When I was starting out with programming many many moons ago, the wiser elders I learnt from and the books I read seemed to suggest proper professional code is always properly commented so that a new user (or yourself coming back a few months later) could easily understand the intent of the code.</description>
     </item>
     
     <item>
       <title>ASP.NET MVC 3 CTP1 View Improvements</title>
-      <link>http://localhost:1313/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</link>
+      <link>http://hsft.co/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</link>
       <pubDate>Wed, 15 Sep 2010 21:12:40 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</guid>
       <description>ASP.NET MVC 3 CTP1 has introduced many improvements, not least of which is in the View. This screencast explores the improvements in the View, specially looking at the awesome new ViewEngine – Razor. It covers Razor syntax, layouts, templates, issues with namespaces etc. It also looks at the new dynamic viewmodel and shows how it can be used to clean up view code. It&#39;s just over 45 minutes long and we do go into a little depth.</description>
     </item>
     
     <item>
       <title>Selecting ListView Items with CheckBoxes</title>
-      <link>http://localhost:1313/ashic/blog/2010/08/selecting-listview-items-with-checkboxes/</link>
+      <link>http://hsft.co/ashic/blog/2010/08/selecting-listview-items-with-checkboxes/</link>
       <pubDate>Sat, 14 Aug 2010 09:57:28 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/08/selecting-listview-items-with-checkboxes/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/08/selecting-listview-items-with-checkboxes/</guid>
       <description>Often we need to enable users to select multiple items from a ListView control and do a batch operation on them. While the ListView control does enable selection, it only supports selecting one row (item) at a time. This article shows a nice, easy and reusable way to enable multiple selection with checkboxes.
 The Project I&#39;ve created a very simple &amp;quot;Empty ASP.NET WebForms Application&amp;quot; and added a standard Default.aspx page. I&#39;ve created an App_Data folder and added a database called PeopleDB.</description>
     </item>
     
     <item>
       <title>ASP.NET Routing with IIS 7 – Remember Your Modules</title>
-      <link>http://localhost:1313/ashic/blog/2010/07/aspnet-routing-iis7-remember-modules/</link>
+      <link>http://hsft.co/ashic/blog/2010/07/aspnet-routing-iis7-remember-modules/</link>
       <pubDate>Mon, 26 Jul 2010 18:04:57 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/07/aspnet-routing-iis7-remember-modules/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/07/aspnet-routing-iis7-remember-modules/</guid>
       <description>ASP.NET 4.0 introduces routing and it works very well. With IIS 7, there are some interesting configuration options that can help improve your site&#39;s performance. When done wrong, they can have unexpected side effects. And we&#39;re going to look at one of them today.
 Extensionless Urls and Wildcard Mappings Before IIS 7, the easy way to get extensionless urls when working with routing would be to have a wildcard mapping (yes, I know there are other ways with ISAPI handlers and stuff, but that&#39;s not too simple).</description>
     </item>
     
     <item>
       <title>BUET, World Cups, Politicians, Students, Teachers, Authorities… ah BUET</title>
-      <link>http://localhost:1313/ashic/blog/2010/06/buet-world-cups-politicians-students-teachers-authoritiese-ah-buet/</link>
+      <link>http://hsft.co/ashic/blog/2010/06/buet-world-cups-politicians-students-teachers-authoritiese-ah-buet/</link>
       <pubDate>Sat, 19 Jun 2010 21:31:30 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/06/buet-world-cups-politicians-students-teachers-authoritiese-ah-buet/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/06/buet-world-cups-politicians-students-teachers-authoritiese-ah-buet/</guid>
       <description>I was planning on starting a write up involving ASP.NET, EF4, Spark, MSpec etc. when Zinat came over to tell me that BUET halls were again vacant. Slightly surprised, I went through facebook comments of ex-Buetians, blog posts, somewherein; and thought I&#39;d write about this instead. And yes, I chose the words &amp;quot;slightly surprised&amp;quot; very carefully.
 Let&#39;s first go back four years to the last World Cup. I was a student of BUET back then.</description>
     </item>
     
     <item>
       <title>Anonymous Types are Internal, C# 4.0 Dynamic Beware!</title>
-      <link>http://localhost:1313/ashic/blog/2010/05/anonymous-types-c-sharp-4-dynamic/</link>
+      <link>http://hsft.co/ashic/blog/2010/05/anonymous-types-c-sharp-4-dynamic/</link>
       <pubDate>Wed, 26 May 2010 19:10:47 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/05/anonymous-types-c-sharp-4-dynamic/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/05/anonymous-types-c-sharp-4-dynamic/</guid>
       <description>C# 4.0 has introduced the dynamic keyword. You can declare a variable as dynamic and regardless of what can be inferred at compile time, you can access any properties and call any methods and your code will still compile. Resolving of those properties and methods will be done at runtime. If at runtime, they aren&#39;t found, you&#39;d get a runtime exception. If they are found, your code will run fine.</description>
     </item>
     
     <item>
       <title>ASP.NET MVC – Unit Testing JsonResult Returning Anonymous Types</title>
-      <link>http://localhost:1313/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</link>
+      <link>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</link>
       <pubDate>Tue, 25 May 2010 20:41:54 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</guid>
       <description>Unit testing of ASP.NET MVC JsonResults can be a source of confusion. The problem arises from the fact that an Action Method itself doesn&#39;t produce any html / json / string output – it simply returns an Action Result. ASP.NET MVC then calls the ExecuteResult() method on that Action Result. The ExecuteResult() method is what causes output to be written to the Response stream. Let&#39;s take the following controller and action method for example:</description>
     </item>
     
     <item>
       <title>Fetching a Property Value via Reflection</title>
-      <link>http://localhost:1313/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</link>
+      <link>http://hsft.co/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</link>
       <pubDate>Tue, 11 May 2010 02:31:51 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</guid>
       <description>Reflection is a method by which we can use metadata at runtime to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. It has many uses, ranging from allowing usage of attributes to creating instances of dynamically generated classes and using them. You can even use reflection to read and modify private member variables of an object.</description>
     </item>
     
     <item>
       <title>ASP.NET MVC: ModelBinding Multiple File Uploads to an Array</title>
-      <link>http://localhost:1313/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</link>
+      <link>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</link>
       <pubDate>Thu, 06 May 2010 19:46:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</guid>
       <description>Web apps often need to upload files. ModelBinding a file upload to an HttpPostedFileBase action parameter is straightforward as long as you know the exact name of the file upload html control. There may be some situations where there are quite a few file upload controls and for whatever reason, they have very different names (they could be autogenerated on the page for example). In such a case, it becomes difficult to know what names to give to the action parameters at compile time.</description>
     </item>
     
     <item>
       <title>Speaking on Silverlight 4 and WCF RIA Services at BRAC University</title>
-      <link>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</link>
+      <link>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</link>
       <pubDate>Sat, 20 Mar 2010 08:54:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</guid>
       <description>I&#39;m speaking on Silverlight 4 and&amp;nbsp;WCF RIA Services at&amp;nbsp;BRAC University&amp;nbsp;on March 31, 2010. Hoping to wet the appetites of the developers of tomorrow.</description>
     </item>
     
     <item>
       <title>Speaking On Silverlight 4 and WCF RIA Services at NSU</title>
-      <link>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</link>
+      <link>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</link>
       <pubDate>Sat, 20 Mar 2010 08:50:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</guid>
       <description>I&#39;m speaking on Silverlight 4 and&amp;nbsp;WCF RIA Services at North South University on March 31, 2010. Hoping to finally meet David Lim :)</description>
     </item>
     
     <item>
       <title>Encrypted Hidden Redux : Let&#39;s Get Salty</title>
-      <link>http://localhost:1313/ashic/blog/2010/03/encrypted-hidden-with-salt/</link>
+      <link>http://hsft.co/ashic/blog/2010/03/encrypted-hidden-with-salt/</link>
       <pubDate>Sat, 13 Mar 2010 14:37:16 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/03/encrypted-hidden-with-salt/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/03/encrypted-hidden-with-salt/</guid>
       <description>This article builds on the ideas presented in my earlier article http://www.heartysoft.com/post/2010/02/25/Encrypted-Hidden-Inputs-in-ASPNET-MVC.aspx
 If you haven&#39;t read that yet, I&#39;d recommend doing so before proceeding.
 Problems with the Previous Approach The approach outlined in the previous article is pretty secure and easy to use. However, there are a few issues that can be improved upon:
@@ -538,38 +538,38 @@ Problems with the Previous Approach The approach outlined in the previous articl
     
     <item>
       <title>MVC 2 RC 2 Templated Helper Bug and a Potential Solution</title>
-      <link>http://localhost:1313/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</link>
+      <link>http://hsft.co/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</link>
       <pubDate>Mon, 01 Mar 2010 18:43:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</guid>
       <description>The Problem ASP.NET MVC 2 introduces templated helpers. They&amp;rsquo;re a convenient and type safe way to render model data. There is a potential problem in the way in which the system processes the lambda expression passed in to the helper. The problem causes overridden properties to be ignored and uses the base class&amp;rsquo; declaration of the property instead. This can have adverse reactions where the client side validation feature of ASP.</description>
     </item>
     
     <item>
       <title>Encrypted Hidden Inputs in ASP.NET MVC</title>
-      <link>http://localhost:1313/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
+      <link>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
       <pubDate>Thu, 25 Feb 2010 07:27:09 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
       <description>I have written an update to this articlethat shows a better way of doing what is presented here. The core concepts are pretty much the same and I would request you to read this one before the improved version. There are many situations where we need to persist some data during the user&amp;rsquo;s session. There are a few options in achieving this:
 1. Session: Using the Session object will persist the data in server resources.</description>
     </item>
     
     <item>
       <title>Exposing a WCF Service for Ajax and Silverlight</title>
-      <link>http://localhost:1313/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</link>
+      <link>http://hsft.co/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</link>
       <pubDate>Mon, 22 Feb 2010 09:44:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</guid>
       <description>One of the most attractive features of WCF is that you get to write a service once and expose it to be used by multiple clients using different technologies and protocols. How a WCF service is exposed can be changed simply by changing the configuration file, without needing to recompile the code. In this article, we&#39;re going to create a WCF service and expose it to Ajax. We&#39;ll test the Ajax service by calling it from ASP.</description>
     </item>
     
     <item>
       <title>Asp.net MVC 2.0 RC 2 Just Released</title>
-      <link>http://localhost:1313/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</link>
+      <link>http://hsft.co/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</link>
       <pubDate>Fri, 05 Feb 2010 00:47:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</guid>
       <description>I was just moderating the asp.net forums and approved Phil&#39;s announcement 29 minutes ago that Asp.net MVC 2.0 RC 2&amp;nbsp;has just been released: 
 Hi everyone,
 We released ASP.NET MVC 2 Release Candidate 2 this evening!
@@ -578,10 +578,10 @@ We released ASP.NET MVC 2 Release Candidate 2 this evening!
     
     <item>
       <title>Ajax, Asp.net Ajax, jQuery – Misconceptions and Facts</title>
-      <link>http://localhost:1313/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</link>
+      <link>http://hsft.co/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</link>
       <pubDate>Wed, 09 Dec 2009 13:19:31 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</guid>
       <description>There seems to be some confusion among a lot of developers about Asp.net Ajax. This article will hopefully clear some doubts regarding what it is, what it isn’t and where jQuery comes in.
 Ajax
 Ajax stands for Asynchronous JavaScript And Xml. Ajax is used to asynchronously make a server side request from a web page. It does not need a full page refresh (a full postback in Asp.net terms) and can result in a few benefits:</description>
@@ -589,57 +589,57 @@ Ajax stands for Asynchronous JavaScript And Xml. Ajax is used to asynchronously 
     
     <item>
       <title>I’m Back!!</title>
-      <link>http://localhost:1313/ashic/blog/2009/12/im-back/</link>
+      <link>http://hsft.co/ashic/blog/2009/12/im-back/</link>
       <pubDate>Tue, 08 Dec 2009 06:10:18 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/12/im-back/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/12/im-back/</guid>
       <description>After a few months absence, I’m back. I’ve redesigned the site and a few more updates will hopefully come in the next few weeks. So much has happened since my last post –  VS 2010 and .net 4.0 beta MVC 2.0 beta Silverlight 4.0 beta New Bing maps Azure improvements  -and that’s just a high level view :)
 I’ll hopefully put up some articles to cover these soon. Stay tuned!</description>
     </item>
     
     <item>
       <title>Speaking on IE8 and Windows Live Services at the Windows 7 Launch Party</title>
-      <link>http://localhost:1313/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</link>
+      <link>http://hsft.co/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</link>
       <pubDate>Sun, 01 Nov 2009 09:24:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</guid>
       <description>I&#39;m speaking on IE 8 and Windows Live Services at the Windows 7 Launch Party at Dhaka on November 7, 2009. Hope to see a few of my fellow MVPs there.</description>
     </item>
     
     <item>
       <title>Woohoo…I’m an Asp.net MVP…and a few questions for you</title>
-      <link>http://localhost:1313/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</link>
+      <link>http://hsft.co/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</link>
       <pubDate>Wed, 01 Jul 2009 13:25:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</guid>
       <description>I was announced asp.net MVP today. It&amp;rsquo;s great to receive the award as a recognition of my activities at the asp.net forums. I hope I can continue to help people out there and that this site will grow in the process. It&amp;rsquo;s my first time receiving the award and hopefully it won&amp;rsquo;t be the last. In an attempt to hold on to it(!), I&amp;rsquo;ll ask you guys&amp;hellip;what should I write about?</description>
     </item>
     
     <item>
       <title>Simple Username / Password Authentication WITHOUT Membership Providers</title>
-      <link>http://localhost:1313/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</link>
+      <link>http://hsft.co/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</link>
       <pubDate>Fri, 19 Jun 2009 05:44:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</guid>
       <description>The Membership provider in asp.net is great. As is the Roles support. You can do some very nifty things with it with a considerable amount of ease. You can get hashed or encrypted passwords and a whole host of features that&amp;rsquo;s pretty much enterprise grade. And you get it for free. Well, not free, but it is pretty easy to set up.
 But what if your website only needed two or three user accounts?</description>
     </item>
     
     <item>
       <title>Display Modes of Validator Controls</title>
-      <link>http://localhost:1313/ashic/blog/2009/06/display-modes-of-validator-controls/</link>
+      <link>http://hsft.co/ashic/blog/2009/06/display-modes-of-validator-controls/</link>
       <pubDate>Tue, 16 Jun 2009 04:04:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/06/display-modes-of-validator-controls/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/06/display-modes-of-validator-controls/</guid>
       <description>By default, asp.net validators are positioned right next to the control they validate. You can move them in the markup, but wherever you put them, they occupy an area equal to the area required to display the Text property (or if the Text is not present, then the ErrorMessage property). We may not want that. We may want them to only occupy space when they&amp;rsquo;re displayed, or not display them at all (and showing the error message in a validation summary only).</description>
     </item>
     
     <item>
       <title>A Cool Bing-like Search Box (Button on the Inside)</title>
-      <link>http://localhost:1313/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</link>
+      <link>http://hsft.co/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</link>
       <pubDate>Mon, 15 Jun 2009 23:57:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</guid>
       <description>In the recent &amp;ldquo;web 2.0&amp;rdquo; sites, we see cool search boxes, with the search button appearing &amp;ldquo;inside&amp;rdquo; the text box. How&amp;rsquo;d they do that? Microsoft&amp;rsquo;s bing search also has this feature. A snapshot of the bing search box looks like this:
 
 It&amp;rsquo;s actually quite simple to do, with a bit of css. First, let&amp;rsquo;s look at the markup:
@@ -651,10 +651,10 @@ It&amp;rsquo;s actually quite simple to do, with a bit of css. First, let&amp;rs
     
     <item>
       <title>Retrieving the Password for a User in Asp.net</title>
-      <link>http://localhost:1313/ashic/blog/2009/06/retrieving-the-password-for-a-user-in-aspnet/</link>
+      <link>http://hsft.co/ashic/blog/2009/06/retrieving-the-password-for-a-user-in-aspnet/</link>
       <pubDate>Sun, 14 Jun 2009 00:30:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/06/retrieving-the-password-for-a-user-in-aspnet/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/06/retrieving-the-password-for-a-user-in-aspnet/</guid>
       <description>If you&amp;rsquo;re using the Membership API in asp.net and need to retrieve a user&amp;rsquo;s password, you can do so by doing this:
 MembershipUser user = Membership.GetUser(&amp;ldquo;username&amp;rdquo;); string password = user.GetPassword(); string saferPassword = user.GetPassword(&amp;ldquo;password answer&amp;rdquo;);
 The latter is safer as it requires you to pass in the user&amp;rsquo;s security answer as an added check. This will give you the unencrypted password [The default membership system stores hashed passwords in the database].</description>
@@ -662,10 +662,10 @@ The latter is safer as it requires you to pass in the user&amp;rsquo;s security 
     
     <item>
       <title>How to Programmatically Logout / Disable a User Account</title>
-      <link>http://localhost:1313/ashic/blog/2009/06/how-to-programmatically-logout-disable-a-user-account/</link>
+      <link>http://hsft.co/ashic/blog/2009/06/how-to-programmatically-logout-disable-a-user-account/</link>
       <pubDate>Sat, 13 Jun 2009 22:29:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/06/how-to-programmatically-logout-disable-a-user-account/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/06/how-to-programmatically-logout-disable-a-user-account/</guid>
       <description>There may be the need to programmatically logout the user in an asp.net application. If you&amp;rsquo;re using Forms authentication, this is very simple to do:
 FormsAuthentication.SignOut();
 
@@ -674,10 +674,10 @@ You may also need to block the currently logged in / specific user from the syst
     
     <item>
       <title>Speaking at Microsoft Day @ Dhaka- June 20, 2009</title>
-      <link>http://localhost:1313/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</link>
+      <link>http://hsft.co/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</link>
       <pubDate>Fri, 12 Jun 2009 14:04:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</guid>
       <description>It&amp;rsquo;s finally happening&amp;hellip;we&amp;rsquo;re having an MS dev (and IT) event here in Dhaka, Bangladesh. This is the first one ever and marks a significant landmark for the software industry here. It&amp;rsquo;s going to be held on June 20, at IDB Bhaban Auditorium. You can find details and register (mandatory) for the event here:
 http://msdnbangladesh.net/content/msday.aspx
 Seats are limited&amp;hellip;only 200 in total. It&amp;rsquo;s open for devs, IT pros and students.
@@ -686,20 +686,20 @@ I&amp;rsquo;ll be doing a half hour session on Windows Azure, from 2:45pm to 3:1
     
     <item>
       <title>Finally Set Up My Own Site: BlogEngine.Net</title>
-      <link>http://localhost:1313/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</link>
+      <link>http://hsft.co/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</link>
       <pubDate>Tue, 09 Jun 2009 13:12:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</guid>
       <description>I&amp;rsquo;ve been looking to set up my own site for quite some time now. The things I had in mind required a great deal of development and, due to my workload with completing graduation and a few client projects, I just couldn&amp;rsquo;t find the time. In the last few weeks, I&amp;rsquo;ve been looking at alternatives to doing the whole thing on my own. I looked at a few offerings:
 1. Graffiti</description>
     </item>
     
     <item>
       <title>FileUpload Control Doesn’t Give Full Path….HELP!!!!</title>
-      <link>http://localhost:1313/ashic/blog/2009/05/fileupload-control-does-not-give-full-path/</link>
+      <link>http://hsft.co/ashic/blog/2009/05/fileupload-control-does-not-give-full-path/</link>
       <pubDate>Tue, 19 May 2009 20:44:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/05/fileupload-control-does-not-give-full-path/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/05/fileupload-control-does-not-give-full-path/</guid>
       <description>I&amp;rsquo;ve answered this question about five times in the last few days at the forums. It&amp;rsquo;s getting tedious so I thought I&amp;rsquo;d make a blog post about it.
 Issue:
 The FileUpload control has a FileName property. In FireFox (FF) and some other standards compliant browsers, the filename only holds the name of the file. It does NOT hold the full path. In some versions of Internet Explorer (perhaps all versions, but at least up until v7), the FileName property holds a full path.</description>
@@ -707,19 +707,19 @@ The FileUpload control has a FileName property. In FireFox (FF) and some other s
     
     <item>
       <title>Top of the Mountain :)</title>
-      <link>http://localhost:1313/ashic/blog/2009/05/top-of-the-mountain-/</link>
+      <link>http://hsft.co/ashic/blog/2009/05/top-of-the-mountain-/</link>
       <pubDate>Mon, 18 May 2009 16:47:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/05/top-of-the-mountain-/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/05/top-of-the-mountain-/</guid>
       <description>I&amp;rsquo;ve been contributing more and more to the asp.net community recently. I had a somewhat dry spell two to three moths back. I completed my graduation in Computer Science and Engineering, moved out of the university dorms, got a new apartment, had a nightmare furnishing it; and finally got some time to sit down and get back to the community. Having a bit of free time, I wanted to make up for the lost time as much as I could.</description>
     </item>
     
     <item>
       <title>How to Show / Hide a ModalPopupExtender using Javascript</title>
-      <link>http://localhost:1313/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</link>
+      <link>http://hsft.co/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</link>
       <pubDate>Wed, 06 May 2009 06:10:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</guid>
       <description>If we have a ModalPopupExtender with the id &amp;lsquo;modPopup_ModalPopupExtender&amp;rsquo;, and need to display or hide it in javascript, we can easily do this using the $find() function.
 Let&amp;rsquo;s see this in action:
 ASPX:
@@ -731,39 +731,39 @@ The code is pretty self explanatory. Hope that helps.</description>
     
     <item>
       <title>How to Send Emails from .Net [example uses GMail SMTP]</title>
-      <link>http://localhost:1313/ashic/blog/2009/04/how-to-send-emails-from-net-example-uses-gmail-smtp/</link>
+      <link>http://hsft.co/ashic/blog/2009/04/how-to-send-emails-from-net-example-uses-gmail-smtp/</link>
       <pubDate>Tue, 28 Apr 2009 05:10:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/04/how-to-send-emails-from-net-example-uses-gmail-smtp/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/04/how-to-send-emails-from-net-example-uses-gmail-smtp/</guid>
       <description>We frequently see questions about sending emails using .Net in the asp.net forums. The process of sending mail is the same for Windows apps and asp.net websites as the same .Net classes are used. The process can be slightly shortened by specifying default SMTP settings in the web.config or app.config file. Here, I&amp;rsquo;m showing the full version of the code and it does not rely on any configuration settings. The code also specifies unicode encoding for the subject and body.</description>
     </item>
     
     <item>
       <title>Asp.net MVC, Html.DropDownList and Selected Value</title>
-      <link>http://localhost:1313/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</link>
+      <link>http://hsft.co/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</link>
       <pubDate>Fri, 27 Mar 2009 03:53:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</guid>
       <description>I recently ran into the altogether common problem of the Html.DropDownList helper rendering a drop down list with no value selected. This is a major problem when editing data as by default, the first value is selected and saving would mean the first value is used.
 There have been a few issues resulting in the same error. My issue was that I was setting the Name of the drop down list to be equal to the property on my model.</description>
     </item>
     
     <item>
       <title>Error Installing SQL 2008 Business Intelligence Studio and Related Package Load Error in VS2008</title>
-      <link>http://localhost:1313/ashic/blog/2009/02/error-installing-sql-2008-business-intelligence-studio-and-related-package-load-error-in-vs2008/</link>
+      <link>http://hsft.co/ashic/blog/2009/02/error-installing-sql-2008-business-intelligence-studio-and-related-package-load-error-in-vs2008/</link>
       <pubDate>Sat, 21 Feb 2009 06:35:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/02/error-installing-sql-2008-business-intelligence-studio-and-related-package-load-error-in-vs2008/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/02/error-installing-sql-2008-business-intelligence-studio-and-related-package-load-error-in-vs2008/</guid>
       <description>It&amp;rsquo;s been a while since I last blogged. I&amp;rsquo;ve become a forum moderator, an All-Star and also completed my final exams for my bachelor&amp;rsquo;s degree since then. Now that I have a little more time, I hope to contribute more often.
 I was installing SQL Server 2008 Dev Edition with all features, and ran into some problems. Poking around the internet, I found that the problems arise if VS2008 is installed anywhere other than the default location that the installer provides.</description>
     </item>
     
     <item>
       <title>Putting Messages Into a ValidationSummary Control...From Code</title>
-      <link>http://localhost:1313/ashic/blog/2008/12/putting-messages-into-a-validationsummary-controlfrom-code/</link>
+      <link>http://hsft.co/ashic/blog/2008/12/putting-messages-into-a-validationsummary-controlfrom-code/</link>
       <pubDate>Thu, 11 Dec 2008 19:49:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/12/putting-messages-into-a-validationsummary-controlfrom-code/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/12/putting-messages-into-a-validationsummary-controlfrom-code/</guid>
       <description>I love the asp.net validation controls. They&#39;re chick and really useful. We sometimes have to show some messages that are not the ErrorMessages of validators. An approach to do this could be to
 a) ScriptManager.RegisterClientScriptBlock to show a popup (YUCK!!)
 b) Put in a label and set its Text from code. This could be an option, only the error message will be in the label and not inside the ValidationSummary. This does not look good as some errors will be shown neatly in a ValidationSummary whereas others will eb shown in a separate label.</description>
@@ -771,10 +771,10 @@ b) Put in a label and set its Text from code. This could be an option, only the 
     
     <item>
       <title>Getting the URI in Silverlight</title>
-      <link>http://localhost:1313/ashic/blog/2008/12/getting-the-uri-in-silverlight/</link>
+      <link>http://hsft.co/ashic/blog/2008/12/getting-the-uri-in-silverlight/</link>
       <pubDate>Mon, 08 Dec 2008 14:52:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/12/getting-the-uri-in-silverlight/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/12/getting-the-uri-in-silverlight/</guid>
       <description>We may need the uri of the silverlight app in various circumstances (like if we move the app around in the solution, or are dealing with images and other resources located in a folder on the web site that&#39;s not part of the silverlight project). We can get the path easily with:
 App.Current.Host.Source
 So, if we are to get a uri to an image in the Images folder in the web site that hosts the silverlight app, we can go:</description>
@@ -782,10 +782,10 @@ So, if we are to get a uri to an image in the Images folder in the web site that
     
     <item>
       <title>How to Read the HTML of a Web Page Programmatically</title>
-      <link>http://localhost:1313/ashic/blog/2008/11/how-to-read-the-html-of-a-web-page-programmatically/</link>
+      <link>http://hsft.co/ashic/blog/2008/11/how-to-read-the-html-of-a-web-page-programmatically/</link>
       <pubDate>Fri, 21 Nov 2008 04:38:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/11/how-to-read-the-html-of-a-web-page-programmatically/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/11/how-to-read-the-html-of-a-web-page-programmatically/</guid>
       <description>We might need to read the contents of some page (local or remote) by code. This is quite simple in .net.
 using System.Net; using System.IO;
 WebRequest req = WebRequest.Create(&#34;http://www.asp.net&#34;); WebResponse res = req.GetResponse(); StreamReader sr = new StreamReader(res.GetResponseStream()); string html = sr.ReadToEnd();
@@ -796,78 +796,78 @@ Hope that helps.</description>
     
     <item>
       <title>ACT: CollapsiblePanelExtender - How to Collapse / Expand Programmatically</title>
-      <link>http://localhost:1313/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</link>
+      <link>http://hsft.co/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</link>
       <pubDate>Fri, 21 Nov 2008 02:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</guid>
       <description>The CollapsiblePanelExtender is a cool way to convert simple panels to collapsible ones. It usually has a target panel, a control which can make it collapse, another (or the same) control to make it expand etc. Clicking the said controls will trigger the collapse/open behaviour.
 We may need to sometimes control this behaviour from code - both client side javascript and server side code behind. Suppose we have a CollapsiblePanelExtender with the Id &#39;cpe1&#39;.</description>
     </item>
     
     <item>
       <title>LINQ to SQL dbml - More than just for accessing a db</title>
-      <link>http://localhost:1313/ashic/blog/2008/11/linq-to-sql-dbml-more-than-just-for-accessing-a-db/</link>
+      <link>http://hsft.co/ashic/blog/2008/11/linq-to-sql-dbml-more-than-just-for-accessing-a-db/</link>
       <pubDate>Thu, 20 Nov 2008 18:02:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/11/linq-to-sql-dbml-more-than-just-for-accessing-a-db/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/11/linq-to-sql-dbml-more-than-just-for-accessing-a-db/</guid>
       <description>Hi guys...I&#39;ve been gone nearly a month now. I&#39;ve finished the last of my classes of my last year of my BSc degree (final exams are in January) and we were having all sorts of grad parties. Add to that finishing off a freelance project and my new role as one of the moderators of http://forums.asp.net, blogging had to take a back seat. Anyway, I&#39;m back :)
 I recently formatted my dev machine with a fresh install of everything.</description>
     </item>
     
     <item>
       <title>Assigning Port Numbers for the Dev Server</title>
-      <link>http://localhost:1313/ashic/blog/2008/10/assigning-port-numbers-for-the-dev-server/</link>
+      <link>http://hsft.co/ashic/blog/2008/10/assigning-port-numbers-for-the-dev-server/</link>
       <pubDate>Fri, 24 Oct 2008 00:25:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/10/assigning-port-numbers-for-the-dev-server/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/10/assigning-port-numbers-for-the-dev-server/</guid>
       <description>A lot of times, specially when using web services, we want the dev server to use a specific port. Suppose you have a web service and a website which consumes it. You put them in two separate projects. You&amp;rsquo;d want the web service to always use the same port. One option is to set it up in IIS. But what if you don&amp;rsquo;t want to use IIS? What if your putting together a simple test and wish to use the dev server?</description>
     </item>
     
     <item>
       <title>WCF .svc Gives HTTP 404 on Host, Works Perfectly on Local</title>
-      <link>http://localhost:1313/ashic/blog/2008/10/wcf-svc-gives-http-404-on-host-works-perfectly-on-local/</link>
+      <link>http://hsft.co/ashic/blog/2008/10/wcf-svc-gives-http-404-on-host-works-perfectly-on-local/</link>
       <pubDate>Wed, 01 Oct 2008 00:19:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/10/wcf-svc-gives-http-404-on-host-works-perfectly-on-local/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/10/wcf-svc-gives-http-404-on-host-works-perfectly-on-local/</guid>
       <description>I was recently working on a project that used WCF web services extensively. Everything was ready for deployment, I deployed to the remote host, and voila &amp;ndash; nothing works (nothing WCF related). After a LOT of frustration, I managed to make it work. I found two areas which were causing the problem:
 1. The .svc extension was NOT setup right at our host. You can set this in the web.config webhandlers section for IIS 7, but not for IIS 6.</description>
     </item>
     
     <item>
       <title>Setting Timeouts for Session and Authentication</title>
-      <link>http://localhost:1313/ashic/blog/2008/09/setting-timeouts-for-session-and-authentication/</link>
+      <link>http://hsft.co/ashic/blog/2008/09/setting-timeouts-for-session-and-authentication/</link>
       <pubDate>Mon, 29 Sep 2008 04:59:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/09/setting-timeouts-for-session-and-authentication/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/09/setting-timeouts-for-session-and-authentication/</guid>
       <description>Setting the timeouts for Session and Authentication can be a bit tricky. If not set properly, your user may be logged in when the Session expires. If you&amp;rsquo;re app depends on Session specific to the logged in user, you&amp;rsquo;ll have problems. By default, the Authentication timeout is 30 minutes while for that of Session is 20 minutes. Here&amp;rsquo;s how you can change that on a site wise basis:
 Session Under &amp;lt;system.</description>
     </item>
     
     <item>
       <title>JQuery is now 1st Party for Asp.net - Kinda</title>
-      <link>http://localhost:1313/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</link>
+      <link>http://hsft.co/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</link>
       <pubDate>Sun, 28 Sep 2008 23:11:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</guid>
       <description>Wow...AMAZING&amp;hellip;Hurray&amp;hellip;I mean, like, WOW man&amp;hellip;
 In a very welcome turn of events, JQuery is now &amp;ldquo;officially&amp;rdquo; going to be part of Asp.net development. MS will provide support, annotated VS versions that&amp;rsquo;ll give us intellisense, provide us with demonstrations and tutorials on how jquery can work with features like the AJAX Control Toolkit, Asp.Net AJAX, client side templates &amp;ndash; and all the time without modifying, forking or otherwise changing jquery. This is surprising, and in a very pleasant way.</description>
     </item>
     
     <item>
       <title>Disable Caching in an HttpHandler</title>
-      <link>http://localhost:1313/ashic/blog/2008/09/disable-caching-in-an-httphandler/</link>
+      <link>http://hsft.co/ashic/blog/2008/09/disable-caching-in-an-httphandler/</link>
       <pubDate>Thu, 18 Sep 2008 10:56:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/09/disable-caching-in-an-httphandler/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/09/disable-caching-in-an-httphandler/</guid>
       <description>I was generating some custom reports in Word 2007 format today. The reports were being served by an HttpHandler and various params are passed to it (mostly by query string). One report needed a list of ids to be passed and the query string wasn&#39;t an option there, so I put that in Session. [My other post today shows how]. The trouble was that the urls were identical and someone clever (the browser or the server) was caching the report.</description>
     </item>
     
     <item>
       <title>How to use Session values in an HttpHandler</title>
-      <link>http://localhost:1313/ashic/blog/2008/09/how-to-use-session-values-in-an-httphandler/</link>
+      <link>http://hsft.co/ashic/blog/2008/09/how-to-use-session-values-in-an-httphandler/</link>
       <pubDate>Thu, 18 Sep 2008 08:30:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/09/how-to-use-session-values-in-an-httphandler/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/09/how-to-use-session-values-in-an-httphandler/</guid>
       <description>When writing a custom HttpHandler, by default you have no access to the Session object. Doing something like HttpContext.Current.Session also returns null. The workaround is quite simple:
 Reference the System.Web.SessionState namespace:
 using System.Web.SessionState;
@@ -883,19 +883,19 @@ Hope that helps.
     
     <item>
       <title>FTP Woes and....FireFTP to the Rescue!!</title>
-      <link>http://localhost:1313/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</link>
+      <link>http://hsft.co/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</link>
       <pubDate>Fri, 05 Sep 2008 10:50:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</guid>
       <description>I&#39;m running Vista x64 sp1. I&#39;ve had IE 7 and then IE 8 (b2)&amp;nbsp;installed. I tried uploading via ftp from a)Windows Explorer, b)Visual Studio ftp, c)FireZilla, d)SmartFTP. Small files uploaded perfectly but even 150KB files kept timing out and retrying. Active/passive didn&#39;t help. Nothing helped. I tried for 28 hours to upload a 340KB file. It was infuriating. I tried from another ISP&#39;s connection. I tried from XP. Nothing worked. God knows why.</description>
     </item>
     
     <item>
       <title>HTML Comments, Other Comments and Some VS Tips</title>
-      <link>http://localhost:1313/ashic/blog/2008/09/html-comments-other-comments-and-some-vs-tips/</link>
+      <link>http://hsft.co/ashic/blog/2008/09/html-comments-other-comments-and-some-vs-tips/</link>
       <pubDate>Tue, 02 Sep 2008 02:50:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/09/html-comments-other-comments-and-some-vs-tips/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/09/html-comments-other-comments-and-some-vs-tips/</guid>
       <description>&amp;nbsp;
 I just found out something really weird about HTML comments. Apparently, according to standards, you can&#39;t do this:
 &amp;lt;!--&amp;nbsp; comment ------------------------ --&amp;gt;
@@ -904,38 +904,38 @@ That is, you can&#39;t put two or more &amp;lsquo;-&amp;lsquo;s inside a comment
     
     <item>
       <title>Memorystream Not Expandable: Invalid Operation Exception</title>
-      <link>http://localhost:1313/ashic/blog/2008/08/memorystream-not-expandable-invalid-operation-exception/</link>
+      <link>http://hsft.co/ashic/blog/2008/08/memorystream-not-expandable-invalid-operation-exception/</link>
       <pubDate>Sun, 24 Aug 2008 19:31:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/08/memorystream-not-expandable-invalid-operation-exception/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/08/memorystream-not-expandable-invalid-operation-exception/</guid>
       <description>There&#39;s a little&amp;nbsp;gotcha with the MemoryStream class that I just found out. It has 7 constructors. The default constructor has the stream set as expandable, with an initial capacity of 0. The ctors that take the capacity set the capacity to the param, but also keeps the stream expandable. If, however, you use a ctor with the byte[] param, it initializes the stream with the contents of the buffer, but the stream becomes non-expandable.</description>
     </item>
     
     <item>
       <title>.Net 3.5 SP1...finally</title>
-      <link>http://localhost:1313/ashic/blog/2008/08/net-35-sp1finally/</link>
+      <link>http://hsft.co/ashic/blog/2008/08/net-35-sp1finally/</link>
       <pubDate>Tue, 12 Aug 2008 09:47:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/08/net-35-sp1finally/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/08/net-35-sp1finally/</guid>
       <description>Fate has a weird sense of humour. I held out from installing .net 3.5 sp1 all through the CTPs, then beta 1 and beta 2. This is also the first time I restrained myself from installing new stuff (coz simply put, having to uninstall a bunch of betas and patches and what not was getting to me). Well, I couldn&#39;t hold out any longer. I downloaded the entire thing. My internet is pretty crap, so I had to download the packages individually, then run a command line switch to download the final files.</description>
     </item>
     
     <item>
       <title>Refresh Button and Double Insert / Updates</title>
-      <link>http://localhost:1313/ashic/blog/2008/08/refresh-button-and-double-insert-updates/</link>
+      <link>http://hsft.co/ashic/blog/2008/08/refresh-button-and-double-insert-updates/</link>
       <pubDate>Fri, 01 Aug 2008 19:33:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/08/refresh-button-and-double-insert-updates/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/08/refresh-button-and-double-insert-updates/</guid>
       <description>I saw a few questions on the forums about double posting of data because of users using the refresh buttons in the browser.
 Ideally, I&#39;d want to have my insert / update mechanisms be done by AJAX calls to a web service. While this will work nicely regardless of back / refresh buttons being pressed, there is a necessary overhead, and a lot of people (including me, in a hurry) find the default features of a gridview very attractive.</description>
     </item>
     
     <item>
       <title>Top Answerer: Getting Started on www.asp.net</title>
-      <link>http://localhost:1313/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</link>
+      <link>http://hsft.co/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</link>
       <pubDate>Thu, 31 Jul 2008 21:05:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</guid>
       <description>Just made the top answerer for the Getting Started section on the www.asp.net forums :)
 
 I overtook the awesome vinz. Of course, he&#39;s likely to bounce back tomorrow; and of course, he leads a lot of the boards I visit - the guy has endless time (and knowledge)&amp;nbsp;:D
@@ -944,40 +944,40 @@ I joined the forums way back in January 2007. I was more of a consumer back then
     
     <item>
       <title>Silverlight 2b2 Screencasts...somebody went nuts!!</title>
-      <link>http://localhost:1313/ashic/blog/2008/07/silverlight-2b2-screencastssomebody-went-nuts/</link>
+      <link>http://hsft.co/ashic/blog/2008/07/silverlight-2b2-screencastssomebody-went-nuts/</link>
       <pubDate>Tue, 29 Jul 2008 14:12:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/07/silverlight-2b2-screencastssomebody-went-nuts/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/07/silverlight-2b2-screencastssomebody-went-nuts/</guid>
       <description>You have GOT to be KIDDING me...after the asp.net guys went crazy and posted&amp;nbsp;a lot of&amp;nbsp;great AJAX control toolkit tutorials, the silverlight guys have posted FIFTY TWO (yes 5 and 2) videos on silverlight 2 beta 2. 
 Downloading &#39;em now...oh why do I have a slow internet :(</description>
     </item>
     
     <item>
       <title>UrlRewriter.net and Themes</title>
-      <link>http://localhost:1313/ashic/blog/2008/07/urlrewriternet-and-themes/</link>
+      <link>http://hsft.co/ashic/blog/2008/07/urlrewriternet-and-themes/</link>
       <pubDate>Mon, 28 Jul 2008 05:14:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/07/urlrewriternet-and-themes/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/07/urlrewriternet-and-themes/</guid>
       <description>As I mentioned in my last post, I&#39;ve finally given urlrewriter.net a try - just to get over my php faithful friends who always sneered at us for those .aspx extensions.
 I watched this video: How Do I: Implement URL Rewriting? by Scott Golightly. While it was good for the basic stuff (and informative), you&#39;d have to code everything by hand. Also,near the end, he shows an implementation of a custom Form class that can handle postbacks with url rewriting.</description>
     </item>
     
     <item>
       <title>Kaspersky and ‘Banner’s</title>
-      <link>http://localhost:1313/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</link>
+      <link>http://hsft.co/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</link>
       <pubDate>Mon, 28 Jul 2008 05:10:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</guid>
       <description>What a coincidence...my second post on my blog is also about Kaspersky. Why do I keep running into the weird things? Anyway, this should also hold for many web content filters.
 Last night I was finally playing around with the most excellent urlrewriter.net. I&#39;m on IIS7 on Vista x64 SP1. I&#39;d always thought (for unknown reasons) that this thing would be tough and would give me a headache with my images and stuff.</description>
     </item>
     
     <item>
       <title>Hey Kaspersky, Stop Slowing Down My VS</title>
-      <link>http://localhost:1313/ashic/blog/2008/07/hey-kaspersky-stop-slowing-down-my-vs/</link>
+      <link>http://hsft.co/ashic/blog/2008/07/hey-kaspersky-stop-slowing-down-my-vs/</link>
       <pubDate>Mon, 14 Jul 2008 04:39:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/07/hey-kaspersky-stop-slowing-down-my-vs/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/07/hey-kaspersky-stop-slowing-down-my-vs/</guid>
       <description>I&#39;m finally starting off this blog about a month after Joe gave it to me...yay, awesome, yahoo (or should that be MS yahoo?).
 One thing that has always frustrated me was that whenever I install Vista (or XP), everything is zippy and fast. Gradually, things become really sluggish. Then, it becomes so unbearable that I have to reinstall the darned thing. The thing that slowed down the most (or at least, is a frontline contender for slowing down) seemed to be VS - the one thing I needed the most (well, maybe after IE).</description>
     </item>

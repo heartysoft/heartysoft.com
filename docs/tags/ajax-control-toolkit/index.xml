@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ajax Control Toolkit on Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/tags/ajax-control-toolkit/</link>
+    <link>http://hsft.co/tags/ajax-control-toolkit/</link>
     <description>Recent content in Ajax Control Toolkit on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Feb 2010 09:44:58 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/ajax-control-toolkit/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/tags/ajax-control-toolkit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Exposing a WCF Service for Ajax and Silverlight</title>
-      <link>http://localhost:1313/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</link>
+      <link>http://hsft.co/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</link>
       <pubDate>Mon, 22 Feb 2010 09:44:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</guid>
       <description>One of the most attractive features of WCF is that you get to write a service once and expose it to be used by multiple clients using different technologies and protocols. How a WCF service is exposed can be changed simply by changing the configuration file, without needing to recompile the code. In this article, we&#39;re going to create a WCF service and expose it to Ajax. We&#39;ll test the Ajax service by calling it from ASP.</description>
     </item>
     
     <item>
       <title>Ajax, Asp.net Ajax, jQuery – Misconceptions and Facts</title>
-      <link>http://localhost:1313/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</link>
+      <link>http://hsft.co/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</link>
       <pubDate>Wed, 09 Dec 2009 13:19:31 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</guid>
       <description>There seems to be some confusion among a lot of developers about Asp.net Ajax. This article will hopefully clear some doubts regarding what it is, what it isn’t and where jQuery comes in.
 Ajax
 Ajax stands for Asynchronous JavaScript And Xml. Ajax is used to asynchronously make a server side request from a web page. It does not need a full page refresh (a full postback in Asp.net terms) and can result in a few benefits:</description>
@@ -33,10 +33,10 @@ Ajax stands for Asynchronous JavaScript And Xml. Ajax is used to asynchronously 
     
     <item>
       <title>How to Show / Hide a ModalPopupExtender using Javascript</title>
-      <link>http://localhost:1313/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</link>
+      <link>http://hsft.co/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</link>
       <pubDate>Wed, 06 May 2009 06:10:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</guid>
       <description>If we have a ModalPopupExtender with the id &amp;lsquo;modPopup_ModalPopupExtender&amp;rsquo;, and need to display or hide it in javascript, we can easily do this using the $find() function.
 Let&amp;rsquo;s see this in action:
 ASPX:
@@ -48,10 +48,10 @@ The code is pretty self explanatory. Hope that helps.</description>
     
     <item>
       <title>ACT: CollapsiblePanelExtender - How to Collapse / Expand Programmatically</title>
-      <link>http://localhost:1313/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</link>
+      <link>http://hsft.co/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</link>
       <pubDate>Fri, 21 Nov 2008 02:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</guid>
       <description>The CollapsiblePanelExtender is a cool way to convert simple panels to collapsible ones. It usually has a target panel, a control which can make it collapse, another (or the same) control to make it expand etc. Clicking the said controls will trigger the collapse/open behaviour.
 We may need to sometimes control this behaviour from code - both client side javascript and server side code behind. Suppose we have a CollapsiblePanelExtender with the Id &#39;cpe1&#39;.</description>
     </item>

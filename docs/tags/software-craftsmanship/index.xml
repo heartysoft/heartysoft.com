@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Craftsmanship on Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/tags/software-craftsmanship/</link>
+    <link>http://hsft.co/tags/software-craftsmanship/</link>
     <description>Recent content in Software Craftsmanship on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 13 Feb 2015 01:42:48 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/software-craftsmanship/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/tags/software-craftsmanship/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CommandQueryExample Feedback 2: Alternative Implementation</title>
-      <link>http://localhost:1313/ashic/blog/2015/02/command-query-example-part2/</link>
+      <link>http://hsft.co/ashic/blog/2015/02/command-query-example-part2/</link>
       <pubDate>Fri, 13 Feb 2015 01:42:48 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/02/command-query-example-part2/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/02/command-query-example-part2/</guid>
       <description>This is the second part (of n) in my look into Alan’s example implementation of having a project that doesn’t use a repository. As a reminder, the goal is not CQRS, or DDD, but to see how applications can be built that do data access san repositories.
 Show Me Ze Codez The code for the (maybe first?) alternative implementation can be found here: https://github.com/ashic/CommandQueryExample
 In the root folder, there’s a src2 folder, with Alan’s original implementation in the src folder.</description>
@@ -24,10 +24,10 @@ In the root folder, there’s a src2 folder, with Alan’s original implementati
     
     <item>
       <title>CommandQueryExample Feedback 1: Overview</title>
-      <link>http://localhost:1313/ashic/blog/2015/02/command-query-example-part1/</link>
+      <link>http://hsft.co/ashic/blog/2015/02/command-query-example-part1/</link>
       <pubDate>Wed, 11 Feb 2015 01:41:20 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/02/command-query-example-part1/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/02/command-query-example-part1/</guid>
       <description>My twitter buddy, and a person I quite admire, Alan Stevens has been looking into the latest “fad” of repository hate. He’s been looking at alternatives, and has created a simple sample application, available at https://github.com/alanstevens/CommandQueryExample . He’s asked for feedback, and seeing that these are often common questions, with his permission, I’m giving mine in the form of a few posts. So, let’s get started.
 &amp;nbsp;
 What It’s Not The sample is not an attempt at CQRS – Alan mentions that in the readme.</description>
@@ -35,10 +35,10 @@ What It’s Not The sample is not an attempt at CQRS – Alan mentions that in t
     
     <item>
       <title>Roughing It Session at the Canary Wharf Dot Net User Group</title>
-      <link>http://localhost:1313/ashic/blog/2012/05/roughing-it-canary-wharf/</link>
+      <link>http://hsft.co/ashic/blog/2012/05/roughing-it-canary-wharf/</link>
       <pubDate>Mon, 07 May 2012 14:05:09 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2012/05/roughing-it-canary-wharf/</guid>
+      <guid>http://hsft.co/ashic/blog/2012/05/roughing-it-canary-wharf/</guid>
       <description>Here are the slides and code from my recent talk at the Canary Wharf Dot Net User Group (lots of code….few slides).
 Roughing It View more presentations from Ashic Mahtab. Code:
 https://github.com/ashic/RoughingItCanaryWharf
@@ -48,19 +48,19 @@ Enjoy!</description>
     
     <item>
       <title>Ninja Coding: Composition over Inheritance–Even when Overriding</title>
-      <link>http://localhost:1313/ashic/blog/2011/03/composition-when-overriding/</link>
+      <link>http://hsft.co/ashic/blog/2011/03/composition-when-overriding/</link>
       <pubDate>Thu, 17 Mar 2011 22:08:45 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/03/composition-when-overriding/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/03/composition-when-overriding/</guid>
       <description>We’ve all heard it a million times – composition is favourable to inheritance. But inheritance can sometimes come with its own charms. One of its main attractions is to do some grunt work in a base class and have the ability to override that behaviour in a derived class. Framework developers favour an abstract base class as it leaves the potential to add features in the future without breaking all client code.</description>
     </item>
     
     <item>
       <title>Ninja Coding: Code Comments and Self Explanatory Code</title>
-      <link>http://localhost:1313/ashic/blog/2010/12/ninja-coding-code-comments/</link>
+      <link>http://hsft.co/ashic/blog/2010/12/ninja-coding-code-comments/</link>
       <pubDate>Mon, 20 Dec 2010 07:06:41 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/12/ninja-coding-code-comments/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/12/ninja-coding-code-comments/</guid>
       <description>It’s been a while since I last blogged and thought I would get back into the habit by starting off a new category of posts. The title for this category is “Ninja Coding” and will cover topics from software craftsmanship and better design to very simple tricks and tricks. Today, we will be visiting code comments.
 When I was starting out with programming many many moons ago, the wiser elders I learnt from and the books I read seemed to suggest proper professional code is always properly commented so that a new user (or yourself coming back a few months later) could easily understand the intent of the code.</description>
     </item>

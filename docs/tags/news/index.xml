@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/tags/news/</link>
+    <link>http://hsft.co/tags/news/</link>
     <description>Recent content in News on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Apr 2012 15:16:57 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/tags/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Speaking at NxtGenUG Coventry</title>
-      <link>http://localhost:1313/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</link>
+      <link>http://hsft.co/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</link>
       <pubDate>Sun, 15 Apr 2012 15:16:57 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</guid>
+      <guid>http://hsft.co/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</guid>
       <description>I&#39;ll be speaking about CQRS, Event Sourcing and Related Patterns at NxtGenUG Conventry on June 26, 2012.</description>
     </item>
     
     <item>
       <title>Speaking at NxtGenUG Southampton</title>
-      <link>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</link>
+      <link>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</link>
       <pubDate>Tue, 06 Dec 2011 21:30:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</guid>
       <description>I&#39;ll be speaking on CQRS, Event Sourcing and related patterns at NxtGenUG Southampton on January 19.</description>
     </item>
     
     <item>
       <title>Speaking at NxtGenUG Hereford</title>
-      <link>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</link>
+      <link>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</link>
       <pubDate>Tue, 06 Dec 2011 19:15:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</guid>
       <description>I&#39;ll be speaking on CQRS, Event Sourcing and related patterns at NxtGenUG Hereford on January 09, 2012.</description>
     </item>
     
     <item>
       <title>2011 MVP Hat Trick</title>
-      <link>http://localhost:1313/ashic/blog/2011/07/2011-mvp-hat-trick/</link>
+      <link>http://hsft.co/ashic/blog/2011/07/2011-mvp-hat-trick/</link>
       <pubDate>Sat, 02 Jul 2011 03:30:59 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2011/07/2011-mvp-hat-trick/</guid>
+      <guid>http://hsft.co/ashic/blog/2011/07/2011-mvp-hat-trick/</guid>
       <description>Got this email today:
 &#34;Congratulations! We are pleased to present you with the 2011 Microsoft&amp;reg; MVP Award! This award is given to exceptional technical community leaders who actively share their high quality, real world expertise with others. We appreciate your outstanding contributions in ASP.NET/IIS technical communities during the past year.&#34;
 That&#39;s three on the trot and it feels great to have done it before the 25 year milestone :)
@@ -52,56 +52,56 @@ And so begins another year of contributing to the community.</description>
     
     <item>
       <title>Speaking on Silverlight 4 and WCF RIA Services at BRAC University</title>
-      <link>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</link>
+      <link>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</link>
       <pubDate>Sat, 20 Mar 2010 08:54:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</guid>
       <description>I&#39;m speaking on Silverlight 4 and&amp;nbsp;WCF RIA Services at&amp;nbsp;BRAC University&amp;nbsp;on March 31, 2010. Hoping to wet the appetites of the developers of tomorrow.</description>
     </item>
     
     <item>
       <title>Speaking On Silverlight 4 and WCF RIA Services at NSU</title>
-      <link>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</link>
+      <link>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</link>
       <pubDate>Sat, 20 Mar 2010 08:50:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</guid>
+      <guid>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</guid>
       <description>I&#39;m speaking on Silverlight 4 and&amp;nbsp;WCF RIA Services at North South University on March 31, 2010. Hoping to finally meet David Lim :)</description>
     </item>
     
     <item>
       <title>I’m Back!!</title>
-      <link>http://localhost:1313/ashic/blog/2009/12/im-back/</link>
+      <link>http://hsft.co/ashic/blog/2009/12/im-back/</link>
       <pubDate>Tue, 08 Dec 2009 06:10:18 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/12/im-back/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/12/im-back/</guid>
       <description>After a few months absence, I’m back. I’ve redesigned the site and a few more updates will hopefully come in the next few weeks. So much has happened since my last post –  VS 2010 and .net 4.0 beta MVC 2.0 beta Silverlight 4.0 beta New Bing maps Azure improvements  -and that’s just a high level view :)
 I’ll hopefully put up some articles to cover these soon. Stay tuned!</description>
     </item>
     
     <item>
       <title>Speaking on IE8 and Windows Live Services at the Windows 7 Launch Party</title>
-      <link>http://localhost:1313/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</link>
+      <link>http://hsft.co/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</link>
       <pubDate>Sun, 01 Nov 2009 09:24:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</guid>
       <description>I&#39;m speaking on IE 8 and Windows Live Services at the Windows 7 Launch Party at Dhaka on November 7, 2009. Hope to see a few of my fellow MVPs there.</description>
     </item>
     
     <item>
       <title>Woohoo…I’m an Asp.net MVP…and a few questions for you</title>
-      <link>http://localhost:1313/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</link>
+      <link>http://hsft.co/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</link>
       <pubDate>Wed, 01 Jul 2009 13:25:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</guid>
       <description>I was announced asp.net MVP today. It&amp;rsquo;s great to receive the award as a recognition of my activities at the asp.net forums. I hope I can continue to help people out there and that this site will grow in the process. It&amp;rsquo;s my first time receiving the award and hopefully it won&amp;rsquo;t be the last. In an attempt to hold on to it(!), I&amp;rsquo;ll ask you guys&amp;hellip;what should I write about?</description>
     </item>
     
     <item>
       <title>Speaking at Microsoft Day @ Dhaka- June 20, 2009</title>
-      <link>http://localhost:1313/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</link>
+      <link>http://hsft.co/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</link>
       <pubDate>Fri, 12 Jun 2009 14:04:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</guid>
       <description>It&amp;rsquo;s finally happening&amp;hellip;we&amp;rsquo;re having an MS dev (and IT) event here in Dhaka, Bangladesh. This is the first one ever and marks a significant landmark for the software industry here. It&amp;rsquo;s going to be held on June 20, at IDB Bhaban Auditorium. You can find details and register (mandatory) for the event here:
 http://msdnbangladesh.net/content/msday.aspx
 Seats are limited&amp;hellip;only 200 in total. It&amp;rsquo;s open for devs, IT pros and students.
@@ -110,48 +110,48 @@ I&amp;rsquo;ll be doing a half hour session on Windows Azure, from 2:45pm to 3:1
     
     <item>
       <title>Finally Set Up My Own Site: BlogEngine.Net</title>
-      <link>http://localhost:1313/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</link>
+      <link>http://hsft.co/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</link>
       <pubDate>Tue, 09 Jun 2009 13:12:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</guid>
       <description>I&amp;rsquo;ve been looking to set up my own site for quite some time now. The things I had in mind required a great deal of development and, due to my workload with completing graduation and a few client projects, I just couldn&amp;rsquo;t find the time. In the last few weeks, I&amp;rsquo;ve been looking at alternatives to doing the whole thing on my own. I looked at a few offerings:
 1. Graffiti</description>
     </item>
     
     <item>
       <title>Top of the Mountain :)</title>
-      <link>http://localhost:1313/ashic/blog/2009/05/top-of-the-mountain-/</link>
+      <link>http://hsft.co/ashic/blog/2009/05/top-of-the-mountain-/</link>
       <pubDate>Mon, 18 May 2009 16:47:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2009/05/top-of-the-mountain-/</guid>
+      <guid>http://hsft.co/ashic/blog/2009/05/top-of-the-mountain-/</guid>
       <description>I&amp;rsquo;ve been contributing more and more to the asp.net community recently. I had a somewhat dry spell two to three moths back. I completed my graduation in Computer Science and Engineering, moved out of the university dorms, got a new apartment, had a nightmare furnishing it; and finally got some time to sit down and get back to the community. Having a bit of free time, I wanted to make up for the lost time as much as I could.</description>
     </item>
     
     <item>
       <title>JQuery is now 1st Party for Asp.net - Kinda</title>
-      <link>http://localhost:1313/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</link>
+      <link>http://hsft.co/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</link>
       <pubDate>Sun, 28 Sep 2008 23:11:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</guid>
       <description>Wow...AMAZING&amp;hellip;Hurray&amp;hellip;I mean, like, WOW man&amp;hellip;
 In a very welcome turn of events, JQuery is now &amp;ldquo;officially&amp;rdquo; going to be part of Asp.net development. MS will provide support, annotated VS versions that&amp;rsquo;ll give us intellisense, provide us with demonstrations and tutorials on how jquery can work with features like the AJAX Control Toolkit, Asp.Net AJAX, client side templates &amp;ndash; and all the time without modifying, forking or otherwise changing jquery. This is surprising, and in a very pleasant way.</description>
     </item>
     
     <item>
       <title>.Net 3.5 SP1...finally</title>
-      <link>http://localhost:1313/ashic/blog/2008/08/net-35-sp1finally/</link>
+      <link>http://hsft.co/ashic/blog/2008/08/net-35-sp1finally/</link>
       <pubDate>Tue, 12 Aug 2008 09:47:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/08/net-35-sp1finally/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/08/net-35-sp1finally/</guid>
       <description>Fate has a weird sense of humour. I held out from installing .net 3.5 sp1 all through the CTPs, then beta 1 and beta 2. This is also the first time I restrained myself from installing new stuff (coz simply put, having to uninstall a bunch of betas and patches and what not was getting to me). Well, I couldn&#39;t hold out any longer. I downloaded the entire thing. My internet is pretty crap, so I had to download the packages individually, then run a command line switch to download the final files.</description>
     </item>
     
     <item>
       <title>Top Answerer: Getting Started on www.asp.net</title>
-      <link>http://localhost:1313/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</link>
+      <link>http://hsft.co/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</link>
       <pubDate>Thu, 31 Jul 2008 21:05:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</guid>
       <description>Just made the top answerer for the Getting Started section on the www.asp.net forums :)
 
 I overtook the awesome vinz. Of course, he&#39;s likely to bounce back tomorrow; and of course, he leads a lot of the boards I visit - the guy has endless time (and knowledge)&amp;nbsp;:D
@@ -160,10 +160,10 @@ I joined the forums way back in January 2007. I was more of a consumer back then
     
     <item>
       <title>Silverlight 2b2 Screencasts...somebody went nuts!!</title>
-      <link>http://localhost:1313/ashic/blog/2008/07/silverlight-2b2-screencastssomebody-went-nuts/</link>
+      <link>http://hsft.co/ashic/blog/2008/07/silverlight-2b2-screencastssomebody-went-nuts/</link>
       <pubDate>Tue, 29 Jul 2008 14:12:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2008/07/silverlight-2b2-screencastssomebody-went-nuts/</guid>
+      <guid>http://hsft.co/ashic/blog/2008/07/silverlight-2b2-screencastssomebody-went-nuts/</guid>
       <description>You have GOT to be KIDDING me...after the asp.net guys went crazy and posted&amp;nbsp;a lot of&amp;nbsp;great AJAX control toolkit tutorials, the silverlight guys have posted FIFTY TWO (yes 5 and 2) videos on silverlight 2 beta 2. 
 Downloading &#39;em now...oh why do I have a slow internet :(</description>
     </item>

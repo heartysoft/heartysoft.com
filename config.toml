@@ -1,5 +1,5 @@
 title = "Heartysoft Solutions Limited"
-baseURL = "http://localhost:1313/"
+baseURL = "http://hsft.co/"
 languageCode = "en"
 theme = "hsft"
 preserveTaxonomyNames = false

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Heartysoft Solutions Limited</title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>http://hsft.co/tags/linux/</link>
     <description>Recent content in Linux on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 06 Jul 2015 14:27:58 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hsft.co/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Deleting stuff older than date</title>
-      <link>http://localhost:1313/ashic/blog/2015/07/deleting-stuff-older-than-date/</link>
+      <link>http://hsft.co/ashic/blog/2015/07/deleting-stuff-older-than-date/</link>
       <pubDate>Mon, 06 Jul 2015 14:27:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/ashic/blog/2015/07/deleting-stuff-older-than-date/</guid>
+      <guid>http://hsft.co/ashic/blog/2015/07/deleting-stuff-older-than-date/</guid>
       <description>I seem to be looking for this frequently, and can never remember it. So, more of a reminder for me (and for others!)
 &amp;nbsp;
 find ./ –not –newermt 2015-06-23 | xargs rm –rf
