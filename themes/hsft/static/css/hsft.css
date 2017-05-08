@@ -456,16 +456,14 @@ div.inner-page {
 
 .blog-post-summary div {
     background: #ecf9ff;
-    padding: 0.5em
+    padding: 0.5em;
+    min-height:16.5em;
 }
 .blog-post-summary div p {
     color: #000;
     width: auto;
     max-width: 740px;
-}
-
-.blog-post-summary div p:first-of-type {
-    min-height: 100px;
+    overflow: hidden
 }
 
 .blog-post-summary div h4 {

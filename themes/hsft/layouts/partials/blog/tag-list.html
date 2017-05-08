@@ -3,7 +3,7 @@
         {{range $t := .Params.Tags }}
             {{if (and (ne $t "blog") (ne $t "news") ) }}        
                 <li>
-                    <a href="/tags/{{$t | urlize }}/">{{ $t }}</a>
+                    <a href="/tags/{{replace $t "#" "%23" | urlize }}/">{{ $t }}</a>
                 </li>
             {{ end }}
         {{ end }}
