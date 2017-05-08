@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>Error Installing SQL 2008 Business Intelligence Studio and Related Package Load Error in VS2008</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/asp.net/">ASP.NET</a>
+                </li>
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            21 Feb, 2009
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>It&rsquo;s been a while since I last blogged. I&rsquo;ve become a forum moderator, an All-Star and also completed my final exams for my bachelor&rsquo;s degree since then. Now that I have a little more time, I hope to contribute more often.</p>
+<p>I was installing SQL Server 2008 Dev Edition with all features, and ran into some problems. Poking around the internet, I found that the problems arise if VS2008 is installed anywhere other than the default location that the installer provides. Experimenting a bit, I found that these steps help resolve the issues:</p>
+<p><strong>Installing SQL 2008 Dev Edition with VS 2008 installed in a non-default location:</strong></p>
+<p>First try to install SQL 2008 Dev Edition. Everything should succeed except for the Business Intelligence Studio (BIS). After the installer completes stating that BIS install failed, find the folder which contains devenv.exe (the VS executable). For me this was: D:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE. In that folder, find and copy devenv.exe.config (you may need to have extensions displayed in folder options). Next, browse to one of the following:</p>
+<p><strong>For x64 machines:</strong> C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE</p>
+<p><strong>For x86 machines:</strong> C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE</p>
+<p>[If your Windows installation is in another drive, replace &lsquo;C&rsquo; with that drive&rsquo;s letter.]</p>
+<p>Paste the devenv.exe.config file in that folder. After that, try running the SQL 2008 installer again and BIS should install.</p>
+<p><strong>Holy cow, what on Earth are all these package load failures in VS2008? Damn you, you broke my VS!!</strong></p>
+<p>At this point, going into design view in VS should raise all hell with package load failures. The reason is pretty much the same as why the BIS install fails. The BIS packages don&rsquo;t work right with non-default locations for VS2008. To resolve this, go to one of the following folders:</p>
+<p><strong>For x64 machines:</strong> C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE</p>
+<p><strong>For x86 machines:</strong> C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE</p>
+<p>[If your Windows installation is in another drive, replace &lsquo;C&rsquo; with that drive&rsquo;s letter.]</p>
+<p>Copy everything (copy, don&rsquo;t cut. You need them there as well). Now go to the folder that contains devenv.exe. For me this was: D:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE. Paste everything you just copied. [Overwriting should be safe.] VS should work as expected from now on.</p>
+<p>There are &ldquo;better&rdquo; ways to work around the problem. But they involve messing around with the temp SQL installation config files at install time, and I found that this is the easiest and quickest solution.</p>
+<p>Hope that helps.</p>
+        
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>Disable Caching in an HttpHandler</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/.net/">.NET</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/asp.net/">ASP.NET</a>
+                </li>
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            18 Sep, 2008
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>I was generating some custom reports in Word 2007 format today. The reports were being served by an HttpHandler and various params are passed to it (mostly by query string). One report needed a list of ids to be passed and the query string wasn't an option there, so I put that in Session. [My other post today shows how]. The trouble was that the urls were identical and someone clever (the browser or the server) was caching the report. So, changing the parameter that was made up of ids resulted in no change of the report. Now, output caching is pretty simple to eliminate on pages, and for asmx web services for that matter, but I found that doing so for a handler is slightly tricky. Here's what I did:</p>
+<p><pre class='brush:c#'> context.Response.Clear(); context.Response.Cache.SetCacheability(HttpCacheability.Public); context.Response.Cache.SetExpires(DateTime.MinValue); </pre></p>
+<p>&nbsp;in the ProcessRequest method.</p>
+<p>I would've thought context.Response.Cache.SetCacheability(HttpCacheability.None) would do it, but that kept giving me errors when downloading the docx file. Rather, enabling cacheing and forcing a timeout seems to do it.</p>
+<p>&nbsp;</p>
+<p>Hope that helps.</p>
+        
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

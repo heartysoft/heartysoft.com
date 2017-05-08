@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Heartysoft Solutions Limited</title>
+    <link>http://localhost:1313/tags/security/</link>
+    <description>Recent content in Security on Heartysoft Solutions Limited</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 31 Jul 2013 06:28:25 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sql Integrated Security, IIS App Pools, and Permissions</title>
+      <link>http://localhost:1313/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</link>
+      <pubDate>Wed, 31 Jul 2013 06:28:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</guid>
+      <description>Integrated Security is quite nice in the sense that you don’t need to configure login names in config files for various servers. And there are some other benefits in terms of manageability, etc: http://serverfault.com/questions/13292/is-using-integrated-security-sspi-for-accessing-sql-server-better-for-web-appl . And while it will take a bit of administration to configure proper impersonation, etc. to get Integrated Security working properly, for simple cases (or even test boxes) where you can have IIS and the database on the same box, it’s quite easy to set up.</description>
+    </item>
+    
+    <item>
+      <title>Encrypted Hidden Redux : Let&#39;s Get Salty</title>
+      <link>http://localhost:1313/ashic/blog/2010/03/encrypted-hidden-with-salt/</link>
+      <pubDate>Sat, 13 Mar 2010 14:37:16 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2010/03/encrypted-hidden-with-salt/</guid>
+      <description>This article builds on the ideas presented in my earlier article http://www.heartysoft.com/post/2010/02/25/Encrypted-Hidden-Inputs-in-ASPNET-MVC.aspx
+If you haven&#39;t read that yet, I&#39;d recommend doing so before proceeding.
+Problems with the Previous Approach The approach outlined in the previous article is pretty secure and easy to use. However, there are a few issues that can be improved upon:
+ Security: The approach is using a symmetric encryption process with a fixed private key. Asymmetric encryption would no doubt provide more security, but the performance costs and hassle is probably not worth it.</description>
+    </item>
+    
+    <item>
+      <title>Encrypted Hidden Inputs in ASP.NET MVC</title>
+      <link>http://localhost:1313/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
+      <pubDate>Thu, 25 Feb 2010 07:27:09 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
+      <description>I have written an update to this articlethat shows a better way of doing what is presented here. The core concepts are pretty much the same and I would request you to read this one before the improved version. There are many situations where we need to persist some data during the user&amp;rsquo;s session. There are a few options in achieving this:
+1. Session: Using the Session object will persist the data in server resources.</description>
+    </item>
+    
+    <item>
+      <title>Encrypted Hidden Inputs in ASP.NET MVC</title>
+      <link>http://localhost:1313/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
+      <pubDate>Thu, 25 Feb 2010 07:27:09 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
+      <description>I have written an update to this articlethat shows a better way of doing what is presented here. The core concepts are pretty much the same and I would request you to read this one before the improved version. There are many situations where we need to persist some data during the user&amp;rsquo;s session. There are a few options in achieving this:
+1. Session: Using the Session object will persist the data in server resources.</description>
+    </item>
+    
+  </channel>
+</rss>

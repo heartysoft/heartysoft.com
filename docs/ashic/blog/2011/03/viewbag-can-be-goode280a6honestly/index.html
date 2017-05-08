@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>ViewBag can be good…honestly</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/.net/">.NET</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/asp.net-mvc/">ASP.NET MVC</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/asp.net/">ASP.NET</a>
+                </li>
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            13 Mar, 2011
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>A lot of people seem to have an allergic reaction towards anything not “strongly typed”. They abhor ViewBag and resent ViewData[“key”] for passing values from the controller to the view. They write viewmodels that aggregate a few other viewmodels or worse, use inheritance to generate complex hierarchies. And in order to try and keep all that clean, they use design patterns and what not to achieve “compile time checking”, “testability” and a few other mirages of “good code”. Maybe I like leaning over the edge a bit, but I really can’t understand why something that is to be a data carrier has to be part of something that’s as complex (if not more) than a trivial application’s domain. Here are some of the drawbacks of strongly typing all viewmodel data:</p>  <h2>Hideous hideous chaining</h2>  <p>If you have viewmodel classes that encapsulate other viewmodel classes, your view will like have code like:</p>  <p>Model.MemberAddressVM.X.Y.WhatNot</p>  <p>Granted the effects can be mitigated by using partials, RenderAction and other stuff; and this is not the main problem.</p>  <h2>Using hierarchies</h2>  <p>If you use a base viewmodel class and set some default stuff further up the hierarchy (in an ApplicationController base class or something), you won’t get (much of) the chaining problem, but you will tightly couple the behaviour for all controllers that share the same base. In many cases, the viewmodel data is only for the specific view and meaningless for the others. Anytime we favour inheritance, we should stop and think whether the coupling is worth it.</p>  <h2>Extra burden</h2>  <p>Right, so if we choose the aggregated viewmodel approach, we take on a great deal of responsibility. We need to create the wrapper class, pass in parameters via the ctor, do the newing up in the controller, write tests to verify…while sometimes all of that can be useful, in many cases it’s not. Consider this example:</p>  <p>A member has many addresses. The /member/rooney/addresses page has a list of addresses and a button named “create new”. Clicking the button shows a jquery iframe popup which handles the create form. The form needs to know about the member’s id (to know which member the new address would belong to). The grid showing all addresses for the user needs an IEnumerable&lt;Address&gt;. So just to pass in MemberId to the addresses page, (if we were using an aggregate viewmodel) our viewmodel would be like this:</p>  <p>MemberAddressesViewModel    <br />&#160;&#160;&#160; - MemberId     <br />&#160;&#160;&#160; - IEnumerable&lt;MemberAddress&gt;</p>  <p>or even </p>  <p>MemberAddressesViewModel    <br />&#160;&#160;&#160; - MemberId     <br />&#160;&#160;&#160; - MemberAddressGridViewModel</p>  <p>where the latter would just wrap an IEnumerable&lt;MemberAddress&gt;.</p>  <p>We would then have controller code like:</p>  <p>var gridItems = db.GetAll&lt;Address&gt;().Where(x=&gt;x.MemberId == memberId);    <br />var model = new MemberAddressesViewModel(memberId, new MemberAddressGridViewModel(gridItems));     <br />return View(model);</p>  <p>And I won’t bother writing the test for that.</p>  <p>&#160;</p>  <h2>False sense of doing it right</h2>  <p>Many think that only using strongly typed vms is the “right” and “proper” way of doing things. They assume that since it’s strongly typed and “driven” by intellisense, it must be right. This is far from the case…at best it just gives you syntactic validation. If you accept that as enough, you run the risk of having semantic errors. If MemberId and LegacyMemberId were both present in the viewmodel and somebody used MemberId to create a link to the member’s legacy data, chances are that’s still wrong, although intellisense and view compilation would let that pass. Even with all those additional indirections, something as simple as which Id should be used go through. When using ViewBag, it’s quite likely that you would double check if you’re using the right thing as it’s loosely typed and you know it can be prone to errors. When using the strongly typed version, after having dedicated vm code, tests to cover it and seeing it pass intellisense, you might accept that simply using the MemberId to generate a link on a member details page may be enough. This shouldn’t be the case and you should be doing UI testing – but if you’re doing that, any errors with the ViewBag version would also get caught. So apart from seeing the cool intellisense, are you really gaining any benefit?</p>  <p>&#160;</p>  <h2></h2>  <h2>But ViewBag isn’t statically checked…that’s bad, right?</h2>  <p>Is it? Well, I can understand where lack of static checking might be alarming (I still like C# over ruby), but there are cases where the ceremony needed to achieve the static checking means a lot more work with very little gain. In the previous example, We could have left the index page’s model to be of type IEnumerable&lt;MemberAddress&gt; and simply passed in MemberId in ViewBag. Sure, we wouldn’t have got compile time checking and our controller (and view) would build even if the ViewBag.MemberId were not passed in to the controller. The controller side of things could be rectified with a single unit test [ ((long)(ViewBag.MemberId)).ShouldEqual(5) ] – you achieve the same “notification” of the controller not working, you just get it one step later (at unit test time and not at build time). This would be a concern only if you accept code that fails unit tests as “complete”. I don’t, hence it’s not a problem for me. Loss of testability? I don’t think so.</p>  <p>As for the view side of things – yes, you won’t be able to do Model.MemberId, rather you’ll be doing ViewBag.MemberId. Other than that, the difference is quite minimal. You’d still UI test the page to ensure that the correct variable is getting set properly and if not, it’ll get caught.</p>  <h2>Benefits of using ViewBag for some data</h2>  <p>Apart from the example mentioned above, ViewBag is quite useful when passing bits of data to the view that aren’t related to the immediate functionality of the view. For example, widget data or navigation data can be set up in a base controller and put in the ViewBag. If you were to use strongly typed viewmodels, you would have to adhere to a hierarchy of viewmodel classes which would add complexity and rigidity. Anything that doesn’t quite fit into your existing vm hierarchy will be an annoyance and may require time and effort in maintaining your one true viewmodel tree. All that work to pass in some trivial data not directly related to the immediate functionality of the view – seems like a waste. If you set the secondary bits of data via the ViewBag, this becomes so much simpler. And I’m all for simplification. This does mean you’ll need to check whether or not a controller is setting the appropriate ViewBag entry via a unit test. But one test vs all that complexity – it’s really a no brainer for me.</p>  <h2>So you’re saying not to use strongly typed viewmodels?</h2>  <p>No I’m not. I’m all for strongly typed viewmodel for the data that is of immediate concern to the view’s functionality. For example, on a EditMember page, the MemberDetails might be the viewmodel. However, NavigationItems, WidgetData, CountryDropDownListItems etc. do not contribute directly to the MemberDetails editing feature. As such, I would put those bits in viewbag while keeping the view’s type as MemberDetails (as opposed to a MemberDetailsWithNavigationAndWidgetAndCountryItemsViewModel). You can see a bit of this in the default project template as well – they set the page’s title in ViewBag and display it in the master from ViewBag. </p>
+        
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

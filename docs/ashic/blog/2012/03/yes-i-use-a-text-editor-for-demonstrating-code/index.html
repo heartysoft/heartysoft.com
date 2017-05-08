@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>Yes, I Use a Text Editor for Demonstrating Code</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/community/">Community</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/c%23/">C#</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/.net/">.NET</a>
+                </li>
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            15 Mar, 2012
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>I was in Southampton recently for a talk titled “An Introduction to CQRS, Event Sourcing and their Benefits”. I’ve got some nice feedback suggesting people generally liked it. I also got some nice criticism – some to do with the focus of the talk (which I’ll cover in another post) but one particular one that brought up the issue of my coding in a text editor - </p> <p><em>“Dropping out many times to a text editor to write code that was never compiled let alone executed. What was that about? Why not use Visual Studio so you can compile and execute the code?”</em></p> <p>It is definitely an interesting point and well worth addressing. Hence this blog post.</p> <h2>A Brief Description of the Content</h2> <p>The talk was about CQRS, Event Sourcing and the various benefits they can bring. It was about introducing the concepts and see how the orthogonal concepts can be useful from various angles – in implementing a bounded context in domain driven design, in conforming to SOLID principles and good OO practices, in achieving high scalability when needed, in writing good and stable tests etc. It covered a lot of ideas. And time was obviously limited. </p> <h2>Why the Text Editor</h2> <p>The focus of the talk was propagating the ideas. And showing how simple it is to implement those ideas. While simple, that still takes time. I could have pre-coded 15 samples and hit ctrl+F5 or CTRL+U, L and be done with it. However, I doubt that would have been useful in transferring the ideas. A running demo in certain cases is very useful. But it is not really that great in conveying the simplicity of implementing something.</p> <p>I find Notepad++ to be an excellent tool to convey ideas related to coding. I’m not distracted by Visual Studio or Resharper constantly badgering me to fix my syntax or type in everything to make the code compilable. The freedom it gives (while maintaining nice indenting) means that I can focus on the idea I’m trying to express, rather than create an application in Visual Studio and do “code slides”. For example, the following code:</p> <p>class LoggingHandle<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp; ctor(Logger logger, Action&lt;object&gt; next);<br>&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp; public void Handle(object cmd)<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _logger.Log(cmd.ToString());<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _next(cmd);<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>}</p> <p>_bus.Register&lt;SomeCommand&gt;(x=&gt; new LoggingHandler(_log, new SomeHandler().Handle));</p> <p>That is enough to show how we can compose handlers. Does it compile? No. Does it need a bit more work to make it compile? Yes. Does it convey the idea? Yes. Then why do I need to take focus away from the main idea I’m trying to express and create running projects in Visual Studio? Typing that live takes about a minute. Going through VS project with all the implemented classes takes more than that. </p> <h2>It’s not only for Demos</h2> <p>Here’s a secret – I don’t use Notepad just for demos. I use it for real projects as well. If I’m faced with a particularly complicated problem that may have different approaches, I try them out in notepad. If I’m about to write a class that other classes may be using, I will sometimes start writing the method signatures in notepad to see how it looks, how much information is being appropriately hidden and what it “smells” like. In some cases, I even resort to pen and paper. Yes, tests are usually involved as well but this is at a pre-test-just-thinking phase. And I find it infinitely valuable. If I find it so, why would I not use the same thing to convey ideas during demoes?</p> <p>Perhaps I’m a bit dumb but sometimes I find I need a buffer between my ideas and Visual Studio. And I find notepad to be a great one.</p> <p>So, yes – dropping into a text editor to write the code that exists only to convey ideas and never gets compiled or executed? This is what that’s about.</p>
+        
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

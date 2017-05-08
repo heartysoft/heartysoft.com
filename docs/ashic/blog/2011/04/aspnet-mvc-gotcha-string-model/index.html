@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>ASP.NET MVC Gotcha – String as Model</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/.net/">.NET</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/asp.net/">ASP.NET</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/asp.net-mvc/">ASP.NET MVC</a>
+                </li>
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            19 Apr, 2011
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>A very common task in ASP.NET MVC is to return a ViewResult from a controller Action. This is usually achieved by a simple:</p>  <p><pre class='brush:c#'>   
+return View(“ViewName”, modelForTheView);    
+</pre></p>  <p>And this works fine…usually. Have you ever had a view where the model is simply a string? In that case, your code may look like this:</p>  <p><pre class='brush:c#'>   
+var model = “some string”;    
+return View(“ViewName”, model);    
+</pre></p>  <p>Only in this case, it won’t work. Don’t believe me? Try it. It’s going to show an obscure error message saying that it could not find the view or master / layout page for ViewName.cshtml [or aspx if you’re using that inferior view engine]. Yet if the model is anything but a string, it works perfectly. This can result in confusion, anger, despair, hair-pulling, keyboard pounding and more importantly wasted time. And if you ever find yourself doing any of those things, then the reason for the error will annoy you even further. You see, Controll.View() has a number of overloads. Two of them are as follows:</p>  <p><pre class='brush:c#'>   
+View(String, Object)    
+View(String, String)    
+</pre></p>  <p>And yes, they are different. The first one expects the model as the second parameter. The second one expects the MASTER/LAYOUT name as the second parameter. When you pass anything but a string as the second parameter, the first overload is triggered. When you pass a string, .NET sees that it matches the second overload and that match is “stronger” than the first. As a result, it calls the second overload. As a result, it will look for a master / layout with the same name as the data you’re passing to it and chances are, it won’t find it. And you’ll get that confusing error.</p>  <h2>The Solution</h2>  <p>The solution is quite simple. You could use the other overload:</p>  <p><pre class='brush:c#'>   
+View(String, String, Object)    
+</pre></p>  <p>where the second parameter is the master / layout name and the third is the actual model whenever you have a View expecting a string in the model. Or you could use a named parameter:</p>  <p><pre class='brush:c#'>   
+return View(“ViewName”, model: “some string”);    
+</pre></p>  <p>Or simply use a separate ViewModel class.</p>  <p><em></em></p>  <p><em>The same principle applies to</em></p>  <p><em><pre class='brush:c#'>     
+View(Object)      
+View(String)      
+</pre></em></p>  <p><em>i.e. If you pass anything but a string as the first parameter, it’s considered the model and the view name is inferred from the executing action. If you pass only&#160; a string, it’s taken to be the view name and the model is null.</em></p>  <p>&#160;</p>  <h2>Why This Annoys Me</h2>  <p>With due respect, this design is simply bonkers to me. It seems like the MVC team wanted to add some flexibility but in the process, they introduced an open invitation for off by one errors. Suddenly the type of the model is dictating how the View method responds. Simply the fact that a call to:</p>  <p><pre class='brush:c#'>   
+return View(“Index”, model)    
+</pre></p>  <p>can have two radically different consequences depending on what’s in the model variable is mindboggling. Besides, what benefit is there from having an overload of the View method that sets the master / layout? The same could easily be achieved by simply putting the master / layout name in Viewbag / ViewData and simply assigning it in the view. Assigning the master / layout in the view is not a good practice in general and should not be encouraged by having an overload of the View method which does exactly that while taking precedence over another overload that is far more commonly used [i.e. second parameter’s the model].</p>  <p>That said, for good or for bad, the annoying overload is there in the framework. So if you have a string as the “model”,&#160; be aware that what you think is the model may actually not be interpreted as such. </p>
+        
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

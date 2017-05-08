@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>Ajax, Asp.net Ajax, jQuery – Misconceptions and Facts</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/.net/">.NET</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/ajax/">AJAX</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/ajax-control-toolkit/">AJAX Control Toolkit</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/asp.net/">ASP.NET</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/asp.net-mvc/">ASP.NET MVC</a>
+                </li>
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            9 Dec, 2009
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p><p>There seems to be some confusion among a lot of developers about Asp.net Ajax. This article will hopefully clear some doubts regarding what it is, what it isn’t and where jQuery comes in.</p>  <p><strong>Ajax</strong></p>  <p>Ajax stands for <strong>A</strong>synchronous <strong>J</strong>avaScript <strong>A</strong>nd <strong>X</strong>ml. Ajax is used to asynchronously make a server side request from a web page. It does not need a full page refresh (a full postback in Asp.net terms) and can result in a few benefits:</p>  <p>1. The user does not have to see the whole page flash blank for every little thing that requires server side processing.</p>  <p>2. Only the required data is sent from the server to the client in response to an Ajax request. This reduces network traffic.</p>  <p>3. Only the required data is processed. So processing of other parts of the page is not needed. This reduces the server workload.</p>  <p>Microsoft created the XMLHTTP ActiveX control way back in 1999. Other browsers have added similar functionality in a native object called XmlHttpRequest (XHR). These objects are used to create and carry out Ajax requests. The technology was being used before the term <strong>Ajax</strong> officially came into being, and it became widely known when Google used it with GMail and Google Maps. <a href="http://en.wikipedia.org/wiki/Jesse_James_Garrett">Jesse James Garrett</a> coined the name <strong>Ajax</strong> feeling the need for an appropriate shorthand. Presumably, he thought of the name while taking a shower in 2005. </p>  <p>Although the name suggests JavaScript and XML – and initially XML was used to transfer the data – nowadays data can be passed in other formats as well as XML. For instance, it’s very common to pass data between the server and client using JSON (JavaScript Object Notation). And although the XHR object is usually used to make Ajax calls, other methods like using an IFrame or dynamically created &lt;script&gt; tags can also be seen.</p>  <p><strong>What Ajax Can’t Do</strong></p>  <p>There are a few limitations to Ajax calls. The major ones are:</p>  <p>1. It can’t make a cross domain call. The request must be made to a url within the same domain. So, if your domain is www.yoursite.com, the request must go to a url within www.yoursite.com. It can’t go to www.darth-vader.com or anywhere else. [There are workarounds, like using JSONP – although whether JSONP is Ajax is subject to speculation.]</p>  <p>2. It can never ever upload a file to the server.</p>  <p>3. It can’t access files on the client machine.</p>  <p>4. Any other limitations that JavaScript has.</p>  <p><strong>Asp.net Ajax</strong></p>  <p>Asp.net Ajax is Microsoft’s framework for Ajax and JavaScript development. Although it’s name is <strong>Asp.net Ajax</strong>, it can do much much more than <em>just</em> Ajax. It has always consisted of client side JavaScript and integration into Asp.net WebForms. This has been a main point of confusion and caused many people to think that Asp.net Ajax can only be used from Asp.net. Along with that, there’s also the Asp.net Ajax Control Toolkit (ACT), which adds a bunch of functionality and features on top of Asp.net Ajax. If this all seems confusing, it’s probably because it is. And Microsoft has addressed this. The Asp.net Ajax framework has recently been reorganized and the new version is currently in Beta. To make things simpler, these are now the key aspects of Asp.net Ajax:</p>  <ul>   <li>Asp.net Ajax Library: This is a reorganization or the existing client side features (along with quite a few new ones) of Asp.net Ajax. This is a stand alone JavaScript library just like jQuery, scriptaculous, mootools etc. Although called Asp.net Ajax, it is in fact an entire JavaScript library that supports Object Oriented JavaScript, client templates, web service calls, animation, JSONP and a whole host of other things. It can be used with server side Asp.net, Asp.net MVC – even plain Html. Want to use it on a php page? Go right on ahead. It will work perfectly without .Net even installed on the server. This is completely client side, with no server dependencies. To add to that, the Asp.net Ajax Control Toolkit (ACT) has been incorporated into this library. So, you can use stuff like the CalenderExtender, ModalPopupExtender, HoverMenuExtender etc. without needing to use Asp.net. The Asp.net Ajax Library project is open source and maintained by the Codeplex Foundation (Microsoft recently donated the project to the Codeplex Foundation). You can find more information about the library (including detailed tutorials) at <a title="http://www.asp.net/ajaxlibrary/" href="http://www.asp.net/ajaxlibrary/"><a href="http://www.asp.net/ajaxlibrary/">http://www.asp.net/ajaxlibrary/</a></a>. </li> </ul>  <p>&#160;</p>  <ul>   <li>Server Side Asp.net: Asp.net Ajax has rich server side integration into Asp.net. To utilize these features, you will need to be using Asp.net. The ScriptManager, UpdatePanel, UpdateProgress and other controls allow developers to use features like partial page updates, managing browser history, script combining, web service script registration etc. without having to write any JavaScript. Asp.net Ajax enables Ajax features while retaining drag and drop RAD functionality in WebForms. It also provides an infrastructure on which to build extender controls, script controls and components – custom server controls that use the Asp.net Ajax Library (the client side library mentioned above) – and takes care of registering the required scripts and resources at runtime. All the developer using the control needs to do is drag and drop the control onto a WebForms page with a ScriptManager and set the properties. The framework will do the rest. </li> </ul>  <p>&#160;</p>  <ul>   <li>Ajax Control Toolkit: The Ajax Control Toolkit (ACT) adds a bunch of features and controls to Asp.net Ajax. Previously, this was a stand alone project hosted at codeplex. It was primarily used in WebForms scenarios. With the new-and-currently-in-beta version, the ACT has been incorporated into the Asp.net Ajax Library. All the controls of the toolkit are all present and can be used entirely from script. The ACT also has some server side components which can be used to make custom Asp.net Ajax server side control development easier. In addition, the server side components provide drag and drop functionality to all the controls and extenders in the client side ACT library. This makes using the controls easier in a WebForms environment, taking advantage of the ScriptManager control. While very easy to use with WebForms, it’s also very simple to use entirely from script (like in Asp.net MVC or plain Html). This has been a major improvement in the latest beta as it was quite cumbersome to use the toolkit before. </li> </ul>  <p>&#160;</p>  <ul>   <li>jQuery: jQuery is another JavaScript library, just like the Asp.net Ajax library. It’s free, open source and the brainchild of <a href="http://en.wikipedia.org/wiki/John_Resig">John Resig</a>, who initially released it in 2006. So why are we talking about it here? Well, jQuery has quite a few benefits and is a great JavaScript library. It’s very lightweight, has some awesome selector syntax as well as chaining support for expressions. Again, why am I mentioning this here? The Asp.net Ajax team was looking to incorporate similar features in the client side library of Asp.net Ajax. jQuery was gaining real popularity at that time. It could do complex JavaScript tasks with very little code. The motto of jQuery is “write less, do more”. Microsoft was also pushing the early versions of Asp.net MVC. Asp.net MVC really needed a JavaScript library that could handle Ajax, JSON and client side manipulation in a simple manner. More and more developers started using jQuery for this. It was decided that jQuery would be officially considered a part of Asp.net development. It was initially included into the Asp.net MVC project template, and since then has been included in Asp.net Ajax as well. All the controls in the ACT now work seamlessly with jQuery (in the latest beta of the Ajax Library). Microsoft also pledged bug reports, patches, tests etc. to the jQuery project. One thing to note is that although jQuery support is included in the Asp.net Ajax Library, you do not need to be using jQuery to use Asp.net Ajax (or even the client side Asp.net Ajax Library). Microsoft recommends using them both together as it will make development easier with less need to reinvent the wheel. jQuery is already a rocket powered missile in a tiny package. As such, jQuery complements Asp.net Ajax and using one does not force you to restrain from the other. </li> </ul>  <p>&#160;</p>  <ul>   <li>Microsoft Ajax Content Delivery Network (CDN): Microsoft has CDN servers around the globe. And it hosts all of the JavaScript files in the Microsoft Ajax Library (including those for the ACT), jQuery, jQuery validation plug-in and the Asp.net Ajax scripts for Asp.net MVC on these servers. The files are cached and delivered to users of your website from their nearest location. This has a a few benefits:      <ul>       <li>The files reach the website user faster. </li>        <li>The files, once delivered, are cached on the browser too. Any other domain that uses the same file causes the browser to use the local cached version (since the file’s url is the CDN url, the domain remains constant). Hence, other websites using the CDN will load faster too. </li>        <li>The files are delivered from Microsoft’s servers. This reduces your server network bandwidth usage and reduces costs for you. </li>        <li>The CDN supports Http and Https. This means website users won’t get a pesky message asking them whether or not they want to show non-secure items. </li>     </ul>   </li> </ul>  <blockquote>   <p>You can learn more about the CDN here: <a title="http://www.asp.net/ajaxlibrary/CDN.ashx" href="http://www.asp.net/ajaxlibrary/CDN.ashx"><a href="http://www.asp.net/ajaxlibrary/CDN.ashx">http://www.asp.net/ajaxlibrary/CDN.ashx</a></a></p> </blockquote>  <p>So that’s it for an overview of what Asp.net Ajax actually is. If you wish to learn more, you can find a whole host of resources here: <a title="http://www.asp.net/ajax/" href="http://www.asp.net/ajax/"><a href="http://www.asp.net/ajax/">http://www.asp.net/ajax/</a></a></p> <a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fwww.heartysoft.com%2fpost%2f2009%2f12%2f09%2faspnet-ajax-misconceptions-and-facts.aspx"><img border="0" alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fwww.heartysoft.com%2fpost%2f2009%2f12%2f09%2faspnet-ajax-misconceptions-and-facts.aspx" /></a> <br/> <a rev="vote-for" href="http://dotnetshoutout.com/Heartysoftcom-Ajax-Aspnet-Ajax-jQuery-Misconceptions-and-Facts"><img alt="Shout it" src="http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fwww.heartysoft.com%2Fpost%2F2009%2F12%2F09%2Faspnet-ajax-misconceptions-and-facts.aspx" style="border:0px" /></a></p>
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

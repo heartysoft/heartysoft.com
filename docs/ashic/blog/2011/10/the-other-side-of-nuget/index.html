@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>The Other Side of NuGet</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/.net/">.NET</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/nuget/">NuGet</a>
+                </li>
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            28 Oct, 2011
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>NuGet is a very nice addition to the .NET developers’ arsenal. It is a central place for every library and framework in .NET. It has pretty good tooling integrated into Visual Studio and the command line options are pretty sweet too. It can pull down specific libraries including their own dependencies saving the developer a lot of time and effort in figuring them out manually. For the continued growth of the open source .NET community, NuGet is pretty much something that should have happened years ago. Yet there are some things about NuGet you need to be careful about. </p> <h2>Everything on NuGet is not shrink wrapped</h2> <p>This may seem pretty obvious as its an amalgam of different libraries from many many different authors. Yet when using NuGet many people seem to forget that. When done properly, a NuGet package “just works”. Brilliant. Yet there are a number of reasons why a package may not “just work”. It could be that the package was created wrong. It could be that one of the dependencies forgot to mention a specific version and as such the latest version of that dependency would be fetched – possibly incompatible with the main package. It could be that the main package has an out-dated version specified. It could be that even with the latest version, there’s a glaring bug that makes the library unusable – it’ll get fixed eventually.</p> <p>A lot of these problems stem from the fact that most packages are open source – some managed by a single person team. That’s not a bad thing. That’s what the OSS community thrives on. Yet if they weren’t on NuGet, we would find ourselves researching and evaluating the package more – trying to find chinks in the armour and in the process, get better understanding about the component. NuGet makes it quite easy to just do a search in the NuGet UI for some term, pull down a match into our project code and try to learn the library. What would we have done differently if we had not had NuGet? We would never have added an unknown library to our project. We would have created a separate throwaway project and experimented with the library. We would have judged its pros and cons and after careful evaluation, decided whether it’s good enough to go in. Just because you’re using NuGet should not mean you’re allowed to skip this step. Anyone can put anything on NuGet. Don’t think that just because it’s on NuGet, you don’t need to evaluate something.</p> <h2>Dependency Hell</h2> <p>Many people are wary about the number of dependencies they take on. Many think this is an unjust fear. Some argue that any bug in any of the dependencies can show up in your product. Using NuGet, it’s easier to “ignore” that fact when adding a package (even though the package explorer clearly shows the dependencies). There is another problem with the dependencies. If two packages have dependencies on different versions of the same package, you will run into issues. There’s little Microsoft or the NuGet team can do about this. You just need to be wary of this fact if you do use NuGet. That’s right – it’s your responsibility to judge the packages and as with the previous point, you should not skip this step.</p> <h2></h2> <h2>Proxy and Network</h2> <p>Where I work, we need to go through a proxy with credentials to access the central network and the internet. The network settings for VS seem abysmal. To connect we need to do these in order:</p> <p>- Launch the VS Extension Manager<br>- Wait for it to timeout (90ish seconds)<br>- Click the link to enter credentials<br>- Enter credentials ticking the “remember” checkbox<br>- Close the extension manager<br>- Open NuGet package manager and use it.<br></p> <p>And if we close VS, we need to repeat the process again. Joy.<br>Yes, our network system is crap. And yes, we don’t have control over it. It takes 3 minutes or so to get to the NuGet packages. Surely this can be improved. </p> <p>[Update: This is thankfully resolved…the NuGet window now displays the login prompt.]</p> <h2></h2> <h2>References, Packages, Dlls, R#</h2> <p>If you add every package to every project through NuGet, you’re fine. But if one project adds a dependency via NuGet and another project just uses the downloaded dlls, there’s a chance you’ll have problems on the central build. This may not sound like much but it can be. Resharper’s Alt + Enter will simply add a reference to the dll. In addition to that, NuGet adding packages could take a while (see previous point) depending on your network setup. These types of annoying pauses can decrease productivity significantly. </p> <h2>Build Servers and NuGet</h2> <p>With NuGet, comes the decision on whether or not to commit packages. Many people suggest that packages should not be committed to source control. NuGet has a nifty way of fetching the dependencies by a simple command line operation. Keeping the packages out of source control will mean quicker checkouts, right? I couldn’t disagree with this recommendation more. I believe that unless constrained by some very specific reason, dependencies should be in source control. This allows anybody who has the source code to build the project immediately regardless of whether or not they’re connected to the internet or a private NuGet server. Some people go as far as to put VMs with specific environment configurations in version control. Having to go through a secondary process to “update dependencies” on checkout is annoying and a waste of time. In addition, if another team member adds a new package to the project, other devs will have to run a command in order to get up to date. This can add up.</p> <p>Does keeping the packages out of source control save you anything? Faster checkouts? Hah…you get a quicker checkout of the source code but you need to add those packages in anyway. Wouldn’t simply getting the dlls from source control be faster? Your dlls wouldn’t change that often if they’re in a lib folder. Hence, after the first checkout, you wouldn’t need to even think about it. And what about repeatability? You’re adding environmental dependencies (network, NuGet server etc.) that may or may not behave the same way year round. Just last week, NuGet was updated to v1.5. Until we updated the internal server to 1.5, we experienced problems using both the central NuGet server and our private NuGet server. This took time away from the devs. They were waiting for the bottleneck to clear up. We don’t like bottlenecks. Having the build server fetch packages from NuGet can be annoying if there are connectivity issues. Yes, caching helps. But if you add a new package, the server will need to connect to the internet. This is again an annoying delay. </p> <p>Not committing packages means that the developers and the build server have to know about NuGet. What one guy does has to be done by others (be it through a simple command) after fetching the latest code. In the age of continuous delivery, this is just bizarre. I’m not saying don’t use NuGet. I’m saying use NuGet to fetch the dlls the first time (and when you need to update the packages) but commit the dlls in source control. Keep your build server free of NuGet and the network dependencies it brings. This will not slow you down. This will save you minutes every single day. Those minutes and the interruptions they bring do add up. What would happen if you did commit the dlls? Nobody on the team or the build server would need NuGet, a network connection or anything else to build. A few less things to worry about. </p> <p>Great tools make your normal workflow faster , easier and quicker. NuGet is a great tool for adding those dependencies without having to go all sourceforge, github, bitbucket or codeplex crazy. But think about it – would you be fetching your dependencies from those places from your build server? No you wouldn’t. Adding NuGet to your build process would mean doing exactly that. At that point, you’re no longer automating a manual process, you’re adding a new step to your build – a step that has a dependency on NuGet itself, network connections, central servers and what not. It just occurred to me that this has an analogy with one of my passions – CQRS. In CQRS, you don’t wait for the user to request something and then go off to a huge central model to generate the result – rather you pre-process the result and return it when the user asks for it. This ensures that the user can get what they need even if there’s an issue connecting to the central server. Similarly, why go off traversing package servers and the interwebz when you can get avoid it? As Greg Young says – “Autonomy can be a powerful thing”. </p> <h2>The Poor Guy on the Train </h2> <p>There’s no golden rule for pretty much anything. But if your packages are seldom updated or new dependencies added then, consider what benefits you gain by forcing the NuGet dependency on everybody. Think of the guy who checks out code at the end of the day so that he can work during his 90 minute commute on a packed train. He somehow manages to find a seat, open up his laptop only to find that he forgot to run a pesky NuGet command line updater which connects to the office package server. And then he finds that the SVN or TFS monstrosity means he can’t even go back to his code before checkout and work on something else. He has to stare into the abyss for the remainder of his journey.</p> <p>&nbsp;</p> <p>NuGet is a great tool and a necessary one (as is OpenWrap but that’s another issue). Something like this from the first party was badly needed. And it does what it does quite well. But as far as checking in packages go, have a think and analyse if the NuGet dependency on your whole team is something that will work for you or against you. There is no right or wrong answer to this – do what’s best for your team.</p>
+        
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

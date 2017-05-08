@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zeromqlondon on Heartysoft Solutions Limited</title>
+    <link>http://localhost:1313/tags/zeromqlondon/</link>
+    <description>Recent content in Zeromqlondon on Heartysoft Solutions Limited</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 21 Feb 2013 23:19:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/zeromqlondon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ZeroMQLondon – And Away We Go</title>
+      <link>http://localhost:1313/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</link>
+      <pubDate>Thu, 21 Feb 2013 23:19:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</guid>
+      <description>On Wednesday, we had our first hands on session of the London ZeroMQ User Group. It was nice to see such an enthusiastic bunch of people come along to find out what Zero is all about.
+As our first technical session, it covered some of the basic concepts – contexts, sockets, and “sockets”. We got started with some of the theory, and then moved onto getting a basic REQ-REP pair up and running over TCP – across threads, across processes, and then (with some difficulty overcoming network issues but hey – what’s a dive into network programming without network issues, eh?</description>
+    </item>
+    
+    <item>
+      <title>ZeroMQLondon Launch</title>
+      <link>http://localhost:1313/ashic/blog/2012/12/zeromq-london-launch/</link>
+      <pubDate>Fri, 07 Dec 2012 02:06:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2012/12/zeromq-london-launch/</guid>
+      <description>We launched the London ZeroMQ User Group (ZeroMQLondon) on Wednesday, the 5th of December, 2012. We were extremely lucky to have one of the founders of 0mq, Pieter Hintjens, in town for TechMeshConf 2012 – and to agree to do a talk to launch the group. This was our first meetup, and it got a bit hectic towards the start… Hopefully we’ll do better in future ones. We are extremely grateful to Skillsmatter for providing us with a large enough place to hold the 50+ people that came (and with Udi speaking downstairs and “hogging” a large part of the London .</description>
+    </item>
+    
+  </channel>
+</rss>

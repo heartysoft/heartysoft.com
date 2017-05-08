@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>Simple Username / Password Authentication WITHOUT Membership Providers</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/asp.net/">ASP.NET</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/asp.net/">ASP.NET</a>
+                </li>
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            19 Jun, 2009
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p><p>The Membership provider in asp.net is great. As is the Roles support. You can do some very nifty things with it with a considerable amount of ease. You can get hashed or encrypted passwords and a whole host of features that&rsquo;s pretty much enterprise grade. And you get it for free. Well, not free, but it is pretty easy to set up.</p>
+<p>But what if your website only needed two or three user accounts? What if you didn&rsquo;t need all that fancy stuff. You just want to use a login system that&rsquo;ll just block off an admin area or something and you want to do it quick and dirty. Maybe it&rsquo;s a prototype. Maybe it&rsquo;s your own little site where you just want simplicity for authentication. I&rsquo;ve actually went through all the aspnet_regsql.exe trouble for a very simple site that would have just one user. Sounds like overkill? It is.</p>
+<p>The login controls provided in asp.net 2.0 are quite handy, but they mostly work with a membership provider. The &lt;asp:Login&gt; control is specially helpful for creating a login screen in no time. But it too works with a Membership provider.</p>
+<p>So how can we quickly setup a login system without using a Membership provider? And how can we use the &lt;asp:Login&gt; control to set up the login screen when using such a system? Read on&hellip;</p>
+<p>Forms authentication actually allows you to store usernames and passwords in the web.config file. A typical web.config file doing this is shown here:</p>
+<p>&nbsp;</p>
+<p><a href="http://www.heartysoft.com/image.axd?picture=login-1.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="login-1" src="http://www.heartysoft.com/image.axd?picture=login-1_thumb.png" border="0" alt="login-1" width="607" height="617" /></a></p>
+<p>I&rsquo;ve highlighted the important parts. The authentication mode needs to be Forms. The PasswordFormat is left as &ldquo;Cleared&rdquo; here. It can also be hashed or encrypted. I&rsquo;ll make a post in the future about hashed and encrypted passwords. I&rsquo;ve added a single &lt;user&gt; to the credentials node. You could easily add more. In the &lt;authorization&gt; node, I&rsquo;ve allowed all users. In the &lt;location&gt; node for the &ldquo;admin&rdquo; folder, I&rsquo;ve set it to deny all unauthenticated users. So, if a user is logged in, they can access the admin folder. If not, they&rsquo;re asked to login.</p>
+<p>Now, with this in place, if you were to put an &lt;asp:Login&gt; control on a page and expect it to work just like when using a Membership provider, then you&rsquo;re in for a nasty surprise. Even if you enter the correct username and password, it&rsquo;ll tell you the login has failed. Why? The reason is pretty simple. We&rsquo;ve not mentioned a Membership provider to use, so asp.net defaults to the Membership provider in the machine.config, which usually is an asp.net sql membership provider drawing info from a database in App_Data. That database has no info about our user named admin with the password &ldquo;pa$$w0rd!&rdquo;. So, logging in fails. How do we overcome this? Simple. Just add a handler for the OnLoogingIn (NOT OnLoggedIn) event of the &lt;asp:Login&gt; control and in that handler, do this:</p>
+<p><a href="http://www.heartysoft.com/image.axd?picture=login-2.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="login-2" src="http://www.heartysoft.com/image.axd?picture=login-2_thumb.png" border="0" alt="login-2" width="612" height="143" /></a></p>
+<p>[If you don&rsquo;t want the authentication cookie to persist between requests, set the second parameter of RedirectFromLoginPage to false.]</p>
+<p>&nbsp;</p>
+<p>That&rsquo;s all there is to it.</p>
+<p>Now, that was very simple, but the question that pops up is <em>is it secure?</em></p>
+<p>Well, the answer is both a yes and a no. It&rsquo;s yes in the sense that IIS will never serve anything with a .config extension from an outside request. So, users on your site will never be able to download the web.config and look at the username and passwords. The &ldquo;no&rdquo; part of the answer comes from the fact that if someone can look inside the web.config file, they&rsquo;d be able to see the usernames and passwords. If you run your own server or have a hosted account that only you access, this is not that big a problem. [I add the latter coz no hosting company is ever going to go through the risk of looking inside of clients&rsquo; files for passwords.] For extra security though, you can use hashed or encrypted passwords in this system too, which I&rsquo;ll cover in a future post.</p>
+<p>A drawback to this is that the web.config file can get very big for a lot of users. But then again, this isn&rsquo;t meant to be used for a lot of users. This is meant for very simple sites woth very few users. There are sites out there that are like this and don&rsquo;t need all the Membership gloss. If your site&rsquo;s like that, you can easily use this method.</p>
+<p>&nbsp;</p>
+<p>Hope that helps.</p>
+<div class="wlWriterHeaderFooter" style="margin:0px; padding:0px 0px 0px 0px;">
+<div class="shoutIt"><a rev="vote-for" href="http://dotnetshoutout.com/Submit?url=http%3a%2f%2fwww.heartysoft.com%2fpost%2f2009%2f06%2f19%2fSimple-Username-Password-Authentication-WITHOUT-Membership-Providers.aspx&amp;title=Simple+Username+%2f+Password+Authentication+WITHOUT+Membership+Providers"><img style="border:0px" src="http://dotnetshoutout.com/image.axd?url=http://www.heartysoft.com/post/2009/06/19/Simple-Username-Password-Authentication-WITHOUT-Membership-Providers.aspx" alt="Shout it" /></a></div>
+</div></p>
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

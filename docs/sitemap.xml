@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2016/05/open-vpn-disconnecting-reset-winsock/</loc>
+    <lastmod>2016-05-21T15:02:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2015/11/ndepend-6-is-awesome/</loc>
+    <lastmod>2015-11-06T08:02:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2015/09/dont-strong-name-existing-nuget-packages/</loc>
+    <lastmod>2015-09-03T21:09:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2015/07/deleting-stuff-older-than-date/</loc>
+    <lastmod>2015-07-06T14:27:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2015/02/command-query-example-part2/</loc>
+    <lastmod>2015-02-13T01:42:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2015/02/command-query-example-part1/</loc>
+    <lastmod>2015-02-11T01:41:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2015/01/sample-and-population-parameters/</loc>
+    <lastmod>2015-01-07T00:39:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2015/01/on-cassandra/</loc>
+    <lastmod>2015-01-05T23:14:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2014/09/scottish-referendum-bias-statistical-inference/</loc>
+    <lastmod>2014-09-07T14:02:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2014/05/intellij-coursera-scala-sbt-madness/</loc>
+    <lastmod>2014-05-03T14:44:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2014/04/webapi-per-controller-settings/</loc>
+    <lastmod>2014-04-16T23:40:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2014/04/azure-websites-share-files/</loc>
+    <lastmod>2014-04-13T21:41:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2014/03/git-p4merge-mergetool/</loc>
+    <lastmod>2014-03-04T00:56:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/11/oredev-2013/</loc>
+    <lastmod>2013-11-09T09:06:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/08/sql-server-datetime-and-precision/</loc>
+    <lastmod>2013-08-06T05:59:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</loc>
+    <lastmod>2013-07-31T06:28:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/07/gitignore-powershell-unicode/</loc>
+    <lastmod>2013-07-16T20:48:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/06/zeromq-async-server/</loc>
+    <lastmod>2013-06-24T09:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/06/martin-thompson-lock-free-algos/</loc>
+    <lastmod>2013-06-10T11:57:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/06/processor-affinity-windows-taskset/</loc>
+    <lastmod>2013-06-06T08:48:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/03/build-fsharp-3-on-build-server-without-vs/</loc>
+    <lastmod>2013-03-12T16:31:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</loc>
+    <lastmod>2013-02-21T23:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/01/zeromq-vc-runtime/</loc>
+    <lastmod>2013-01-28T17:59:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2013/01/ndepend/</loc>
+    <lastmod>2013-01-28T01:36:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2012/12/zeromq-london-launch/</loc>
+    <lastmod>2012-12-07T02:06:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2012/05/roughing-it-canary-wharf/</loc>
+    <lastmod>2012-05-07T14:05:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</loc>
+    <lastmod>2012-04-15T15:16:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</loc>
+    <lastmod>2012-03-15T05:51:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2012/01/formatting-javascript-date/</loc>
+    <lastmod>2012-01-02T05:27:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</loc>
+    <lastmod>2011-12-06T21:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</loc>
+    <lastmod>2011-12-06T19:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/11/agile-fragile/</loc>
+    <lastmod>2011-11-24T09:07:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/10/the-other-side-of-nuget/</loc>
+    <lastmod>2011-10-28T03:37:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/10/ddd-north-2011/</loc>
+    <lastmod>2011-10-14T04:22:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/10/ddd-belfast-2011/</loc>
+    <lastmod>2011-10-12T03:40:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/07/2011-mvp-hat-trick/</loc>
+    <lastmod>2011-07-02T03:30:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/06/canary-wharf-cqrs/</loc>
+    <lastmod>2011-06-20T07:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</loc>
+    <lastmod>2011-04-19T04:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/03/composition-when-overriding/</loc>
+    <lastmod>2011-03-17T22:08:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</loc>
+    <lastmod>2011-03-13T09:47:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/03/introducing-msmspec/</loc>
+    <lastmod>2011-03-07T02:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2011/01/introducing-seleniumspec/</loc>
+    <lastmod>2011-01-03T20:02:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/12/ninja-coding-code-comments/</loc>
+    <lastmod>2010-12-20T07:06:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</loc>
+    <lastmod>2010-09-15T21:12:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/08/selecting-listview-items-with-checkboxes/</loc>
+    <lastmod>2010-08-14T09:57:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/07/aspnet-routing-iis7-remember-modules/</loc>
+    <lastmod>2010-07-26T18:04:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/06/buet-world-cups-politicians-students-teachers-authoritiese-ah-buet/</loc>
+    <lastmod>2010-06-19T21:31:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/05/anonymous-types-c-sharp-4-dynamic/</loc>
+    <lastmod>2010-05-26T19:10:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</loc>
+    <lastmod>2010-05-25T20:41:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</loc>
+    <lastmod>2010-05-11T02:31:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</loc>
+    <lastmod>2010-05-06T19:46:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</loc>
+    <lastmod>2010-03-20T08:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</loc>
+    <lastmod>2010-03-20T08:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/03/encrypted-hidden-with-salt/</loc>
+    <lastmod>2010-03-13T14:37:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</loc>
+    <lastmod>2010-03-01T18:43:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</loc>
+    <lastmod>2010-02-25T07:27:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</loc>
+    <lastmod>2010-02-22T09:44:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</loc>
+    <lastmod>2010-02-05T00:47:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</loc>
+    <lastmod>2009-12-09T13:19:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/12/im-back/</loc>
+    <lastmod>2009-12-08T06:10:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</loc>
+    <lastmod>2009-11-01T09:24:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</loc>
+    <lastmod>2009-07-01T13:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</loc>
+    <lastmod>2009-06-19T05:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/06/display-modes-of-validator-controls/</loc>
+    <lastmod>2009-06-16T04:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</loc>
+    <lastmod>2009-06-15T23:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/06/retrieving-the-password-for-a-user-in-aspnet/</loc>
+    <lastmod>2009-06-14T00:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/06/how-to-programmatically-logout-disable-a-user-account/</loc>
+    <lastmod>2009-06-13T22:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</loc>
+    <lastmod>2009-06-12T14:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</loc>
+    <lastmod>2009-06-09T13:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/05/fileupload-control-does-not-give-full-path/</loc>
+    <lastmod>2009-05-19T20:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/05/top-of-the-mountain-/</loc>
+    <lastmod>2009-05-18T16:47:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</loc>
+    <lastmod>2009-05-06T06:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/04/how-to-send-emails-from-net-example-uses-gmail-smtp/</loc>
+    <lastmod>2009-04-28T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</loc>
+    <lastmod>2009-03-27T03:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2009/02/error-installing-sql-2008-business-intelligence-studio-and-related-package-load-error-in-vs2008/</loc>
+    <lastmod>2009-02-21T06:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/12/putting-messages-into-a-validationsummary-controlfrom-code/</loc>
+    <lastmod>2008-12-11T19:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/12/getting-the-uri-in-silverlight/</loc>
+    <lastmod>2008-12-08T14:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/11/how-to-read-the-html-of-a-web-page-programmatically/</loc>
+    <lastmod>2008-11-21T04:38:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</loc>
+    <lastmod>2008-11-21T02:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/11/linq-to-sql-dbml-more-than-just-for-accessing-a-db/</loc>
+    <lastmod>2008-11-20T18:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/10/assigning-port-numbers-for-the-dev-server/</loc>
+    <lastmod>2008-10-24T00:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/10/wcf-svc-gives-http-404-on-host-works-perfectly-on-local/</loc>
+    <lastmod>2008-10-01T00:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/09/setting-timeouts-for-session-and-authentication/</loc>
+    <lastmod>2008-09-29T04:59:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</loc>
+    <lastmod>2008-09-28T23:11:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/09/disable-caching-in-an-httphandler/</loc>
+    <lastmod>2008-09-18T10:56:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/09/how-to-use-session-values-in-an-httphandler/</loc>
+    <lastmod>2008-09-18T08:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</loc>
+    <lastmod>2008-09-05T10:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/09/html-comments-other-comments-and-some-vs-tips/</loc>
+    <lastmod>2008-09-02T02:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/08/memorystream-not-expandable-invalid-operation-exception/</loc>
+    <lastmod>2008-08-24T19:31:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/08/net-35-sp1finally/</loc>
+    <lastmod>2008-08-12T09:47:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/08/refresh-button-and-double-insert-updates/</loc>
+    <lastmod>2008-08-01T19:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</loc>
+    <lastmod>2008-07-31T21:05:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/07/silverlight-2b2-screencastssomebody-went-nuts/</loc>
+    <lastmod>2008-07-29T14:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/07/urlrewriternet-and-themes/</loc>
+    <lastmod>2008-07-28T05:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</loc>
+    <lastmod>2008-07-28T05:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ashic/blog/2008/07/hey-kaspersky-stop-slowing-down-my-vs/</loc>
+    <lastmod>2008-07-14T04:39:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/.net/</loc>
+    <lastmod>2015-11-06T08:02:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/agile/</loc>
+    <lastmod>2011-11-24T09:07:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ajax/</loc>
+    <lastmod>2010-02-22T09:44:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ajax-control-toolkit/</loc>
+    <lastmod>2010-02-22T09:44:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/asp.net/</loc>
+    <lastmod>2014-04-16T23:40:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/asp.net-mvc/</loc>
+    <lastmod>2015-02-13T01:42:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/azure/</loc>
+    <lastmod>2014-04-13T21:41:14+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/blog/</loc>
+    <lastmod>2016-05-21T15:02:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2016-05-21T15:02:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/buet/</loc>
+    <lastmod>2010-06-19T21:31:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/c#/</loc>
+    <lastmod>2015-11-06T08:02:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cassandra/</loc>
+    <lastmod>2015-01-05T23:14:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/community/</loc>
+    <lastmod>2015-02-13T01:42:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cqrs/</loc>
+    <lastmod>2012-04-15T15:16:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/data-science/</loc>
+    <lastmod>2014-09-07T14:02:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/event-sourcing/</loc>
+    <lastmod>2012-04-15T15:16:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/f#/</loc>
+    <lastmod>2013-03-12T16:31:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/general-software-development/</loc>
+    <lastmod>2016-05-21T15:02:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/git/</loc>
+    <lastmod>2014-03-04T00:56:45+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2016-05-21T15:02:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/html/</loc>
+    <lastmod>2009-06-15T23:57:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/iis-7/</loc>
+    <lastmod>2010-07-26T18:04:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/javascript/</loc>
+    <lastmod>2012-01-02T05:27:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/jquery/</loc>
+    <lastmod>2012-01-02T05:27:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2015-07-06T14:27:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/msmspec/</loc>
+    <lastmod>2011-03-07T02:35:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/news/</loc>
+    <lastmod>2012-04-15T15:16:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ninjacoding/</loc>
+    <lastmod>2010-12-20T07:06:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/nuget/</loc>
+    <lastmod>2015-09-03T21:09:19+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/performance-tips/</loc>
+    <lastmod>2013-06-10T11:57:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/scala/</loc>
+    <lastmod>2014-05-03T14:44:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/security/</loc>
+    <lastmod>2013-07-31T06:28:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/silverlight/</loc>
+    <lastmod>2010-02-22T09:44:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/software-craftsmanship/</loc>
+    <lastmod>2015-02-13T01:42:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/sql/</loc>
+    <lastmod>2013-08-06T05:59:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/statistics/</loc>
+    <lastmod>2015-01-07T00:39:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2015-11-06T08:02:21+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/validation/</loc>
+    <lastmod>2009-06-16T04:04:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/wcf/</loc>
+    <lastmod>2010-02-22T09:44:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/zeromq/</loc>
+    <lastmod>2013-11-09T09:06:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/zeromqlondon/</loc>
+    <lastmod>2013-02-21T23:19:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

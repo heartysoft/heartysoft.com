@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>IntelliJ, Coursera, Scala, Sbt, Madness</h1>
+        <div class="tag-holder">
+    <ul>
+        
+            
+        
+                    
+                <li>
+                    <a href="/tags/scala/">scala</a>
+                </li>
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            3 May, 2014
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>I’m revisiting Martin Odersky’s Scala course at Coursera. This is the second running of the course. Last time, I tried to get things running with IntelliJ IDEA, and reluctantly reverted to Eclipse as nothing seemed to work properly. As this is my second time doing the course, and also as I would like to actually work with Scala (despite its sluggish dev experience in IDEs…but that’s another story), I was determined to get things running in IntelliJ <em>no matter what</em>. I’ve managed to get things running (yay) after quite a bit of trial and error. This may or may not be the exact steps needed, but I seem to have successfully reproduced the issues I was having, and resolved them. So, here goes nothing…</p> <h2></h2> <h2>Target Issues</h2> <p></p> <p></p> <p>The steps outlined in this guide will resolve issues where IntelliJ can’t load Scala projects, can load them but compilation fails, code seems to be ok, but dependencies like junit, etc. aren’t found (i.e. in the project structure window, the entries in Project Settings &gt; Libraries are mostly red), etc.</p> <h2>Set up</h2> <p>I’m running Windows 8.1 x64. I started off with a clean machine. In terms for drives and directories, windows is on C:\, however, I’ve changed my documents directory to be E:\. </p> <p>This guide uses JDK 1.7.0_55, SBT 0.13.2, and IntelliJ IDEA 13.1.2.</p> <h2>Step 1: JDK</h2> <p>I installed JDK 7 from <a title="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</a> . The exact file is jdk-7u55-windows-x64.exe. </p> <p>Note: I tried installing JDK 8. While that installs fine, attempting to run sbt gives weird errors saying that some Char package or something is broken. I hope this is a temporary issue. However, I did not pursue this further and stuck to JDK 7.</p> <p>If the installer doesn’t automatically do this, put the jdk bin folder in your PATH. For me this was D:\Program Files\Java\jdk1.7.0_55\bin.</p> <p>To check if the installation worked, open a command prompt anywhere and try “java –version” and “javac –version”. Both should succeed, and give 1.7.0_55 as the version.</p> <h2></h2> <h2>Step 2: SBT</h2> <p>I installed sbt from <a title="http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html" href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html">http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html</a> . I used the msi installer for version 0.13.2 (there’s a drop down at the top of the page).</p> <p>This put D:\Program Files (x86)\sbt\\bin in my PATH. Note the extra ‘\’. I changed my PATH so it had D:\Program Files (x86)\sbt\bin. Why the extra slash? Dunno, don’t care :)</p> <p>To check if the installation worked, open a command prompt anywhere <em>other than a sbt project directory</em> and try “sbt sbt–version”. This should give 0.13.2 as the version.</p> <h2>Step 3: IntelliJ</h2> <p>I installed IntelliJ Community Edition from <a title="http://www.jetbrains.com/idea/download/" href="http://www.jetbrains.com/idea/download/">http://www.jetbrains.com/idea/download/</a> . Nothing particularly notable about the installation. My version was 13.1.2, which is the latest.</p> <h2></h2> <h2>Step 4: IntelliJ Scala Plugin</h2> <p>I fired up IntelliJ and hit Configure, then Plugins:</p> <p><a href="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/ujqousavk1h4pheb4xojtzlc/image%5B4%5D.png"><img title="image" style="border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px; display: inline; border-top-width: 0px" border="0" alt="image" src="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/droqxyponsjvhf4a101c1zfn/image_thumb%5B2%5D.png" width="526" height="400"></a> </p> <p><a href="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/ye5h52bmywsyvuw5jpysewno/image%5B8%5D.png"><img title="image" style="border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px; display: inline; border-top-width: 0px" border="0" alt="image" src="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/fu2s3cc2v4ohqjwmwlkldosj/image_thumb%5B4%5D.png" width="327" height="280"></a> </p> <p>In the next window, click “Install Jetbrains plugin”:</p> <p><a href="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/ezfem5jrxb1o24jj1pulok2r/image%5B12%5D.png"><img title="image" style="border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px; display: inline; border-top-width: 0px" border="0" alt="image" src="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/bh42wn5jhty2n5ow5qglcduy/image_thumb%5B6%5D.png" width="394" height="373"></a> </p> <p>Type in Scala in the search box, and install the plugin. Close the window, and apply. This should restart IntelliJ.</p> <p><a href="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/4wmswrwl4rxrrbmfh3pwrfvr/image%5B17%5D.png"><img title="image" style="border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px; display: inline; border-top-width: 0px" border="0" alt="image" src="http://www.heartysoft.com/Media/Default/Windows-Live-Writer/zenjwpiaffhymi1f0vaz1i3s/image_thumb%5B9%5D.png" width="659" height="345"></a> </p> <h2></h2> <h2>WAIT – WE’RE NOT DONE YET</h2> <p>According the course Wiki, you can go ahead and create projects, even SBT ones. However, if you download the assignment projects, and import them via the sbt file, it seems that it can’t resolve the dependencies folder. This means that while you can code the main source files, the code for tests always have red squigglies for things from junit, etc. </p> <h2>Step 5: sbt-idea sbt plugin</h2> <p>It’s time to install a plugin that can resolve the issues related to finding the dependencies. The plugin to use is sbt-idea : <a title="https://github.com/mpeltonen/sbt-idea" href="https://github.com/mpeltonen/sbt-idea">https://github.com/mpeltonen/sbt-idea</a> .</p> <p>You don’t need to download the project or anything. The way to install it is as follows:</p> <ul> <li>Got to your root directory. If I open up git bash, and do “cd ~/”, it takes me to C:\Users\Ashic. However, simply applying the following steps to that directory didn’t work for me. I had to apply the same changes to E:\ (which is my “Documents” root).  <li>Go into the .sbt folder. Create a folder called “plugins” if it doesn’t already exist. Create a file in the plugins folder called “build.sbt”.  <li>Add the following line the the build.sbt file:<br>addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.6.0")  <li>Back in the .sbt folder, you should see a folder called 0.13. Go into that folder.  <li>Create a “plugins” directory and “plugins\build.sbt” files in that folder if it doesn’t exist. Add the same line to that build.sbt file as we did previously.</li></ul> <h2>Setup Done…Except…</h2> <p>The setup is now complete. However, when working with an existing sbt project, there’s one more step necessary. Let’s download the example assignment from <a title="http://spark-public.s3.amazonaws.com/progfun/assignments/example.zip" href="http://spark-public.s3.amazonaws.com/progfun/assignments/example.zip">http://spark-public.s3.amazonaws.com/progfun/assignments/example.zip</a> . Unblock it (properties windows), and extract it to a folder of your choice. Open a command prompt and go to the extracted folder (i.e. the folder containing the src folder.). Run the following command from the command prompt: “<strong>sbt gen-idea</strong>”. That should create the metadata files IntelliJ needs to discover dependencies, run the project, etc.</p> <p>With the metadata files generated, open up IntelliJ and <strong>choose to open (not import) a project, point it to the folder containing the project’s build.sbt file (not the sbt file itself).</strong> You should be able to load the project without errors, run tests using IntelliJ, etc. Whenever you have a new project you want to load, just extract it, run sbt gen-idea and you should be ready to go.</p> <h2></h2> <h2>All Done </h2> <p>From reading docs, comments, etc. it seems IntelliJ should be able to load sbt dependencies and keep them in sync. An interesting point to note is that if we run “sbt sbt-version” inside the extracted assignment folders, it shows 0.12.4. I imagine this is because the project was created with that version, and maybe this is what’s preventing IntelliJ from working as expected. Anyhow, running gen-idea seems to fix the issues.</p> <p>Hope that helps :)</p>
+        
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

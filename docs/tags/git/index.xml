@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Heartysoft Solutions Limited</title>
+    <link>http://localhost:1313/tags/git/</link>
+    <description>Recent content in Git on Heartysoft Solutions Limited</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 04 Mar 2014 00:56:45 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configure P4Merge as Git Mergetool</title>
+      <link>http://localhost:1313/ashic/blog/2014/03/git-p4merge-mergetool/</link>
+      <pubDate>Tue, 04 Mar 2014 00:56:45 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2014/03/git-p4merge-mergetool/</guid>
+      <description>I’ve been using p4merge as my mergetool for a while now. Yet, every time I need to configure it, I seem to be doing google searches with lots of different “ways” to do so. This is a handy lookup for the future :)
+P4merge is now natively supported by Git (as of March, 2014). The latest version available from the p4merge download site automatically adds the binary path to your environment’s PATH.</description>
+    </item>
+    
+    <item>
+      <title>Git Ignore Files and Powershell</title>
+      <link>http://localhost:1313/ashic/blog/2013/07/gitignore-powershell-unicode/</link>
+      <pubDate>Tue, 16 Jul 2013 20:48:24 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/07/gitignore-powershell-unicode/</guid>
+      <description>Powershell’s cool. The syntax may be opinionated, but having a proper scripting environment in Windows is excellent. Git is cool. If you don’t use git, you’re @£$££!###. Typically, I create .gitignore files from the git bash. The way I do it is:
+touch .gitignore
+The main reason for doing this is because Windows Explorer (or File Explorer as it’s known these days) won’t let me create the .gitignore file – “YOU MUST TYPE A FILENAME”.</description>
+    </item>
+    
+  </channel>
+</rss>

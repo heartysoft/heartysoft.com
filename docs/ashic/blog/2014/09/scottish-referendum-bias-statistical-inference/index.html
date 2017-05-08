@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>Statistical Inference, Bias, and the Scottish Referendum</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/data-science/">Data Science</a>
+                </li>
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            7 Sep, 2014
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>I’ll start this post off by first saying I’m a foreign national living and working in London for a few years. I have no stake in whether or not Scotland votes “yay” or “nay” in the upcoming independence referendum. I’ve been to Scotland a few times, and it’s a lovely place. Whether or not it makes political, economic, or any other form of sense to break up a union lasting a few hundred years? Well, let’s just say nobody really knows. In reality, arguments on both sides cater to passion, Braveheart chest thumping, and well…pretty much nothing else. The argument is getting quite irritating to be honest, and many wish that both sides would the “shut the *$£% up”.</p> <p>This post is not about national identities, or political faeces throwing. It’s more about statistical inference. I’ve become more and more interested in data science in the last couple of years or so, and I find it quite <strike>amusing</strike> alarming how much emphasis is being given to opinion polls. This post focuses on the data characteristics of these polls, and putting forward some basic concepts in statistical inference. You do not need prior knowledge of statistics to understand the points. I’ll try to cover them succinctly.</p> <h3>What do polls say?</h3> <p>The latest UGov polls say that there’s a 2 point lead for the “yes” campaign. Previous polls suggested the “no” campaign was in the lead. This post looks at the data for the latest polls, but the same can be said about previous ones. This is not an attack on the “yes” or “no” campaigns (rather, maybe it’s an attack on both!).</p> <h3>What is inference?</h3> <p>More often than not, it isn’t possible to get data (let’s say – poll answers) from all the population concerned. In other words, asking and getting answers from everybody in Scotland would be too difficult, time consuming, costly, etc. As such, we decide to <em>sample</em> a portion of the population for their views. This tends to be a small portion of the population. We then <em>infer</em> what the actual results may be from the sample data set. This is called <em>statistical inference</em>. </p> <h3>What are the challenges in inference?</h3> <p>Inference is like trying to guess what the taste of some soup is going to be by tasting a spoonful (and in this case, while cooking). We don’t taste from every point in the soup pot, and we likely stir the pot so that the soup tastes the same in all areas of the pot before taking the spoonful. Or at least we try to… there’s no guarantee that our spoon does actually reflect the taste of the whole pot, not to mention what any of it might taste like when serving. The bigger the pot, the harder the challenge.</p> <p>Similarly, the sample size (or the number of people asked) is a big challenge when trying to infer on a large population. A challenge arises from the fact that our sample may or may not have people of different backgrounds, views, etc. in a manner indicative of the rest of the population. Problems like these are called <em>bias</em>. A biased dataset skews the results of inference. There are a few types of bias. Let’s look into a few:</p> <ul> <li>Convenience Bias: This happens when we get data from sources that are conveniently accessed. For example, if a student were to ask the other students in her class what they thought about a new school wide policy, but not the students from other classes, the data will suffer from convenience bias.</li> <li>Non-response Bias: This bias arises when we can’t get data from a significant proportion of the population for the sample.</li> <li>Volunteer Bias: This occurs when a group of people are so eager or passionate that they respond in large numbers in the poll, while the others don’t care enough to give a response.</li></ul> <p>There’s also the problem with confounding variables – those factors that affect one (or more) of our factors, and the outcome, but make it look like that affected factors are in fact the cause of the outcome. For example, in areas of high sunlight exposure, there’s likely to be a higher rate of skin cancer, and also a higher rate of sunscreen usage. If we simply consider sunscreen usage and skin cancer rate, it would appear that sunscreen usage leads to skin cancer. In this case, sunlight exposure is a confounding variable. Determining which variables to consider, and which to ignore, is a difficult challenge, often requiring multiple runs, analysis, etc.</p> <p>These are just some problems, but let’s keep going.</p> <h3>What can we do about the problems?</h3> <p>There are a few things we can do to <em>try</em> to overcome these problems. These are by no means guarantees, but let’s look at few. These are usually used in <em>experiments</em>, but can work well for inference as well.</p> <ul> <li>Randomise: We can sample form the population in a random (i.e. fair) manner. In other words, we give each member of a particular group in a population the same chance of being sampled.</li> <li>Block: If we know an attribute (or <em>factor</em>) influences the outcome heavily, then we can first divide the population into <em>homogeneous </em>(i.e. each group containing one “type” for that attribute), and then randomly sample from each group. For example, if we know that gender influences an outcome, we can first divide the population into two groups – one for male, one for female. We can then sample randomly from both groups. This should get rid of the gender bias.</li> <li>Replicate: We can replicate the process many times and take the average, or take a very large data set. This gets rid of the “flukes” in the results.</li> <li>Control: This is usually for experiments (e.g. assessing impacts of a treatment by treating one group with placebo and comparing results). However, things like media exposure, party activity in locality, etc. can be thought of as <em>treatments</em>. As such, to get a good sample, we need to sample evenly from those that have been subject to a treatment, and those that have not.</li></ul> <h3></h3> <h3>Let’s put the poll results into perspective</h3> <p>The full results for the latest polls can be found here:</p> <p><a title="http://yougov.co.uk/news/2014/09/07/full-results-scottish-independence-2nd-5th-septemb/" href="http://yougov.co.uk/news/2014/09/07/full-results-scottish-independence-2nd-5th-septemb/">http://yougov.co.uk/news/2014/09/07/full-results-scottish-independence-2nd-5th-septemb/</a>&nbsp;</p> <p>Let’s look at a few things:</p> <ul> <li>The sample set is 1084. In other words, 1084 out of 5+ million people (Scotland’s estimated population) were sampled. That’s around 0.02%. </li> <li>The blocks considered seem to be voting intention, 2011 vote, gender, age group, social grade and birthplace. (Are these the <em>only</em> factors that decide voting in a referendum? More on this later.)</li> <li>Of the raw data set, 538 said they’d vote “No”, 475 saying “Yes”. These numbers are then weighted based on statistical methods based on what the analyst inferred to be important, and got the <em>weighted</em> numbers of 514 “Yes” and 489 “No”. The weighting has shifted the results from two points this way to that.</li> <li>A large number of people also went with “don’t know” or “won’t vote”.</li></ul> <p>Can you see some problems here? Let’s see:</p> <ul> <li>The process hasn’t been replicated many times and the sample set is tiny compared to the population.</li> <li>There’s a high degree of non-response bias, and also volunteer bias.</li> <li>The weighting is based on analyst inference (more on this later).</li> <li>There are likely some confounding variables, but that’s my opinion.</li></ul> <h3>So what does this mean?</h3> <p>In my opinion, the sample size, method, results, etc. can only lead to one answer – it is impossible to accurately predict what the outcome is actually going to be. The poll numbers are <em>meaningless, </em>and <em>useless.</em> Either side treating it as <em>momentum</em>, or indicative of popular opinion is either incredibly naive, or trying to put forward a show of confidence to gain further support. So, Mr. Salmond of Mr. Darling referring to these sorts of polls are either <em>motive</em> driven, or amusing. If you’re in Scotland, come the referendum, vote based on what you believe to be good…not what some weasel politician is trying to promote based on some flawed numbers.</p> <h3>But elections always have polls, and they’re often right…</h3> <p>Yes, they do. And they’re sometimes wrong. For example, in 1936, a poll suggested that Landon would prevail over FDR by a significant majority. Turns out, the sample was biased, and the publication went out of business (!). But inference can often work better as well. For example, Nate Silver predicted the outcome of 49 of 50 states in the 2008 US general elections, and all 50 in the 2012 general elections. There is a difference here though. The sample sizes were larger, and there was significant historical and demographic information upon which this was founded. In other words, he came up with a model that could be trained with equivalent data, and with more data. In the Scottish referendum, there’s no real applicable historical data. The last time such a question came was was decades ago. The world has changed since then. The data available is also quite minute, and as we saw, biased. It’d be safe to say predictions on next year’s UK elections are easier to predict than the Scottish referendum. </p> <h3>In summary</h3> <p>Don’t pay heed to any of these polls. They’re based on flawed and minute amounts of data. The only thing they’re good for is creating media headlines, and more hot air from politicians. That’s the same for the recent polls, and the ones before it. If you’re in Scotland, vote according to what you want, not what the polls are saying. Democratic voting is to be along the lines of who the individual thinks <em>should</em> win, not on who they think <em>could </em>win.</p>
+        
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

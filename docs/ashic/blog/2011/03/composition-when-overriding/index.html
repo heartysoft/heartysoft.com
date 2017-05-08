@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heartysoft Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="Twitter bootstrap theme">
+    <meta name="author" content="prettystrap"> 
+    <!-- Load bootstrap -->
+    <!--<link id="bootstrap-css-file" href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+
+    <!-- Load pixels -->
+    <link id="the-story-css-file" href="/css/the-story.min.css" rel="stylesheet" media="screen">
+    <link id="the-story-css-file" href="/css/hsft.css" rel="stylesheet" media="screen">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+    <meta http-equiv=X-UA-Compatible content=IE=edge> 
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand visible-lg" href="/">Heartysoft Solutions Limited</a>
+                <a class="navbar-brand hidden-lg" href="/">Heartysoft</a>
+            </div>
+
+            
+            
+                
+<div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+       
+
+
+        <li><a title="Home" href="/#hsft" class=" brand-4">HSFT</a></li>
+        <li><a title="Services" href="/#services" class=" brand-1">Services</a></li>
+        <li><a title="Technology" href="/#technology" class=" brand-3">Technology</a></li>
+        <li>
+            <a  title="Community"
+                href="/#community"
+                class=" brand-2">Community
+            </a>
+        </li>
+         <li class="active">
+            <a title="Blog"
+               href="/blog"
+               class=' scroll brand-4'>
+                Blog
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+            
+
+        </div>
+        
+    </nav>
+
+   
+
+
+
+<div id="blog" class="page color-1">
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
+        </div>
+        
+    </div>
+</div>
+
+<div id="article" class="container">
+    <div class="row inner-page centered">
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>Ninja Coding: Composition over Inheritance–Even when Overriding</h1>
+        <div class="tag-holder">
+    <ul>
+        
+                    
+                <li>
+                    <a href="/tags/.net/">.NET</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/c%23/">C#</a>
+                </li>
+            
+        
+                    
+                <li>
+                    <a href="/tags/software-craftsmanship/">Software Craftsmanship</a>
+                </li>
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+        <div class="clear"></div>
+        <div class="article-date">
+            17 Mar, 2011
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>We’ve all heard it a million times – composition is favourable to inheritance. But inheritance can sometimes come with its own charms. One of its main attractions is to do some grunt work in a base class and have the ability to override that behaviour in a derived class. Framework developers favour an abstract base class as it leaves the potential to add features in the future without breaking all client code. The usual approach towards to polymorphism is achieved by declaring a method (or property) as virtual in the base class and overriding in the derived one(s). And this usually works out quite well (if you do find yourself using inheritance). This would typically look like this:</p>  <p><pre class='brush:c#'>    
+public class Command     
+{     
+&#160;&#160;&#160; public virtual void Validate()     
+&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; var validator = ServiceLocator.Get&lt;Validator&gt;();     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; validator.Validate(this);     
+&#160;&#160;&#160; }     
+}     
+    
+public class SomeDerivedCommand : Command     
+{     
+&#160;&#160;&#160; public override void Validate()     
+&#160;&#160;&#160; {     
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; //some other validation logic     
+&#160;&#160;&#160; }     
+}     
+</pre></p>  <p>While this works quite well in a lot of cases, one area where this is annoying is unit testing. Say you have a class that has the following method:</p>  <p><pre class='brush:c#'>    
+public class SomeCommandHandler     
+{     
+&#160; public void Handle(SomeDerivedCommand command)     
+&#160; {     
+&#160;&#160;&#160;&#160;&#160; command.Validate();     
+&#160;&#160;&#160;&#160;&#160; //do other stuff     
+&#160; }     
+}     
+</pre></p>  <p>and you wished to unit test the Handle method. You first wish to test how the Handle method would behave if the command.Validate() failed. You have a number of options:</p>  <p>1. Mock a command with a mocking tool. This adds a dependency, might have more-than-desired syntax, usually requires the method to be mocked to be virtual or the reference be an interface.   <br />2. Actually create a valid command for the test and an invalid command for another test. This is tedious and more importantly, if the validation logic for the command changes, you’ll have to go back and change tests which are not testing the validation logic. This means brittle tests and is quite bad (usually).    <br />3. Write a manual mock.</p>  <p>Now option 3 usually involves writing a derived class and overriding. Since this is a few lines of code for a test, this is mostly avoided in favour of a tool like moq, fake-it-easy or similar. With one simple step we can make this much simpler.</p>  <h2>Functional Override</h2>  <p>Let’s refactor the code, but this time with a somewhat functional approach:</p>  <p><pre class='brush:c#'>   
+public class Command    
+{    
+&#160;&#160;&#160; public Action Validate { get; protected internal set; }
+  &#160;&#160;&#160; public Command()   
+&#160;&#160;&#160; {    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; Validate = _Validate;    
+&#160;&#160;&#160; }
+  &#160;&#160;&#160; private void _Validate()   
+&#160;&#160;&#160; {    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; var validator = ServiceLocator.Get&lt;Validator&gt;();    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; validator.Validate(this);    
+&#160;&#160;&#160; }    
+}
+  public class SomeDerivedCommand : Command   
+{    
+&#160;&#160;&#160; public SomeDerivedCommand()    
+&#160;&#160;&#160; {    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; Validate = _SomeOtherValidationLogic;    
+&#160;&#160;&#160; }
+  &#160;&#160;&#160; private void _SomeOtherValidationLogic()   
+&#160;&#160;&#160; {    
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; //do other validation here    
+&#160;&#160;&#160; }    
+}
+  public class SomeCommandHandler   
+{    
+&#160; public void Handle(SomeDerivedCommand command)    
+&#160; {    
+&#160;&#160;&#160;&#160;&#160; command.Validate();    
+&#160;&#160;&#160;&#160;&#160; //do other stuff    
+&#160; }    
+}    
+</pre></p>  <p>We haven’t changed much – just converted Validate in the command class to an Action as opposed to a virtual method. The derived class can still override the base class behaviour. If overriding behaviour is not something the derived class wants to do, it doesn’t have to do anything. </p>  <h2>Hang on…that’s more code…what’s the benefit?</h2>  <p>Let’s revisit the scenario where we were testing the SomeCommandHandler class’ Handle method. To create a valid command, we can simply do this:</p>  <p><pre class='brush:c#'>   
+var stubCommand = new SomeDerivedCommand();    
+stubCommand.Validate = () =&gt; { };    
+</pre></p>  <p>And for an invalid command, we can do this:   <br /></p>  <p><pre class='brush:c#'>   
+var stubCommand = new SomeDerivedCommand();    
+stubCommand.Validate = () =&gt; { throw new SomeException(); };    
+</pre></p>  <p>No mocking tools, no derived classes for stubbing out a parameter – so much nicer. And any code that’s calling Validate() will continue to build.</p>  <p>Another benefit you get is that you can now have a library of functional elements (Action, Func, Predicate) and hook them up in the base class and “override” them is derived classes simply by setting a property in the constructor. So even though you’re specifying default functionality in the base class, you have a more flexible approach when overriding behaviour.</p>  <h2>Gotchas</h2>  <p>If you haven’t noticed yet, the Validate Action has a protected internal setter. This means derived classes OR classes in the same assembly can set it. The reason I’m allowing internal mutator is because I would have the test project able to access the internal symbols in the main project. For this I would simply need to set [assembly:InternalsVisibleTo(..)]. That way, the test assembly will be able to set the Action. This does mean encapsulation is broken within the main assembly but judging by the fact that it’s composing behaviour, I’m willing to accept that. If you don’t like that, just make the mutator protected and not internal. You’ll lose the stubbing benefit but you will still get the benefits of composition (use reusable libraries of functional elements as mentioned in the last section). </p>
+        
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
+    </div>
+</div>
+
+
+
+    
+    <footer class="page color-5">
+        <div class="inner-page row">
+            <div class="col-md-6 social">
+                <a href="https://twitter.com/ashic"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/ashic"><i class="fa fa-github-square"></i></a>
+                <a href="http://www.linkedin.com/in/ashicmahtab"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+            <div class="col-md-6 text-right copyright">
+                &copy; 2014 <a href="http://heartysoft.com" title="Heartysoft Solutions Limited">heartysoft.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+                
+            </div>
+            <div class="company-footer">
+                    Heartysoft Solutions Limited is registered in England & Wales
+                    Company Number 07420608 | VAT Number GB 103 3162 72
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lazyload.js"></script>
+    <script type="text/javascript" src="/js/spin.js"></script>
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <script type="text/javascript" src="/js/jquery.history.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+</body>
+</html>
+

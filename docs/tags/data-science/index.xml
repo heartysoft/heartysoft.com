@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Heartysoft Solutions Limited</title>
+    <link>http://localhost:1313/tags/data-science/</link>
+    <description>Recent content in Data Science on Heartysoft Solutions Limited</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Sep 2014 14:02:28 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Statistical Inference, Bias, and the Scottish Referendum</title>
+      <link>http://localhost:1313/ashic/blog/2014/09/scottish-referendum-bias-statistical-inference/</link>
+      <pubDate>Sun, 07 Sep 2014 14:02:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2014/09/scottish-referendum-bias-statistical-inference/</guid>
+      <description>I’ll start this post off by first saying I’m a foreign national living and working in London for a few years. I have no stake in whether or not Scotland votes “yay” or “nay” in the upcoming independence referendum. I’ve been to Scotland a few times, and it’s a lovely place. Whether or not it makes political, economic, or any other form of sense to break up a union lasting a few hundred years?</description>
+    </item>
+    
+  </channel>
+</rss>

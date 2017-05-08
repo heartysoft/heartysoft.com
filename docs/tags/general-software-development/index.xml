@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General Software Development on Heartysoft Solutions Limited</title>
+    <link>http://localhost:1313/tags/general-software-development/</link>
+    <description>Recent content in General Software Development on Heartysoft Solutions Limited</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 May 2016 15:02:34 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/general-software-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenVPN Disconnecting on Windows - Reset WinSock</title>
+      <link>http://localhost:1313/ashic/blog/2016/05/open-vpn-disconnecting-reset-winsock/</link>
+      <pubDate>Sat, 21 May 2016 15:02:34 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2016/05/open-vpn-disconnecting-reset-winsock/</guid>
+      <description>For the last few days, I just couldn’t connect to work VPN from my Windows 10 laptop. Rather, I could connect, and authenticate successfully, but as soon as I accessed anything, it would disconnect stating a tls-error, or decrypt-error. I tried numerous things – uninstalling VirtualBox, lowering MTUs to 1492, then to 1472, cleared out OpenVPN registry settings, tried Viscosity (which looks quite nice, and is very cheap – but not free).</description>
+    </item>
+    
+    <item>
+      <title>CommandQueryExample Feedback 2: Alternative Implementation</title>
+      <link>http://localhost:1313/ashic/blog/2015/02/command-query-example-part2/</link>
+      <pubDate>Fri, 13 Feb 2015 01:42:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2015/02/command-query-example-part2/</guid>
+      <description>This is the second part (of n) in my look into Alan’s example implementation of having a project that doesn’t use a repository. As a reminder, the goal is not CQRS, or DDD, but to see how applications can be built that do data access san repositories.
+Show Me Ze Codez The code for the (maybe first?) alternative implementation can be found here: https://github.com/ashic/CommandQueryExample
+In the root folder, there’s a src2 folder, with Alan’s original implementation in the src folder.</description>
+    </item>
+    
+    <item>
+      <title>CommandQueryExample Feedback 1: Overview</title>
+      <link>http://localhost:1313/ashic/blog/2015/02/command-query-example-part1/</link>
+      <pubDate>Wed, 11 Feb 2015 01:41:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2015/02/command-query-example-part1/</guid>
+      <description>My twitter buddy, and a person I quite admire, Alan Stevens has been looking into the latest “fad” of repository hate. He’s been looking at alternatives, and has created a simple sample application, available at https://github.com/alanstevens/CommandQueryExample . He’s asked for feedback, and seeing that these are often common questions, with his permission, I’m giving mine in the form of a few posts. So, let’s get started.
+&amp;nbsp;
+What It’s Not The sample is not an attempt at CQRS – Alan mentions that in the readme.</description>
+    </item>
+    
+    <item>
+      <title>Martin Thompson’s Writing Concurrent Code with Lock Free Algorithms Course</title>
+      <link>http://localhost:1313/ashic/blog/2013/06/martin-thompson-lock-free-algos/</link>
+      <pubDate>Mon, 10 Jun 2013 11:57:03 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/06/martin-thompson-lock-free-algos/</guid>
+      <description>I had the opportunity to attend Martin Thompson’s Writing Concurrent Code with Lock Free Algorithms Course ( http://skillsmatter.com/course/java-jee/martin-thompsons-writing-concurrent-code-with-lock-free-algorithms ) at SkillsMatter last week. Here is a brief summary of my experience.
+The course starts off with Martin talking about mechanical sympathy, and describing how the innards of modern processors work from a conceptual point of view. This includes various level of caches, buffers, memory controllers, processor architecture, cache lines and what not.</description>
+    </item>
+    
+    <item>
+      <title>Specifying Processor Affinity on Windows (Taskset for Windows)</title>
+      <link>http://localhost:1313/ashic/blog/2013/06/processor-affinity-windows-taskset/</link>
+      <pubDate>Thu, 06 Jun 2013 08:48:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/06/processor-affinity-windows-taskset/</guid>
+      <description>Applications that use multiple threads can benefit greatly in terms of performance by specifying the processors which should be available to it. By default, the OS scheduler can do an OK job of this, however if you know how you’re using threads, being able to specify which processors to run on can significantly increase performance. Let’s consider an example:
+You have an application that has two threads sharing one or more variables.</description>
+    </item>
+    
+    <item>
+      <title>NDepend – Data Mining for your Codebase</title>
+      <link>http://localhost:1313/ashic/blog/2013/01/ndepend/</link>
+      <pubDate>Mon, 28 Jan 2013 01:36:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/01/ndepend/</guid>
+      <description>I’ve been meaning to write something about NDepend for a while now. It is essentially a tool to give you deep insight as to various aspects of your codebase. It has lots of features, can provide a tonne of metrics, and has very good Visual Studio integration. Any engineering discipline puts a lot of emphasis on metrics, and NDepend is a tool which can give you these in an easy to use manner.</description>
+    </item>
+    
+    <item>
+      <title>FTP Woes and....FireFTP to the Rescue!!</title>
+      <link>http://localhost:1313/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</link>
+      <pubDate>Fri, 05 Sep 2008 10:50:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</guid>
+      <description>I&#39;m running Vista x64 sp1. I&#39;ve had IE 7 and then IE 8 (b2)&amp;nbsp;installed. I tried uploading via ftp from a)Windows Explorer, b)Visual Studio ftp, c)FireZilla, d)SmartFTP. Small files uploaded perfectly but even 150KB files kept timing out and retrying. Active/passive didn&#39;t help. Nothing helped. I tried for 28 hours to upload a 340KB file. It was infuriating. I tried from another ISP&#39;s connection. I tried from XP. Nothing worked. God knows why.</description>
+    </item>
+    
+    <item>
+      <title>Kaspersky and ‘Banner’s</title>
+      <link>http://localhost:1313/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</link>
+      <pubDate>Mon, 28 Jul 2008 05:10:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</guid>
+      <description>What a coincidence...my second post on my blog is also about Kaspersky. Why do I keep running into the weird things? Anyway, this should also hold for many web content filters.
+Last night I was finally playing around with the most excellent urlrewriter.net. I&#39;m on IIS7 on Vista x64 SP1. I&#39;d always thought (for unknown reasons) that this thing would be tough and would give me a headache with my images and stuff.</description>
+    </item>
+    
+    <item>
+      <title>Hey Kaspersky, Stop Slowing Down My VS</title>
+      <link>http://localhost:1313/ashic/blog/2008/07/hey-kaspersky-stop-slowing-down-my-vs/</link>
+      <pubDate>Mon, 14 Jul 2008 04:39:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2008/07/hey-kaspersky-stop-slowing-down-my-vs/</guid>
+      <description>I&#39;m finally starting off this blog about a month after Joe gave it to me...yay, awesome, yahoo (or should that be MS yahoo?).
+One thing that has always frustrated me was that whenever I install Vista (or XP), everything is zippy and fast. Gradually, things become really sluggish. Then, it becomes so unbearable that I have to reinstall the darned thing. The thing that slowed down the most (or at least, is a frontline contender for slowing down) seemed to be VS - the one thing I needed the most (well, maybe after IE).</description>
+    </item>
+    
+  </channel>
+</rss>

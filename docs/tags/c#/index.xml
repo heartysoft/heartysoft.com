@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on Heartysoft Solutions Limited</title>
+    <link>http://localhost:1313/tags/c#/</link>
+    <description>Recent content in C# on Heartysoft Solutions Limited</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 06 Nov 2015 08:02:21 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NDepend 6 is Awesome</title>
+      <link>http://localhost:1313/ashic/blog/2015/11/ndepend-6-is-awesome/</link>
+      <pubDate>Fri, 06 Nov 2015 08:02:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2015/11/ndepend-6-is-awesome/</guid>
+      <description>I’m a fan of tools giving you insight into various code metrics, some of which can be worth keeping an eye on for long lived complex projects. In the .NET side of things, NDepend is one of the best in this regard. Until recently however, NDepend could not deal with C#’s compiler driven async-await stuff for a few metrics. NDepend 6 rectifies that.
+The Problem C#’s async-await features does a lot of things under the hood.</description>
+    </item>
+    
+    <item>
+      <title>CommandQueryExample Feedback 2: Alternative Implementation</title>
+      <link>http://localhost:1313/ashic/blog/2015/02/command-query-example-part2/</link>
+      <pubDate>Fri, 13 Feb 2015 01:42:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2015/02/command-query-example-part2/</guid>
+      <description>This is the second part (of n) in my look into Alan’s example implementation of having a project that doesn’t use a repository. As a reminder, the goal is not CQRS, or DDD, but to see how applications can be built that do data access san repositories.
+Show Me Ze Codez The code for the (maybe first?) alternative implementation can be found here: https://github.com/ashic/CommandQueryExample
+In the root folder, there’s a src2 folder, with Alan’s original implementation in the src folder.</description>
+    </item>
+    
+    <item>
+      <title>CommandQueryExample Feedback 1: Overview</title>
+      <link>http://localhost:1313/ashic/blog/2015/02/command-query-example-part1/</link>
+      <pubDate>Wed, 11 Feb 2015 01:41:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2015/02/command-query-example-part1/</guid>
+      <description>My twitter buddy, and a person I quite admire, Alan Stevens has been looking into the latest “fad” of repository hate. He’s been looking at alternatives, and has created a simple sample application, available at https://github.com/alanstevens/CommandQueryExample . He’s asked for feedback, and seeing that these are often common questions, with his permission, I’m giving mine in the form of a few posts. So, let’s get started.
+&amp;nbsp;
+What It’s Not The sample is not an attempt at CQRS – Alan mentions that in the readme.</description>
+    </item>
+    
+    <item>
+      <title>Oredev 2013</title>
+      <link>http://localhost:1313/ashic/blog/2013/11/oredev-2013/</link>
+      <pubDate>Sat, 09 Nov 2013 09:06:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/11/oredev-2013/</guid>
+      <description>So, Oredev 2013 just finished. And what an awesome conference. So many great talks, and so many more awesome people. My fun started a day before the conference. Jez Humble graciously allowed me to sit in on his pre conference workshop on Continuous Delivery. As a fan of the concept, and of the book, it was a nice to finally see the man himself talk about it. And of course, he didn’t disappoint.</description>
+    </item>
+    
+    <item>
+      <title>ZeroMQ London–Async Server Client Platform</title>
+      <link>http://localhost:1313/ashic/blog/2013/06/zeromq-async-server/</link>
+      <pubDate>Mon, 24 Jun 2013 09:58:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/06/zeromq-async-server/</guid>
+      <description>Here’s the code from our latest meetup. Here’s what we (almost) built:
+ An async client server platform where clients and servers can be added dynamically. Communication is done over TCP. The platform takes care of intermittent network connectivity (but not long outages). While James got it running, mine fell at the final hurdle – when trying to finish the final bits in next to no time, I managed to invert the condition of a while loop .</description>
+    </item>
+    
+    <item>
+      <title>Martin Thompson’s Writing Concurrent Code with Lock Free Algorithms Course</title>
+      <link>http://localhost:1313/ashic/blog/2013/06/martin-thompson-lock-free-algos/</link>
+      <pubDate>Mon, 10 Jun 2013 11:57:03 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/06/martin-thompson-lock-free-algos/</guid>
+      <description>I had the opportunity to attend Martin Thompson’s Writing Concurrent Code with Lock Free Algorithms Course ( http://skillsmatter.com/course/java-jee/martin-thompsons-writing-concurrent-code-with-lock-free-algorithms ) at SkillsMatter last week. Here is a brief summary of my experience.
+The course starts off with Martin talking about mechanical sympathy, and describing how the innards of modern processors work from a conceptual point of view. This includes various level of caches, buffers, memory controllers, processor architecture, cache lines and what not.</description>
+    </item>
+    
+    <item>
+      <title>ZeroMQLondon – And Away We Go</title>
+      <link>http://localhost:1313/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</link>
+      <pubDate>Thu, 21 Feb 2013 23:19:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</guid>
+      <description>On Wednesday, we had our first hands on session of the London ZeroMQ User Group. It was nice to see such an enthusiastic bunch of people come along to find out what Zero is all about.
+As our first technical session, it covered some of the basic concepts – contexts, sockets, and “sockets”. We got started with some of the theory, and then moved onto getting a basic REQ-REP pair up and running over TCP – across threads, across processes, and then (with some difficulty overcoming network issues but hey – what’s a dive into network programming without network issues, eh?</description>
+    </item>
+    
+    <item>
+      <title>Roughing It Session at the Canary Wharf Dot Net User Group</title>
+      <link>http://localhost:1313/ashic/blog/2012/05/roughing-it-canary-wharf/</link>
+      <pubDate>Mon, 07 May 2012 14:05:09 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2012/05/roughing-it-canary-wharf/</guid>
+      <description>Here are the slides and code from my recent talk at the Canary Wharf Dot Net User Group (lots of code….few slides).
+Roughing It View more presentations from Ashic Mahtab. Code:
+https://github.com/ashic/RoughingItCanaryWharf
+&amp;nbsp;
+Enjoy!</description>
+    </item>
+    
+    <item>
+      <title>Yes, I Use a Text Editor for Demonstrating Code</title>
+      <link>http://localhost:1313/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</link>
+      <pubDate>Thu, 15 Mar 2012 05:51:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</guid>
+      <description>I was in Southampton recently for a talk titled “An Introduction to CQRS, Event Sourcing and their Benefits”. I’ve got some nice feedback suggesting people generally liked it. I also got some nice criticism – some to do with the focus of the talk (which I’ll cover in another post) but one particular one that brought up the issue of my coding in a text editor - “Dropping out many times to a text editor to write code that was never compiled let alone executed.</description>
+    </item>
+    
+    <item>
+      <title>Ninja Coding: Composition over Inheritance–Even when Overriding</title>
+      <link>http://localhost:1313/ashic/blog/2011/03/composition-when-overriding/</link>
+      <pubDate>Thu, 17 Mar 2011 22:08:45 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2011/03/composition-when-overriding/</guid>
+      <description>We’ve all heard it a million times – composition is favourable to inheritance. But inheritance can sometimes come with its own charms. One of its main attractions is to do some grunt work in a base class and have the ability to override that behaviour in a derived class. Framework developers favour an abstract base class as it leaves the potential to add features in the future without breaking all client code.</description>
+    </item>
+    
+    <item>
+      <title>Introducing MSMSpec</title>
+      <link>http://localhost:1313/ashic/blog/2011/03/introducing-msmspec/</link>
+      <pubDate>Mon, 07 Mar 2011 02:35:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2011/03/introducing-msmspec/</guid>
+      <description>http://msmspec.codeplex.com/ MSMSpec is a T4 based tool that can generate MSTest code to extend your MSpec (Machine.Specifications) tests so that they can run under anything that runs MSTest. This means all the Visual Studio testing features become available for your MSpec tests without the need for Resharper, TDD.NET or setting up an external tool. This can be useful in scenarios where you need to / require / are forced to use certain technologies.</description>
+    </item>
+    
+    <item>
+      <title>Anonymous Types are Internal, C# 4.0 Dynamic Beware!</title>
+      <link>http://localhost:1313/ashic/blog/2010/05/anonymous-types-c-sharp-4-dynamic/</link>
+      <pubDate>Wed, 26 May 2010 19:10:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2010/05/anonymous-types-c-sharp-4-dynamic/</guid>
+      <description>C# 4.0 has introduced the dynamic keyword. You can declare a variable as dynamic and regardless of what can be inferred at compile time, you can access any properties and call any methods and your code will still compile. Resolving of those properties and methods will be done at runtime. If at runtime, they aren&#39;t found, you&#39;d get a runtime exception. If they are found, your code will run fine.</description>
+    </item>
+    
+    <item>
+      <title>Fetching a Property Value via Reflection</title>
+      <link>http://localhost:1313/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</link>
+      <pubDate>Tue, 11 May 2010 02:31:51 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</guid>
+      <description>Reflection is a method by which we can use metadata at runtime to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. It has many uses, ranging from allowing usage of attributes to creating instances of dynamically generated classes and using them. You can even use reflection to read and modify private member variables of an object.</description>
+    </item>
+    
+  </channel>
+</rss>
