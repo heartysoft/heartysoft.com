@@ -109,8 +109,11 @@ $(document).ready(function() {
     });
 
     // Close menu when in mobile view clicked
-    $('.nav .scroll').click(function(e) {
+    /*$('.nav .scroll').click(function(e) {
         if ($('.navbar-toggle').is(":visible"))
         $("#nav-collapse").removeClass("in").addClass("collapse");
-    });
-});
+    });*/
+    $(".nav .scroll").click(function() {
+        $(".navbar-toggle").is(":visible") && $("#nav-collapse").removeClass("in").addClass("collapse")
+    })
+}); 

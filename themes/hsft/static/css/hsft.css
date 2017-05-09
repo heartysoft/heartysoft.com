@@ -271,12 +271,6 @@ div.code-flash span:nth-child(2)
     clear: both;
 }
 
-.nav {
-    position:absolute;
-    right:1em;
-    top:0.1em;
-}
-        
 .nav ul{
     list-style:none;
     font-size:0.8em;
@@ -327,7 +321,6 @@ div.code-flash span:nth-child(2)
 
 .nav ul li:nth-child(2), .nav ul li:nth-child(2) a, .nav ul li:nth-child(6), .nav ul li:nth-child(6) a{
 }
-
 
 div.latest-entries {
     width: 34.5em;
