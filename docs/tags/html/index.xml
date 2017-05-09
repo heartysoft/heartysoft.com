@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html on Heartysoft Solutions Limited</title>
-    <link>http://hsft.co/tags/html/</link>
+    <link>http://heartysoft.com/tags/html/</link>
     <description>Recent content in Html on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 15 Jun 2009 23:57:00 +0000</lastBuildDate>
     
-	<atom:link href="http://hsft.co/tags/html/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heartysoft.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A Cool Bing-like Search Box (Button on the Inside)</title>
-      <link>http://hsft.co/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</link>
       <pubDate>Mon, 15 Jun 2009 23:57:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</guid>
       <description>In the recent &amp;ldquo;web 2.0&amp;rdquo; sites, we see cool search boxes, with the search button appearing &amp;ldquo;inside&amp;rdquo; the text box. How&amp;rsquo;d they do that? Microsoft&amp;rsquo;s bing search also has this feature. A snapshot of the bing search box looks like this:
 
 It&amp;rsquo;s actually quite simple to do, with a bit of css. First, let&amp;rsquo;s look at the markup:

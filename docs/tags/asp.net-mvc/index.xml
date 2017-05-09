@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asp.Net Mvc on Heartysoft Solutions Limited</title>
-    <link>http://hsft.co/tags/asp.net-mvc/</link>
+    <link>http://heartysoft.com/tags/asp.net-mvc/</link>
     <description>Recent content in Asp.Net Mvc on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 13 Feb 2015 01:42:48 +0000</lastBuildDate>
     
-	<atom:link href="http://hsft.co/tags/asp.net-mvc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heartysoft.com/tags/asp.net-mvc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CommandQueryExample Feedback 2: Alternative Implementation</title>
-      <link>http://hsft.co/ashic/blog/2015/02/command-query-example-part2/</link>
+      <link>http://heartysoft.com/ashic/blog/2015/02/command-query-example-part2/</link>
       <pubDate>Fri, 13 Feb 2015 01:42:48 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2015/02/command-query-example-part2/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2015/02/command-query-example-part2/</guid>
       <description>This is the second part (of n) in my look into Alan’s example implementation of having a project that doesn’t use a repository. As a reminder, the goal is not CQRS, or DDD, but to see how applications can be built that do data access san repositories.
 Show Me Ze Codez The code for the (maybe first?) alternative implementation can be found here: https://github.com/ashic/CommandQueryExample
 In the root folder, there’s a src2 folder, with Alan’s original implementation in the src folder.</description>
@@ -24,28 +24,28 @@ In the root folder, there’s a src2 folder, with Alan’s original implementati
     
     <item>
       <title>Per Controller Settings for Web Api</title>
-      <link>http://hsft.co/ashic/blog/2014/04/webapi-per-controller-settings/</link>
+      <link>http://heartysoft.com/ashic/blog/2014/04/webapi-per-controller-settings/</link>
       <pubDate>Wed, 16 Apr 2014 23:40:47 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2014/04/webapi-per-controller-settings/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2014/04/webapi-per-controller-settings/</guid>
       <description>ASP.NET ViewModels typically follow the C# convention of Pascal casing property names. By default, the Json serializer spits out Json objects with field names matching the property names. In JavaScript, it is conventional to use camel casing for almost everything – if something starts with a capital letter and is not all caps, then it denotes that new must be used to instantiate an instance. Not using new in this case causes weird problems, so the capital letter at the start serves as a mechanism to make this immediately visible.</description>
     </item>
     
     <item>
       <title>Sql Integrated Security, IIS App Pools, and Permissions</title>
-      <link>http://hsft.co/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</link>
+      <link>http://heartysoft.com/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</link>
       <pubDate>Wed, 31 Jul 2013 06:28:25 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</guid>
       <description>Integrated Security is quite nice in the sense that you don’t need to configure login names in config files for various servers. And there are some other benefits in terms of manageability, etc: http://serverfault.com/questions/13292/is-using-integrated-security-sspi-for-accessing-sql-server-better-for-web-appl . And while it will take a bit of administration to configure proper impersonation, etc. to get Integrated Security working properly, for simple cases (or even test boxes) where you can have IIS and the database on the same box, it’s quite easy to set up.</description>
     </item>
     
     <item>
       <title>ASP.NET MVC Gotcha – String as Model</title>
-      <link>http://hsft.co/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</link>
       <pubDate>Tue, 19 Apr 2011 04:25:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</guid>
       <description>A very common task in ASP.NET MVC is to return a ViewResult from a controller Action. This is usually achieved by a simple:
 return View(“ViewName”, modelForTheView); 
 And this works fine…usually. Have you ever had a view where the model is simply a string? In that case, your code may look like this:
@@ -55,46 +55,46 @@ Only in this case, it won’t work. Don’t believe me?</description>
     
     <item>
       <title>ViewBag can be good…honestly</title>
-      <link>http://hsft.co/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</link>
       <pubDate>Sun, 13 Mar 2011 09:47:22 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</guid>
       <description>A lot of people seem to have an allergic reaction towards anything not “strongly typed”. They abhor ViewBag and resent ViewData[“key”] for passing values from the controller to the view. They write viewmodels that aggregate a few other viewmodels or worse, use inheritance to generate complex hierarchies. And in order to try and keep all that clean, they use design patterns and what not to achieve “compile time checking”, “testability” and a few other mirages of “good code”.</description>
     </item>
     
     <item>
       <title>ASP.NET MVC 3 CTP1 View Improvements</title>
-      <link>http://hsft.co/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</link>
       <pubDate>Wed, 15 Sep 2010 21:12:40 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</guid>
       <description>ASP.NET MVC 3 CTP1 has introduced many improvements, not least of which is in the View. This screencast explores the improvements in the View, specially looking at the awesome new ViewEngine – Razor. It covers Razor syntax, layouts, templates, issues with namespaces etc. It also looks at the new dynamic viewmodel and shows how it can be used to clean up view code. It&#39;s just over 45 minutes long and we do go into a little depth.</description>
     </item>
     
     <item>
       <title>ASP.NET MVC – Unit Testing JsonResult Returning Anonymous Types</title>
-      <link>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</link>
       <pubDate>Tue, 25 May 2010 20:41:54 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</guid>
       <description>Unit testing of ASP.NET MVC JsonResults can be a source of confusion. The problem arises from the fact that an Action Method itself doesn&#39;t produce any html / json / string output – it simply returns an Action Result. ASP.NET MVC then calls the ExecuteResult() method on that Action Result. The ExecuteResult() method is what causes output to be written to the Response stream. Let&#39;s take the following controller and action method for example:</description>
     </item>
     
     <item>
       <title>ASP.NET MVC: ModelBinding Multiple File Uploads to an Array</title>
-      <link>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</link>
       <pubDate>Thu, 06 May 2010 19:46:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</guid>
       <description>Web apps often need to upload files. ModelBinding a file upload to an HttpPostedFileBase action parameter is straightforward as long as you know the exact name of the file upload html control. There may be some situations where there are quite a few file upload controls and for whatever reason, they have very different names (they could be autogenerated on the page for example). In such a case, it becomes difficult to know what names to give to the action parameters at compile time.</description>
     </item>
     
     <item>
       <title>Encrypted Hidden Redux : Let&#39;s Get Salty</title>
-      <link>http://hsft.co/ashic/blog/2010/03/encrypted-hidden-with-salt/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/03/encrypted-hidden-with-salt/</link>
       <pubDate>Sat, 13 Mar 2010 14:37:16 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/03/encrypted-hidden-with-salt/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/03/encrypted-hidden-with-salt/</guid>
       <description>This article builds on the ideas presented in my earlier article http://www.heartysoft.com/post/2010/02/25/Encrypted-Hidden-Inputs-in-ASPNET-MVC.aspx
 If you haven&#39;t read that yet, I&#39;d recommend doing so before proceeding.
 Problems with the Previous Approach The approach outlined in the previous article is pretty secure and easy to use. However, there are a few issues that can be improved upon:
@@ -103,39 +103,39 @@ Problems with the Previous Approach The approach outlined in the previous articl
     
     <item>
       <title>MVC 2 RC 2 Templated Helper Bug and a Potential Solution</title>
-      <link>http://hsft.co/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</link>
       <pubDate>Mon, 01 Mar 2010 18:43:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</guid>
       <description>The Problem ASP.NET MVC 2 introduces templated helpers. They&amp;rsquo;re a convenient and type safe way to render model data. There is a potential problem in the way in which the system processes the lambda expression passed in to the helper. The problem causes overridden properties to be ignored and uses the base class&amp;rsquo; declaration of the property instead. This can have adverse reactions where the client side validation feature of ASP.</description>
     </item>
     
     <item>
       <title>Encrypted Hidden Inputs in ASP.NET MVC</title>
-      <link>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
       <pubDate>Thu, 25 Feb 2010 07:27:09 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
       <description>I have written an update to this articlethat shows a better way of doing what is presented here. The core concepts are pretty much the same and I would request you to read this one before the improved version. There are many situations where we need to persist some data during the user&amp;rsquo;s session. There are a few options in achieving this:
 1. Session: Using the Session object will persist the data in server resources.</description>
     </item>
     
     <item>
       <title>Encrypted Hidden Inputs in ASP.NET MVC</title>
-      <link>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
       <pubDate>Thu, 25 Feb 2010 07:27:09 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
       <description>I have written an update to this articlethat shows a better way of doing what is presented here. The core concepts are pretty much the same and I would request you to read this one before the improved version. There are many situations where we need to persist some data during the user&amp;rsquo;s session. There are a few options in achieving this:
 1. Session: Using the Session object will persist the data in server resources.</description>
     </item>
     
     <item>
       <title>Asp.net MVC 2.0 RC 2 Just Released</title>
-      <link>http://hsft.co/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</link>
       <pubDate>Fri, 05 Feb 2010 00:47:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</guid>
       <description>I was just moderating the asp.net forums and approved Phil&#39;s announcement 29 minutes ago that Asp.net MVC 2.0 RC 2&amp;nbsp;has just been released: 
 Hi everyone,
 We released ASP.NET MVC 2 Release Candidate 2 this evening!
@@ -144,10 +144,10 @@ We released ASP.NET MVC 2 Release Candidate 2 this evening!
     
     <item>
       <title>Ajax, Asp.net Ajax, jQuery – Misconceptions and Facts</title>
-      <link>http://hsft.co/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</link>
       <pubDate>Wed, 09 Dec 2009 13:19:31 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</guid>
       <description>There seems to be some confusion among a lot of developers about Asp.net Ajax. This article will hopefully clear some doubts regarding what it is, what it isn’t and where jQuery comes in.
 Ajax
 Ajax stands for Asynchronous JavaScript And Xml. Ajax is used to asynchronously make a server side request from a web page. It does not need a full page refresh (a full postback in Asp.net terms) and can result in a few benefits:</description>
@@ -155,10 +155,10 @@ Ajax stands for Asynchronous JavaScript And Xml. Ajax is used to asynchronously 
     
     <item>
       <title>Asp.net MVC, Html.DropDownList and Selected Value</title>
-      <link>http://hsft.co/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</link>
       <pubDate>Fri, 27 Mar 2009 03:53:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</guid>
       <description>I recently ran into the altogether common problem of the Html.DropDownList helper rendering a drop down list with no value selected. This is a major problem when editing data as by default, the first value is selected and saving would mean the first value is used.
 There have been a few issues resulting in the same error. My issue was that I was setting the Name of the drop down list to be equal to the property on my model.</description>
     </item>

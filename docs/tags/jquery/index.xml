@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jquery on Heartysoft Solutions Limited</title>
-    <link>http://hsft.co/tags/jquery/</link>
+    <link>http://heartysoft.com/tags/jquery/</link>
     <description>Recent content in Jquery on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 02 Jan 2012 05:27:23 +0000</lastBuildDate>
     
-	<atom:link href="http://hsft.co/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heartysoft.com/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Formatting JavaScript Date</title>
-      <link>http://hsft.co/ashic/blog/2012/01/formatting-javascript-date/</link>
+      <link>http://heartysoft.com/ashic/blog/2012/01/formatting-javascript-date/</link>
       <pubDate>Mon, 02 Jan 2012 05:27:23 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2012/01/formatting-javascript-date/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2012/01/formatting-javascript-date/</guid>
       <description>Formatting DateTime in C# is dead simple – just call ToString() passing in the format string you desire. Doing the same in JavaScript is annoyingly cumbersome. Today, I came across a nice little jQuery plugin that can carry out this mundane task. It’s the jQuery-dateFormat plugin and can be found at http://archive.plugins.jquery.com/project/jquery-dateFormat Using it is quite simple:
 
 I can think of more than one time where this would&#39;ve saved me some drudgery </description>
@@ -24,10 +24,10 @@ I can think of more than one time where this would&#39;ve saved me some drudgery
     
     <item>
       <title>Exposing a WCF Service for Ajax and Silverlight</title>
-      <link>http://hsft.co/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</link>
       <pubDate>Mon, 22 Feb 2010 09:44:58 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</guid>
       <description>One of the most attractive features of WCF is that you get to write a service once and expose it to be used by multiple clients using different technologies and protocols. How a WCF service is exposed can be changed simply by changing the configuration file, without needing to recompile the code. In this article, we&#39;re going to create a WCF service and expose it to Ajax. We&#39;ll test the Ajax service by calling it from ASP.</description>
     </item>
     

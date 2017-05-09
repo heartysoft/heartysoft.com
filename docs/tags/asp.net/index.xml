@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asp.Net on Heartysoft Solutions Limited</title>
-    <link>http://hsft.co/tags/asp.net/</link>
+    <link>http://heartysoft.com/tags/asp.net/</link>
     <description>Recent content in Asp.Net on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 16 Apr 2014 23:40:47 +0000</lastBuildDate>
     
-	<atom:link href="http://hsft.co/tags/asp.net/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heartysoft.com/tags/asp.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Per Controller Settings for Web Api</title>
-      <link>http://hsft.co/ashic/blog/2014/04/webapi-per-controller-settings/</link>
+      <link>http://heartysoft.com/ashic/blog/2014/04/webapi-per-controller-settings/</link>
       <pubDate>Wed, 16 Apr 2014 23:40:47 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2014/04/webapi-per-controller-settings/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2014/04/webapi-per-controller-settings/</guid>
       <description>ASP.NET ViewModels typically follow the C# convention of Pascal casing property names. By default, the Json serializer spits out Json objects with field names matching the property names. In JavaScript, it is conventional to use camel casing for almost everything – if something starts with a capital letter and is not all caps, then it denotes that new must be used to instantiate an instance. Not using new in this case causes weird problems, so the capital letter at the start serves as a mechanism to make this immediately visible.</description>
     </item>
     
     <item>
       <title>Azure Website Instances Share the Same Files</title>
-      <link>http://hsft.co/ashic/blog/2014/04/azure-websites-share-files/</link>
+      <link>http://heartysoft.com/ashic/blog/2014/04/azure-websites-share-files/</link>
       <pubDate>Sun, 13 Apr 2014 21:41:14 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2014/04/azure-websites-share-files/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2014/04/azure-websites-share-files/</guid>
       <description>During a conversation on twitter, I learnt something that kind of surprised me. You know the fancy feature where you can drag a slider and increase the number of instances of your website that serves your customers?  Well, it turns out that all the instances are served off the same copy of the files. Obviously these files are served off virtualised drives, so it’s not like a disk failure is going to wipe away your websites.</description>
     </item>
     
     <item>
       <title>Sql Integrated Security, IIS App Pools, and Permissions</title>
-      <link>http://hsft.co/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</link>
+      <link>http://heartysoft.com/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</link>
       <pubDate>Wed, 31 Jul 2013 06:28:25 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2013/07/sql-integrated-security-iis-app-pool/</guid>
       <description>Integrated Security is quite nice in the sense that you don’t need to configure login names in config files for various servers. And there are some other benefits in terms of manageability, etc: http://serverfault.com/questions/13292/is-using-integrated-security-sspi-for-accessing-sql-server-better-for-web-appl . And while it will take a bit of administration to configure proper impersonation, etc. to get Integrated Security working properly, for simple cases (or even test boxes) where you can have IIS and the database on the same box, it’s quite easy to set up.</description>
     </item>
     
     <item>
       <title>Formatting JavaScript Date</title>
-      <link>http://hsft.co/ashic/blog/2012/01/formatting-javascript-date/</link>
+      <link>http://heartysoft.com/ashic/blog/2012/01/formatting-javascript-date/</link>
       <pubDate>Mon, 02 Jan 2012 05:27:23 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2012/01/formatting-javascript-date/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2012/01/formatting-javascript-date/</guid>
       <description>Formatting DateTime in C# is dead simple – just call ToString() passing in the format string you desire. Doing the same in JavaScript is annoyingly cumbersome. Today, I came across a nice little jQuery plugin that can carry out this mundane task. It’s the jQuery-dateFormat plugin and can be found at http://archive.plugins.jquery.com/project/jquery-dateFormat Using it is quite simple:
 
 I can think of more than one time where this would&#39;ve saved me some drudgery </description>
@@ -51,10 +51,10 @@ I can think of more than one time where this would&#39;ve saved me some drudgery
     
     <item>
       <title>2011 MVP Hat Trick</title>
-      <link>http://hsft.co/ashic/blog/2011/07/2011-mvp-hat-trick/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/07/2011-mvp-hat-trick/</link>
       <pubDate>Sat, 02 Jul 2011 03:30:59 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/07/2011-mvp-hat-trick/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/07/2011-mvp-hat-trick/</guid>
       <description>Got this email today:
 &#34;Congratulations! We are pleased to present you with the 2011 Microsoft&amp;reg; MVP Award! This award is given to exceptional technical community leaders who actively share their high quality, real world expertise with others. We appreciate your outstanding contributions in ASP.NET/IIS technical communities during the past year.&#34;
 That&#39;s three on the trot and it feels great to have done it before the 25 year milestone :)
@@ -63,10 +63,10 @@ And so begins another year of contributing to the community.</description>
     
     <item>
       <title>ASP.NET MVC Gotcha – String as Model</title>
-      <link>http://hsft.co/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</link>
       <pubDate>Tue, 19 Apr 2011 04:25:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/04/aspnet-mvc-gotcha-string-model/</guid>
       <description>A very common task in ASP.NET MVC is to return a ViewResult from a controller Action. This is usually achieved by a simple:
 return View(“ViewName”, modelForTheView); 
 And this works fine…usually. Have you ever had a view where the model is simply a string? In that case, your code may look like this:
@@ -76,85 +76,85 @@ Only in this case, it won’t work. Don’t believe me?</description>
     
     <item>
       <title>ViewBag can be good…honestly</title>
-      <link>http://hsft.co/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</link>
       <pubDate>Sun, 13 Mar 2011 09:47:22 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/03/viewbag-can-be-goode280a6honestly/</guid>
       <description>A lot of people seem to have an allergic reaction towards anything not “strongly typed”. They abhor ViewBag and resent ViewData[“key”] for passing values from the controller to the view. They write viewmodels that aggregate a few other viewmodels or worse, use inheritance to generate complex hierarchies. And in order to try and keep all that clean, they use design patterns and what not to achieve “compile time checking”, “testability” and a few other mirages of “good code”.</description>
     </item>
     
     <item>
       <title>Introducing SeleniuMspec</title>
-      <link>http://hsft.co/ashic/blog/2011/01/introducing-seleniumspec/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/01/introducing-seleniumspec/</link>
       <pubDate>Mon, 03 Jan 2011 20:02:29 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/01/introducing-seleniumspec/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/01/introducing-seleniumspec/</guid>
       <description>Happy new year to you all. And to celebrate, I’ve just published my first codeplex project. SeleniuMspec is a template that you can use to generate MSpec BDD tests from Selenium IDE. I’ve been using both Selenium and MSpec for a while now and thought this might save a few seconds when writing some integration tests.
 I’d welcome any ideas / help on improving it. Check it out at http://seleniumspec.codeplex.com</description>
     </item>
     
     <item>
       <title>ASP.NET MVC 3 CTP1 View Improvements</title>
-      <link>http://hsft.co/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</link>
       <pubDate>Wed, 15 Sep 2010 21:12:40 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/09/aspnet-mvc-3-ctp1-view-improvements/</guid>
       <description>ASP.NET MVC 3 CTP1 has introduced many improvements, not least of which is in the View. This screencast explores the improvements in the View, specially looking at the awesome new ViewEngine – Razor. It covers Razor syntax, layouts, templates, issues with namespaces etc. It also looks at the new dynamic viewmodel and shows how it can be used to clean up view code. It&#39;s just over 45 minutes long and we do go into a little depth.</description>
     </item>
     
     <item>
       <title>Selecting ListView Items with CheckBoxes</title>
-      <link>http://hsft.co/ashic/blog/2010/08/selecting-listview-items-with-checkboxes/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/08/selecting-listview-items-with-checkboxes/</link>
       <pubDate>Sat, 14 Aug 2010 09:57:28 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/08/selecting-listview-items-with-checkboxes/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/08/selecting-listview-items-with-checkboxes/</guid>
       <description>Often we need to enable users to select multiple items from a ListView control and do a batch operation on them. While the ListView control does enable selection, it only supports selecting one row (item) at a time. This article shows a nice, easy and reusable way to enable multiple selection with checkboxes.
 The Project I&#39;ve created a very simple &amp;quot;Empty ASP.NET WebForms Application&amp;quot; and added a standard Default.aspx page. I&#39;ve created an App_Data folder and added a database called PeopleDB.</description>
     </item>
     
     <item>
       <title>ASP.NET Routing with IIS 7 – Remember Your Modules</title>
-      <link>http://hsft.co/ashic/blog/2010/07/aspnet-routing-iis7-remember-modules/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/07/aspnet-routing-iis7-remember-modules/</link>
       <pubDate>Mon, 26 Jul 2010 18:04:57 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/07/aspnet-routing-iis7-remember-modules/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/07/aspnet-routing-iis7-remember-modules/</guid>
       <description>ASP.NET 4.0 introduces routing and it works very well. With IIS 7, there are some interesting configuration options that can help improve your site&#39;s performance. When done wrong, they can have unexpected side effects. And we&#39;re going to look at one of them today.
 Extensionless Urls and Wildcard Mappings Before IIS 7, the easy way to get extensionless urls when working with routing would be to have a wildcard mapping (yes, I know there are other ways with ISAPI handlers and stuff, but that&#39;s not too simple).</description>
     </item>
     
     <item>
       <title>ASP.NET MVC – Unit Testing JsonResult Returning Anonymous Types</title>
-      <link>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</link>
       <pubDate>Tue, 25 May 2010 20:41:54 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/05/aspnet-mvc-unit-testing-jsonresult-returning-anonymous-types/</guid>
       <description>Unit testing of ASP.NET MVC JsonResults can be a source of confusion. The problem arises from the fact that an Action Method itself doesn&#39;t produce any html / json / string output – it simply returns an Action Result. ASP.NET MVC then calls the ExecuteResult() method on that Action Result. The ExecuteResult() method is what causes output to be written to the Response stream. Let&#39;s take the following controller and action method for example:</description>
     </item>
     
     <item>
       <title>Fetching a Property Value via Reflection</title>
-      <link>http://hsft.co/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</link>
       <pubDate>Tue, 11 May 2010 02:31:51 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/05/fetching-a-property-value-via-reflection/</guid>
       <description>Reflection is a method by which we can use metadata at runtime to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. It has many uses, ranging from allowing usage of attributes to creating instances of dynamically generated classes and using them. You can even use reflection to read and modify private member variables of an object.</description>
     </item>
     
     <item>
       <title>ASP.NET MVC: ModelBinding Multiple File Uploads to an Array</title>
-      <link>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</link>
       <pubDate>Thu, 06 May 2010 19:46:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/05/aspnet-mvc-modelbinding-multiple-file-uploads-to-an-array/</guid>
       <description>Web apps often need to upload files. ModelBinding a file upload to an HttpPostedFileBase action parameter is straightforward as long as you know the exact name of the file upload html control. There may be some situations where there are quite a few file upload controls and for whatever reason, they have very different names (they could be autogenerated on the page for example). In such a case, it becomes difficult to know what names to give to the action parameters at compile time.</description>
     </item>
     
     <item>
       <title>Encrypted Hidden Redux : Let&#39;s Get Salty</title>
-      <link>http://hsft.co/ashic/blog/2010/03/encrypted-hidden-with-salt/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/03/encrypted-hidden-with-salt/</link>
       <pubDate>Sat, 13 Mar 2010 14:37:16 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/03/encrypted-hidden-with-salt/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/03/encrypted-hidden-with-salt/</guid>
       <description>This article builds on the ideas presented in my earlier article http://www.heartysoft.com/post/2010/02/25/Encrypted-Hidden-Inputs-in-ASPNET-MVC.aspx
 If you haven&#39;t read that yet, I&#39;d recommend doing so before proceeding.
 Problems with the Previous Approach The approach outlined in the previous article is pretty secure and easy to use. However, there are a few issues that can be improved upon:
@@ -163,48 +163,48 @@ Problems with the Previous Approach The approach outlined in the previous articl
     
     <item>
       <title>MVC 2 RC 2 Templated Helper Bug and a Potential Solution</title>
-      <link>http://hsft.co/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</link>
       <pubDate>Mon, 01 Mar 2010 18:43:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/03/mvc2-rc2-template-helper-bug/</guid>
       <description>The Problem ASP.NET MVC 2 introduces templated helpers. They&amp;rsquo;re a convenient and type safe way to render model data. There is a potential problem in the way in which the system processes the lambda expression passed in to the helper. The problem causes overridden properties to be ignored and uses the base class&amp;rsquo; declaration of the property instead. This can have adverse reactions where the client side validation feature of ASP.</description>
     </item>
     
     <item>
       <title>Encrypted Hidden Inputs in ASP.NET MVC</title>
-      <link>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
       <pubDate>Thu, 25 Feb 2010 07:27:09 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
       <description>I have written an update to this articlethat shows a better way of doing what is presented here. The core concepts are pretty much the same and I would request you to read this one before the improved version. There are many situations where we need to persist some data during the user&amp;rsquo;s session. There are a few options in achieving this:
 1. Session: Using the Session object will persist the data in server resources.</description>
     </item>
     
     <item>
       <title>Encrypted Hidden Inputs in ASP.NET MVC</title>
-      <link>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</link>
       <pubDate>Thu, 25 Feb 2010 07:27:09 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/02/encrypted-hidden-inputs-in-aspnet-mvc/</guid>
       <description>I have written an update to this articlethat shows a better way of doing what is presented here. The core concepts are pretty much the same and I would request you to read this one before the improved version. There are many situations where we need to persist some data during the user&amp;rsquo;s session. There are a few options in achieving this:
 1. Session: Using the Session object will persist the data in server resources.</description>
     </item>
     
     <item>
       <title>Exposing a WCF Service for Ajax and Silverlight</title>
-      <link>http://hsft.co/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</link>
       <pubDate>Mon, 22 Feb 2010 09:44:58 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/02/exposing-wcf-ajax-silverlight/</guid>
       <description>One of the most attractive features of WCF is that you get to write a service once and expose it to be used by multiple clients using different technologies and protocols. How a WCF service is exposed can be changed simply by changing the configuration file, without needing to recompile the code. In this article, we&#39;re going to create a WCF service and expose it to Ajax. We&#39;ll test the Ajax service by calling it from ASP.</description>
     </item>
     
     <item>
       <title>Asp.net MVC 2.0 RC 2 Just Released</title>
-      <link>http://hsft.co/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</link>
       <pubDate>Fri, 05 Feb 2010 00:47:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/02/aspnet-mvc-20-rc-just-released/</guid>
       <description>I was just moderating the asp.net forums and approved Phil&#39;s announcement 29 minutes ago that Asp.net MVC 2.0 RC 2&amp;nbsp;has just been released: 
 Hi everyone,
 We released ASP.NET MVC 2 Release Candidate 2 this evening!
@@ -213,10 +213,10 @@ We released ASP.NET MVC 2 Release Candidate 2 this evening!
     
     <item>
       <title>Ajax, Asp.net Ajax, jQuery – Misconceptions and Facts</title>
-      <link>http://hsft.co/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</link>
       <pubDate>Wed, 09 Dec 2009 13:19:31 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/12/aspnet-ajax-misconceptions-and-facts/</guid>
       <description>There seems to be some confusion among a lot of developers about Asp.net Ajax. This article will hopefully clear some doubts regarding what it is, what it isn’t and where jQuery comes in.
 Ajax
 Ajax stands for Asynchronous JavaScript And Xml. Ajax is used to asynchronously make a server side request from a web page. It does not need a full page refresh (a full postback in Asp.net terms) and can result in a few benefits:</description>
@@ -224,48 +224,48 @@ Ajax stands for Asynchronous JavaScript And Xml. Ajax is used to asynchronously 
     
     <item>
       <title>Woohoo…I’m an Asp.net MVP…and a few questions for you</title>
-      <link>http://hsft.co/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</link>
       <pubDate>Wed, 01 Jul 2009 13:25:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</guid>
       <description>I was announced asp.net MVP today. It&amp;rsquo;s great to receive the award as a recognition of my activities at the asp.net forums. I hope I can continue to help people out there and that this site will grow in the process. It&amp;rsquo;s my first time receiving the award and hopefully it won&amp;rsquo;t be the last. In an attempt to hold on to it(!), I&amp;rsquo;ll ask you guys&amp;hellip;what should I write about?</description>
     </item>
     
     <item>
       <title>Simple Username / Password Authentication WITHOUT Membership Providers</title>
-      <link>http://hsft.co/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</link>
       <pubDate>Fri, 19 Jun 2009 05:44:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</guid>
       <description>The Membership provider in asp.net is great. As is the Roles support. You can do some very nifty things with it with a considerable amount of ease. You can get hashed or encrypted passwords and a whole host of features that&amp;rsquo;s pretty much enterprise grade. And you get it for free. Well, not free, but it is pretty easy to set up.
 But what if your website only needed two or three user accounts?</description>
     </item>
     
     <item>
       <title>Simple Username / Password Authentication WITHOUT Membership Providers</title>
-      <link>http://hsft.co/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</link>
       <pubDate>Fri, 19 Jun 2009 05:44:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/simple-username-password-authentication-without-membership-providers/</guid>
       <description>The Membership provider in asp.net is great. As is the Roles support. You can do some very nifty things with it with a considerable amount of ease. You can get hashed or encrypted passwords and a whole host of features that&amp;rsquo;s pretty much enterprise grade. And you get it for free. Well, not free, but it is pretty easy to set up.
 But what if your website only needed two or three user accounts?</description>
     </item>
     
     <item>
       <title>Display Modes of Validator Controls</title>
-      <link>http://hsft.co/ashic/blog/2009/06/display-modes-of-validator-controls/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/display-modes-of-validator-controls/</link>
       <pubDate>Tue, 16 Jun 2009 04:04:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/display-modes-of-validator-controls/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/display-modes-of-validator-controls/</guid>
       <description>By default, asp.net validators are positioned right next to the control they validate. You can move them in the markup, but wherever you put them, they occupy an area equal to the area required to display the Text property (or if the Text is not present, then the ErrorMessage property). We may not want that. We may want them to only occupy space when they&amp;rsquo;re displayed, or not display them at all (and showing the error message in a validation summary only).</description>
     </item>
     
     <item>
       <title>A Cool Bing-like Search Box (Button on the Inside)</title>
-      <link>http://hsft.co/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</link>
       <pubDate>Mon, 15 Jun 2009 23:57:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/a-cool-bing-like-search-box-button-on-the-inside/</guid>
       <description>In the recent &amp;ldquo;web 2.0&amp;rdquo; sites, we see cool search boxes, with the search button appearing &amp;ldquo;inside&amp;rdquo; the text box. How&amp;rsquo;d they do that? Microsoft&amp;rsquo;s bing search also has this feature. A snapshot of the bing search box looks like this:
 
 It&amp;rsquo;s actually quite simple to do, with a bit of css. First, let&amp;rsquo;s look at the markup:
@@ -277,10 +277,10 @@ It&amp;rsquo;s actually quite simple to do, with a bit of css. First, let&amp;rs
     
     <item>
       <title>Retrieving the Password for a User in Asp.net</title>
-      <link>http://hsft.co/ashic/blog/2009/06/retrieving-the-password-for-a-user-in-aspnet/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/retrieving-the-password-for-a-user-in-aspnet/</link>
       <pubDate>Sun, 14 Jun 2009 00:30:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/retrieving-the-password-for-a-user-in-aspnet/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/retrieving-the-password-for-a-user-in-aspnet/</guid>
       <description>If you&amp;rsquo;re using the Membership API in asp.net and need to retrieve a user&amp;rsquo;s password, you can do so by doing this:
 MembershipUser user = Membership.GetUser(&amp;ldquo;username&amp;rdquo;); string password = user.GetPassword(); string saferPassword = user.GetPassword(&amp;ldquo;password answer&amp;rdquo;);
 The latter is safer as it requires you to pass in the user&amp;rsquo;s security answer as an added check. This will give you the unencrypted password [The default membership system stores hashed passwords in the database].</description>
@@ -288,10 +288,10 @@ The latter is safer as it requires you to pass in the user&amp;rsquo;s security 
     
     <item>
       <title>How to Programmatically Logout / Disable a User Account</title>
-      <link>http://hsft.co/ashic/blog/2009/06/how-to-programmatically-logout-disable-a-user-account/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/how-to-programmatically-logout-disable-a-user-account/</link>
       <pubDate>Sat, 13 Jun 2009 22:29:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/how-to-programmatically-logout-disable-a-user-account/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/how-to-programmatically-logout-disable-a-user-account/</guid>
       <description>There may be the need to programmatically logout the user in an asp.net application. If you&amp;rsquo;re using Forms authentication, this is very simple to do:
 FormsAuthentication.SignOut();
 
@@ -300,10 +300,10 @@ You may also need to block the currently logged in / specific user from the syst
     
     <item>
       <title>Speaking at Microsoft Day @ Dhaka- June 20, 2009</title>
-      <link>http://hsft.co/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</link>
       <pubDate>Fri, 12 Jun 2009 14:04:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</guid>
       <description>It&amp;rsquo;s finally happening&amp;hellip;we&amp;rsquo;re having an MS dev (and IT) event here in Dhaka, Bangladesh. This is the first one ever and marks a significant landmark for the software industry here. It&amp;rsquo;s going to be held on June 20, at IDB Bhaban Auditorium. You can find details and register (mandatory) for the event here:
 http://msdnbangladesh.net/content/msday.aspx
 Seats are limited&amp;hellip;only 200 in total. It&amp;rsquo;s open for devs, IT pros and students.
@@ -312,20 +312,20 @@ I&amp;rsquo;ll be doing a half hour session on Windows Azure, from 2:45pm to 3:1
     
     <item>
       <title>Finally Set Up My Own Site: BlogEngine.Net</title>
-      <link>http://hsft.co/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</link>
       <pubDate>Tue, 09 Jun 2009 13:12:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/finally-set-up-my-own-site-blogengine-net/</guid>
       <description>I&amp;rsquo;ve been looking to set up my own site for quite some time now. The things I had in mind required a great deal of development and, due to my workload with completing graduation and a few client projects, I just couldn&amp;rsquo;t find the time. In the last few weeks, I&amp;rsquo;ve been looking at alternatives to doing the whole thing on my own. I looked at a few offerings:
 1. Graffiti</description>
     </item>
     
     <item>
       <title>FileUpload Control Doesn’t Give Full Path….HELP!!!!</title>
-      <link>http://hsft.co/ashic/blog/2009/05/fileupload-control-does-not-give-full-path/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/05/fileupload-control-does-not-give-full-path/</link>
       <pubDate>Tue, 19 May 2009 20:44:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/05/fileupload-control-does-not-give-full-path/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/05/fileupload-control-does-not-give-full-path/</guid>
       <description>I&amp;rsquo;ve answered this question about five times in the last few days at the forums. It&amp;rsquo;s getting tedious so I thought I&amp;rsquo;d make a blog post about it.
 Issue:
 The FileUpload control has a FileName property. In FireFox (FF) and some other standards compliant browsers, the filename only holds the name of the file. It does NOT hold the full path. In some versions of Internet Explorer (perhaps all versions, but at least up until v7), the FileName property holds a full path.</description>
@@ -333,19 +333,19 @@ The FileUpload control has a FileName property. In FireFox (FF) and some other s
     
     <item>
       <title>Top of the Mountain :)</title>
-      <link>http://hsft.co/ashic/blog/2009/05/top-of-the-mountain-/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/05/top-of-the-mountain-/</link>
       <pubDate>Mon, 18 May 2009 16:47:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/05/top-of-the-mountain-/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/05/top-of-the-mountain-/</guid>
       <description>I&amp;rsquo;ve been contributing more and more to the asp.net community recently. I had a somewhat dry spell two to three moths back. I completed my graduation in Computer Science and Engineering, moved out of the university dorms, got a new apartment, had a nightmare furnishing it; and finally got some time to sit down and get back to the community. Having a bit of free time, I wanted to make up for the lost time as much as I could.</description>
     </item>
     
     <item>
       <title>How to Show / Hide a ModalPopupExtender using Javascript</title>
-      <link>http://hsft.co/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</link>
       <pubDate>Wed, 06 May 2009 06:10:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/05/how-to-show-hide-a-modalpopupextender-using-javascript/</guid>
       <description>If we have a ModalPopupExtender with the id &amp;lsquo;modPopup_ModalPopupExtender&amp;rsquo;, and need to display or hide it in javascript, we can easily do this using the $find() function.
 Let&amp;rsquo;s see this in action:
 ASPX:
@@ -357,39 +357,39 @@ The code is pretty self explanatory. Hope that helps.</description>
     
     <item>
       <title>How to Send Emails from .Net [example uses GMail SMTP]</title>
-      <link>http://hsft.co/ashic/blog/2009/04/how-to-send-emails-from-net-example-uses-gmail-smtp/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/04/how-to-send-emails-from-net-example-uses-gmail-smtp/</link>
       <pubDate>Tue, 28 Apr 2009 05:10:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/04/how-to-send-emails-from-net-example-uses-gmail-smtp/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/04/how-to-send-emails-from-net-example-uses-gmail-smtp/</guid>
       <description>We frequently see questions about sending emails using .Net in the asp.net forums. The process of sending mail is the same for Windows apps and asp.net websites as the same .Net classes are used. The process can be slightly shortened by specifying default SMTP settings in the web.config or app.config file. Here, I&amp;rsquo;m showing the full version of the code and it does not rely on any configuration settings. The code also specifies unicode encoding for the subject and body.</description>
     </item>
     
     <item>
       <title>Asp.net MVC, Html.DropDownList and Selected Value</title>
-      <link>http://hsft.co/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</link>
       <pubDate>Fri, 27 Mar 2009 03:53:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/03/aspnet-mvc-htmldropdownlist-and-selected-value/</guid>
       <description>I recently ran into the altogether common problem of the Html.DropDownList helper rendering a drop down list with no value selected. This is a major problem when editing data as by default, the first value is selected and saving would mean the first value is used.
 There have been a few issues resulting in the same error. My issue was that I was setting the Name of the drop down list to be equal to the property on my model.</description>
     </item>
     
     <item>
       <title>Error Installing SQL 2008 Business Intelligence Studio and Related Package Load Error in VS2008</title>
-      <link>http://hsft.co/ashic/blog/2009/02/error-installing-sql-2008-business-intelligence-studio-and-related-package-load-error-in-vs2008/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/02/error-installing-sql-2008-business-intelligence-studio-and-related-package-load-error-in-vs2008/</link>
       <pubDate>Sat, 21 Feb 2009 06:35:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/02/error-installing-sql-2008-business-intelligence-studio-and-related-package-load-error-in-vs2008/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/02/error-installing-sql-2008-business-intelligence-studio-and-related-package-load-error-in-vs2008/</guid>
       <description>It&amp;rsquo;s been a while since I last blogged. I&amp;rsquo;ve become a forum moderator, an All-Star and also completed my final exams for my bachelor&amp;rsquo;s degree since then. Now that I have a little more time, I hope to contribute more often.
 I was installing SQL Server 2008 Dev Edition with all features, and ran into some problems. Poking around the internet, I found that the problems arise if VS2008 is installed anywhere other than the default location that the installer provides.</description>
     </item>
     
     <item>
       <title>Putting Messages Into a ValidationSummary Control...From Code</title>
-      <link>http://hsft.co/ashic/blog/2008/12/putting-messages-into-a-validationsummary-controlfrom-code/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/12/putting-messages-into-a-validationsummary-controlfrom-code/</link>
       <pubDate>Thu, 11 Dec 2008 19:49:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/12/putting-messages-into-a-validationsummary-controlfrom-code/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/12/putting-messages-into-a-validationsummary-controlfrom-code/</guid>
       <description>I love the asp.net validation controls. They&#39;re chick and really useful. We sometimes have to show some messages that are not the ErrorMessages of validators. An approach to do this could be to
 a) ScriptManager.RegisterClientScriptBlock to show a popup (YUCK!!)
 b) Put in a label and set its Text from code. This could be an option, only the error message will be in the label and not inside the ValidationSummary. This does not look good as some errors will be shown neatly in a ValidationSummary whereas others will eb shown in a separate label.</description>
@@ -397,10 +397,10 @@ b) Put in a label and set its Text from code. This could be an option, only the 
     
     <item>
       <title>Getting the URI in Silverlight</title>
-      <link>http://hsft.co/ashic/blog/2008/12/getting-the-uri-in-silverlight/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/12/getting-the-uri-in-silverlight/</link>
       <pubDate>Mon, 08 Dec 2008 14:52:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/12/getting-the-uri-in-silverlight/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/12/getting-the-uri-in-silverlight/</guid>
       <description>We may need the uri of the silverlight app in various circumstances (like if we move the app around in the solution, or are dealing with images and other resources located in a folder on the web site that&#39;s not part of the silverlight project). We can get the path easily with:
 App.Current.Host.Source
 So, if we are to get a uri to an image in the Images folder in the web site that hosts the silverlight app, we can go:</description>
@@ -408,10 +408,10 @@ So, if we are to get a uri to an image in the Images folder in the web site that
     
     <item>
       <title>How to Read the HTML of a Web Page Programmatically</title>
-      <link>http://hsft.co/ashic/blog/2008/11/how-to-read-the-html-of-a-web-page-programmatically/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/11/how-to-read-the-html-of-a-web-page-programmatically/</link>
       <pubDate>Fri, 21 Nov 2008 04:38:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/11/how-to-read-the-html-of-a-web-page-programmatically/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/11/how-to-read-the-html-of-a-web-page-programmatically/</guid>
       <description>We might need to read the contents of some page (local or remote) by code. This is quite simple in .net.
 using System.Net; using System.IO;
 WebRequest req = WebRequest.Create(&#34;http://www.asp.net&#34;); WebResponse res = req.GetResponse(); StreamReader sr = new StreamReader(res.GetResponseStream()); string html = sr.ReadToEnd();
@@ -422,78 +422,78 @@ Hope that helps.</description>
     
     <item>
       <title>ACT: CollapsiblePanelExtender - How to Collapse / Expand Programmatically</title>
-      <link>http://hsft.co/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</link>
       <pubDate>Fri, 21 Nov 2008 02:00:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/11/act-collapsiblepanelextender-how-to-collapse-expand-programmatically/</guid>
       <description>The CollapsiblePanelExtender is a cool way to convert simple panels to collapsible ones. It usually has a target panel, a control which can make it collapse, another (or the same) control to make it expand etc. Clicking the said controls will trigger the collapse/open behaviour.
 We may need to sometimes control this behaviour from code - both client side javascript and server side code behind. Suppose we have a CollapsiblePanelExtender with the Id &#39;cpe1&#39;.</description>
     </item>
     
     <item>
       <title>LINQ to SQL dbml - More than just for accessing a db</title>
-      <link>http://hsft.co/ashic/blog/2008/11/linq-to-sql-dbml-more-than-just-for-accessing-a-db/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/11/linq-to-sql-dbml-more-than-just-for-accessing-a-db/</link>
       <pubDate>Thu, 20 Nov 2008 18:02:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/11/linq-to-sql-dbml-more-than-just-for-accessing-a-db/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/11/linq-to-sql-dbml-more-than-just-for-accessing-a-db/</guid>
       <description>Hi guys...I&#39;ve been gone nearly a month now. I&#39;ve finished the last of my classes of my last year of my BSc degree (final exams are in January) and we were having all sorts of grad parties. Add to that finishing off a freelance project and my new role as one of the moderators of http://forums.asp.net, blogging had to take a back seat. Anyway, I&#39;m back :)
 I recently formatted my dev machine with a fresh install of everything.</description>
     </item>
     
     <item>
       <title>Assigning Port Numbers for the Dev Server</title>
-      <link>http://hsft.co/ashic/blog/2008/10/assigning-port-numbers-for-the-dev-server/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/10/assigning-port-numbers-for-the-dev-server/</link>
       <pubDate>Fri, 24 Oct 2008 00:25:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/10/assigning-port-numbers-for-the-dev-server/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/10/assigning-port-numbers-for-the-dev-server/</guid>
       <description>A lot of times, specially when using web services, we want the dev server to use a specific port. Suppose you have a web service and a website which consumes it. You put them in two separate projects. You&amp;rsquo;d want the web service to always use the same port. One option is to set it up in IIS. But what if you don&amp;rsquo;t want to use IIS? What if your putting together a simple test and wish to use the dev server?</description>
     </item>
     
     <item>
       <title>WCF .svc Gives HTTP 404 on Host, Works Perfectly on Local</title>
-      <link>http://hsft.co/ashic/blog/2008/10/wcf-svc-gives-http-404-on-host-works-perfectly-on-local/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/10/wcf-svc-gives-http-404-on-host-works-perfectly-on-local/</link>
       <pubDate>Wed, 01 Oct 2008 00:19:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/10/wcf-svc-gives-http-404-on-host-works-perfectly-on-local/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/10/wcf-svc-gives-http-404-on-host-works-perfectly-on-local/</guid>
       <description>I was recently working on a project that used WCF web services extensively. Everything was ready for deployment, I deployed to the remote host, and voila &amp;ndash; nothing works (nothing WCF related). After a LOT of frustration, I managed to make it work. I found two areas which were causing the problem:
 1. The .svc extension was NOT setup right at our host. You can set this in the web.config webhandlers section for IIS 7, but not for IIS 6.</description>
     </item>
     
     <item>
       <title>Setting Timeouts for Session and Authentication</title>
-      <link>http://hsft.co/ashic/blog/2008/09/setting-timeouts-for-session-and-authentication/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/09/setting-timeouts-for-session-and-authentication/</link>
       <pubDate>Mon, 29 Sep 2008 04:59:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/09/setting-timeouts-for-session-and-authentication/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/09/setting-timeouts-for-session-and-authentication/</guid>
       <description>Setting the timeouts for Session and Authentication can be a bit tricky. If not set properly, your user may be logged in when the Session expires. If you&amp;rsquo;re app depends on Session specific to the logged in user, you&amp;rsquo;ll have problems. By default, the Authentication timeout is 30 minutes while for that of Session is 20 minutes. Here&amp;rsquo;s how you can change that on a site wise basis:
 Session Under &amp;lt;system.</description>
     </item>
     
     <item>
       <title>JQuery is now 1st Party for Asp.net - Kinda</title>
-      <link>http://hsft.co/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</link>
       <pubDate>Sun, 28 Sep 2008 23:11:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/09/jquery-is-now-1st-party-for-aspnet-kinda/</guid>
       <description>Wow...AMAZING&amp;hellip;Hurray&amp;hellip;I mean, like, WOW man&amp;hellip;
 In a very welcome turn of events, JQuery is now &amp;ldquo;officially&amp;rdquo; going to be part of Asp.net development. MS will provide support, annotated VS versions that&amp;rsquo;ll give us intellisense, provide us with demonstrations and tutorials on how jquery can work with features like the AJAX Control Toolkit, Asp.Net AJAX, client side templates &amp;ndash; and all the time without modifying, forking or otherwise changing jquery. This is surprising, and in a very pleasant way.</description>
     </item>
     
     <item>
       <title>Disable Caching in an HttpHandler</title>
-      <link>http://hsft.co/ashic/blog/2008/09/disable-caching-in-an-httphandler/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/09/disable-caching-in-an-httphandler/</link>
       <pubDate>Thu, 18 Sep 2008 10:56:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/09/disable-caching-in-an-httphandler/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/09/disable-caching-in-an-httphandler/</guid>
       <description>I was generating some custom reports in Word 2007 format today. The reports were being served by an HttpHandler and various params are passed to it (mostly by query string). One report needed a list of ids to be passed and the query string wasn&#39;t an option there, so I put that in Session. [My other post today shows how]. The trouble was that the urls were identical and someone clever (the browser or the server) was caching the report.</description>
     </item>
     
     <item>
       <title>How to use Session values in an HttpHandler</title>
-      <link>http://hsft.co/ashic/blog/2008/09/how-to-use-session-values-in-an-httphandler/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/09/how-to-use-session-values-in-an-httphandler/</link>
       <pubDate>Thu, 18 Sep 2008 08:30:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/09/how-to-use-session-values-in-an-httphandler/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/09/how-to-use-session-values-in-an-httphandler/</guid>
       <description>When writing a custom HttpHandler, by default you have no access to the Session object. Doing something like HttpContext.Current.Session also returns null. The workaround is quite simple:
 Reference the System.Web.SessionState namespace:
 using System.Web.SessionState;
@@ -509,19 +509,19 @@ Hope that helps.
     
     <item>
       <title>FTP Woes and....FireFTP to the Rescue!!</title>
-      <link>http://hsft.co/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</link>
       <pubDate>Fri, 05 Sep 2008 10:50:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/09/ftp-woes-andfireftp-to-the-rescue/</guid>
       <description>I&#39;m running Vista x64 sp1. I&#39;ve had IE 7 and then IE 8 (b2)&amp;nbsp;installed. I tried uploading via ftp from a)Windows Explorer, b)Visual Studio ftp, c)FireZilla, d)SmartFTP. Small files uploaded perfectly but even 150KB files kept timing out and retrying. Active/passive didn&#39;t help. Nothing helped. I tried for 28 hours to upload a 340KB file. It was infuriating. I tried from another ISP&#39;s connection. I tried from XP. Nothing worked. God knows why.</description>
     </item>
     
     <item>
       <title>HTML Comments, Other Comments and Some VS Tips</title>
-      <link>http://hsft.co/ashic/blog/2008/09/html-comments-other-comments-and-some-vs-tips/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/09/html-comments-other-comments-and-some-vs-tips/</link>
       <pubDate>Tue, 02 Sep 2008 02:50:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/09/html-comments-other-comments-and-some-vs-tips/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/09/html-comments-other-comments-and-some-vs-tips/</guid>
       <description>&amp;nbsp;
 I just found out something really weird about HTML comments. Apparently, according to standards, you can&#39;t do this:
 &amp;lt;!--&amp;nbsp; comment ------------------------ --&amp;gt;
@@ -530,39 +530,39 @@ That is, you can&#39;t put two or more &amp;lsquo;-&amp;lsquo;s inside a comment
     
     <item>
       <title>Memorystream Not Expandable: Invalid Operation Exception</title>
-      <link>http://hsft.co/ashic/blog/2008/08/memorystream-not-expandable-invalid-operation-exception/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/08/memorystream-not-expandable-invalid-operation-exception/</link>
       <pubDate>Sun, 24 Aug 2008 19:31:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/08/memorystream-not-expandable-invalid-operation-exception/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/08/memorystream-not-expandable-invalid-operation-exception/</guid>
       <description>There&#39;s a little&amp;nbsp;gotcha with the MemoryStream class that I just found out. It has 7 constructors. The default constructor has the stream set as expandable, with an initial capacity of 0. The ctors that take the capacity set the capacity to the param, but also keeps the stream expandable. If, however, you use a ctor with the byte[] param, it initializes the stream with the contents of the buffer, but the stream becomes non-expandable.</description>
     </item>
     
     <item>
       <title>Refresh Button and Double Insert / Updates</title>
-      <link>http://hsft.co/ashic/blog/2008/08/refresh-button-and-double-insert-updates/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/08/refresh-button-and-double-insert-updates/</link>
       <pubDate>Fri, 01 Aug 2008 19:33:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/08/refresh-button-and-double-insert-updates/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/08/refresh-button-and-double-insert-updates/</guid>
       <description>I saw a few questions on the forums about double posting of data because of users using the refresh buttons in the browser.
 Ideally, I&#39;d want to have my insert / update mechanisms be done by AJAX calls to a web service. While this will work nicely regardless of back / refresh buttons being pressed, there is a necessary overhead, and a lot of people (including me, in a hurry) find the default features of a gridview very attractive.</description>
     </item>
     
     <item>
       <title>UrlRewriter.net and Themes</title>
-      <link>http://hsft.co/ashic/blog/2008/07/urlrewriternet-and-themes/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/07/urlrewriternet-and-themes/</link>
       <pubDate>Mon, 28 Jul 2008 05:14:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/07/urlrewriternet-and-themes/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/07/urlrewriternet-and-themes/</guid>
       <description>As I mentioned in my last post, I&#39;ve finally given urlrewriter.net a try - just to get over my php faithful friends who always sneered at us for those .aspx extensions.
 I watched this video: How Do I: Implement URL Rewriting? by Scott Golightly. While it was good for the basic stuff (and informative), you&#39;d have to code everything by hand. Also,near the end, he shows an implementation of a custom Form class that can handle postbacks with url rewriting.</description>
     </item>
     
     <item>
       <title>Kaspersky and ‘Banner’s</title>
-      <link>http://hsft.co/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</link>
       <pubDate>Mon, 28 Jul 2008 05:10:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/07/kaspersky-and-e28098bannere28099s/</guid>
       <description>What a coincidence...my second post on my blog is also about Kaspersky. Why do I keep running into the weird things? Anyway, this should also hold for many web content filters.
 Last night I was finally playing around with the most excellent urlrewriter.net. I&#39;m on IIS7 on Vista x64 SP1. I&#39;d always thought (for unknown reasons) that this thing would be tough and would give me a headache with my images and stuff.</description>
     </item>

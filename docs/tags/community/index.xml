@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community on Heartysoft Solutions Limited</title>
-    <link>http://hsft.co/tags/community/</link>
+    <link>http://heartysoft.com/tags/community/</link>
     <description>Recent content in Community on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 13 Feb 2015 01:42:48 +0000</lastBuildDate>
     
-	<atom:link href="http://hsft.co/tags/community/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heartysoft.com/tags/community/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CommandQueryExample Feedback 2: Alternative Implementation</title>
-      <link>http://hsft.co/ashic/blog/2015/02/command-query-example-part2/</link>
+      <link>http://heartysoft.com/ashic/blog/2015/02/command-query-example-part2/</link>
       <pubDate>Fri, 13 Feb 2015 01:42:48 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2015/02/command-query-example-part2/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2015/02/command-query-example-part2/</guid>
       <description>This is the second part (of n) in my look into Alan’s example implementation of having a project that doesn’t use a repository. As a reminder, the goal is not CQRS, or DDD, but to see how applications can be built that do data access san repositories.
 Show Me Ze Codez The code for the (maybe first?) alternative implementation can be found here: https://github.com/ashic/CommandQueryExample
 In the root folder, there’s a src2 folder, with Alan’s original implementation in the src folder.</description>
@@ -24,10 +24,10 @@ In the root folder, there’s a src2 folder, with Alan’s original implementati
     
     <item>
       <title>CommandQueryExample Feedback 1: Overview</title>
-      <link>http://hsft.co/ashic/blog/2015/02/command-query-example-part1/</link>
+      <link>http://heartysoft.com/ashic/blog/2015/02/command-query-example-part1/</link>
       <pubDate>Wed, 11 Feb 2015 01:41:20 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2015/02/command-query-example-part1/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2015/02/command-query-example-part1/</guid>
       <description>My twitter buddy, and a person I quite admire, Alan Stevens has been looking into the latest “fad” of repository hate. He’s been looking at alternatives, and has created a simple sample application, available at https://github.com/alanstevens/CommandQueryExample . He’s asked for feedback, and seeing that these are often common questions, with his permission, I’m giving mine in the form of a few posts. So, let’s get started.
 &amp;nbsp;
 What It’s Not The sample is not an attempt at CQRS – Alan mentions that in the readme.</description>
@@ -35,58 +35,58 @@ What It’s Not The sample is not an attempt at CQRS – Alan mentions that in t
     
     <item>
       <title>Oredev 2013</title>
-      <link>http://hsft.co/ashic/blog/2013/11/oredev-2013/</link>
+      <link>http://heartysoft.com/ashic/blog/2013/11/oredev-2013/</link>
       <pubDate>Sat, 09 Nov 2013 09:06:29 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2013/11/oredev-2013/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2013/11/oredev-2013/</guid>
       <description>So, Oredev 2013 just finished. And what an awesome conference. So many great talks, and so many more awesome people. My fun started a day before the conference. Jez Humble graciously allowed me to sit in on his pre conference workshop on Continuous Delivery. As a fan of the concept, and of the book, it was a nice to finally see the man himself talk about it. And of course, he didn’t disappoint.</description>
     </item>
     
     <item>
       <title>ZeroMQ London–Async Server Client Platform</title>
-      <link>http://hsft.co/ashic/blog/2013/06/zeromq-async-server/</link>
+      <link>http://heartysoft.com/ashic/blog/2013/06/zeromq-async-server/</link>
       <pubDate>Mon, 24 Jun 2013 09:58:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2013/06/zeromq-async-server/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2013/06/zeromq-async-server/</guid>
       <description>Here’s the code from our latest meetup. Here’s what we (almost) built:
  An async client server platform where clients and servers can be added dynamically. Communication is done over TCP. The platform takes care of intermittent network connectivity (but not long outages). While James got it running, mine fell at the final hurdle – when trying to finish the final bits in next to no time, I managed to invert the condition of a while loop .</description>
     </item>
     
     <item>
       <title>Martin Thompson’s Writing Concurrent Code with Lock Free Algorithms Course</title>
-      <link>http://hsft.co/ashic/blog/2013/06/martin-thompson-lock-free-algos/</link>
+      <link>http://heartysoft.com/ashic/blog/2013/06/martin-thompson-lock-free-algos/</link>
       <pubDate>Mon, 10 Jun 2013 11:57:03 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2013/06/martin-thompson-lock-free-algos/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2013/06/martin-thompson-lock-free-algos/</guid>
       <description>I had the opportunity to attend Martin Thompson’s Writing Concurrent Code with Lock Free Algorithms Course ( http://skillsmatter.com/course/java-jee/martin-thompsons-writing-concurrent-code-with-lock-free-algorithms ) at SkillsMatter last week. Here is a brief summary of my experience.
 The course starts off with Martin talking about mechanical sympathy, and describing how the innards of modern processors work from a conceptual point of view. This includes various level of caches, buffers, memory controllers, processor architecture, cache lines and what not.</description>
     </item>
     
     <item>
       <title>ZeroMQLondon – And Away We Go</title>
-      <link>http://hsft.co/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</link>
+      <link>http://heartysoft.com/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</link>
       <pubDate>Thu, 21 Feb 2013 23:19:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2013/02/zeromqlondon---and-away-we-go/</guid>
       <description>On Wednesday, we had our first hands on session of the London ZeroMQ User Group. It was nice to see such an enthusiastic bunch of people come along to find out what Zero is all about.
 As our first technical session, it covered some of the basic concepts – contexts, sockets, and “sockets”. We got started with some of the theory, and then moved onto getting a basic REQ-REP pair up and running over TCP – across threads, across processes, and then (with some difficulty overcoming network issues but hey – what’s a dive into network programming without network issues, eh?</description>
     </item>
     
     <item>
       <title>ZeroMQLondon Launch</title>
-      <link>http://hsft.co/ashic/blog/2012/12/zeromq-london-launch/</link>
+      <link>http://heartysoft.com/ashic/blog/2012/12/zeromq-london-launch/</link>
       <pubDate>Fri, 07 Dec 2012 02:06:18 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2012/12/zeromq-london-launch/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2012/12/zeromq-london-launch/</guid>
       <description>We launched the London ZeroMQ User Group (ZeroMQLondon) on Wednesday, the 5th of December, 2012. We were extremely lucky to have one of the founders of 0mq, Pieter Hintjens, in town for TechMeshConf 2012 – and to agree to do a talk to launch the group. This was our first meetup, and it got a bit hectic towards the start… Hopefully we’ll do better in future ones. We are extremely grateful to Skillsmatter for providing us with a large enough place to hold the 50+ people that came (and with Udi speaking downstairs and “hogging” a large part of the London .</description>
     </item>
     
     <item>
       <title>Roughing It Session at the Canary Wharf Dot Net User Group</title>
-      <link>http://hsft.co/ashic/blog/2012/05/roughing-it-canary-wharf/</link>
+      <link>http://heartysoft.com/ashic/blog/2012/05/roughing-it-canary-wharf/</link>
       <pubDate>Mon, 07 May 2012 14:05:09 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2012/05/roughing-it-canary-wharf/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2012/05/roughing-it-canary-wharf/</guid>
       <description>Here are the slides and code from my recent talk at the Canary Wharf Dot Net User Group (lots of code….few slides).
 Roughing It View more presentations from Ashic Mahtab. Code:
 https://github.com/ashic/RoughingItCanaryWharf
@@ -96,75 +96,75 @@ Enjoy!</description>
     
     <item>
       <title>Speaking at NxtGenUG Coventry</title>
-      <link>http://hsft.co/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</link>
+      <link>http://heartysoft.com/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</link>
       <pubDate>Sun, 15 Apr 2012 15:16:57 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2012/04/speaking-at-nxtgenug-coventry/</guid>
       <description>I&#39;ll be speaking about CQRS, Event Sourcing and Related Patterns at NxtGenUG Conventry on June 26, 2012.</description>
     </item>
     
     <item>
       <title>Yes, I Use a Text Editor for Demonstrating Code</title>
-      <link>http://hsft.co/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</link>
+      <link>http://heartysoft.com/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</link>
       <pubDate>Thu, 15 Mar 2012 05:51:52 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2012/03/yes-i-use-a-text-editor-for-demonstrating-code/</guid>
       <description>I was in Southampton recently for a talk titled “An Introduction to CQRS, Event Sourcing and their Benefits”. I’ve got some nice feedback suggesting people generally liked it. I also got some nice criticism – some to do with the focus of the talk (which I’ll cover in another post) but one particular one that brought up the issue of my coding in a text editor - “Dropping out many times to a text editor to write code that was never compiled let alone executed.</description>
     </item>
     
     <item>
       <title>Speaking at NxtGenUG Southampton</title>
-      <link>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</link>
       <pubDate>Tue, 06 Dec 2011 21:30:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/12/speaking-at-nxtgenug-southampton/</guid>
       <description>I&#39;ll be speaking on CQRS, Event Sourcing and related patterns at NxtGenUG Southampton on January 19.</description>
     </item>
     
     <item>
       <title>Speaking at NxtGenUG Hereford</title>
-      <link>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</link>
       <pubDate>Tue, 06 Dec 2011 19:15:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/12/speaking-at-nxtgen-hereford/</guid>
       <description>I&#39;ll be speaking on CQRS, Event Sourcing and related patterns at NxtGenUG Hereford on January 09, 2012.</description>
     </item>
     
     <item>
       <title>Agile Fragile</title>
-      <link>http://hsft.co/ashic/blog/2011/11/agile-fragile/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/11/agile-fragile/</link>
       <pubDate>Thu, 24 Nov 2011 09:07:44 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/11/agile-fragile/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/11/agile-fragile/</guid>
       <description>I’m going to indulge myself by having a nice old fashioned rant. The topic of choice is “Agile”. A few experiences and conversations of the recent past have compelled me to write something on this topic. So here goes nothing I’ve recently come across a quite senior person with an obscenely large number of years of experience during which time he has been involved in very large projects (think multi million pound) for very large organisations (think the likes of British Airways).</description>
     </item>
     
     <item>
       <title>DDD North 2011</title>
-      <link>http://hsft.co/ashic/blog/2011/10/ddd-north-2011/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/10/ddd-north-2011/</link>
       <pubDate>Fri, 14 Oct 2011 04:22:40 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/10/ddd-north-2011/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/10/ddd-north-2011/</guid>
       <description>One week after DDD Belfast, I was up in Sunderland for the first ever DDD North. The session line-up looked fantastic and it geared up to be a fantastic day.
 My Session Clean Up Your JavaScript Act I wasn’t expecting too much of a turnout for the session as Mark Rendle’s CoffeeScript was on at the same time. Apparently, I wasn’t the only one with that perception as Andrew mentioned scrambling in more and more chairs I was surprised to see the room filled.</description>
     </item>
     
     <item>
       <title>DDD Belfast 2011</title>
-      <link>http://hsft.co/ashic/blog/2011/10/ddd-belfast-2011/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/10/ddd-belfast-2011/</link>
       <pubDate>Wed, 12 Oct 2011 03:40:07 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/10/ddd-belfast-2011/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/10/ddd-belfast-2011/</guid>
       <description>After repeated attempts to resume blogging, I think I’m pretty much determined to end my hiatus. And I’ll start off with my experience at DDD Belfast.
 Apart from a Scott Gu special event last year, this was my first DDD event. The travel up to Belfast was a bit hectic&amp;nbsp; - the “journey” from the security gates to the EasyJet gates at Gatwick seemed like a mile long trek. Note to self: if flying out of Gatwick, leave an extra hour in your schedule.</description>
     </item>
     
     <item>
       <title>2011 MVP Hat Trick</title>
-      <link>http://hsft.co/ashic/blog/2011/07/2011-mvp-hat-trick/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/07/2011-mvp-hat-trick/</link>
       <pubDate>Sat, 02 Jul 2011 03:30:59 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/07/2011-mvp-hat-trick/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/07/2011-mvp-hat-trick/</guid>
       <description>Got this email today:
 &#34;Congratulations! We are pleased to present you with the 2011 Microsoft&amp;reg; MVP Award! This award is given to exceptional technical community leaders who actively share their high quality, real world expertise with others. We appreciate your outstanding contributions in ASP.NET/IIS technical communities during the past year.&#34;
 That&#39;s three on the trot and it feels great to have done it before the 25 year milestone :)
@@ -173,65 +173,65 @@ And so begins another year of contributing to the community.</description>
     
     <item>
       <title>My CQRS Session at the Canary Wharf Dot Net User Group</title>
-      <link>http://hsft.co/ashic/blog/2011/06/canary-wharf-cqrs/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/06/canary-wharf-cqrs/</link>
       <pubDate>Mon, 20 Jun 2011 07:14:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/06/canary-wharf-cqrs/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/06/canary-wharf-cqrs/</guid>
       <description>About a couple of weeks ago, I presented some very basic CQRS and Event Sourcing concepts to the Canary Wharf Dot Net User Group. It was an interesting experience to say the least. About everybody there had heard of CQRS (hmmm), about a quarter knew a bit about how it works (wow) and only one guy there actually uses it (ah well). This confusing spread in the audience made it quite challenging as to which bits to focus on and what to consider “advanced”.</description>
     </item>
     
     <item>
       <title>Speaking on Silverlight 4 and WCF RIA Services at BRAC University</title>
-      <link>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</link>
       <pubDate>Sat, 20 Mar 2010 08:54:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/03/speaking-on-silverlight-4-and-wcf-ria-services-at-brac-university/</guid>
       <description>I&#39;m speaking on Silverlight 4 and&amp;nbsp;WCF RIA Services at&amp;nbsp;BRAC University&amp;nbsp;on March 31, 2010. Hoping to wet the appetites of the developers of tomorrow.</description>
     </item>
     
     <item>
       <title>Speaking On Silverlight 4 and WCF RIA Services at NSU</title>
-      <link>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</link>
+      <link>http://heartysoft.com/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</link>
       <pubDate>Sat, 20 Mar 2010 08:50:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2010/03/speaking-on-silverlight-4-and-ria-services-at-nsu/</guid>
       <description>I&#39;m speaking on Silverlight 4 and&amp;nbsp;WCF RIA Services at North South University on March 31, 2010. Hoping to finally meet David Lim :)</description>
     </item>
     
     <item>
       <title>I’m Back!!</title>
-      <link>http://hsft.co/ashic/blog/2009/12/im-back/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/12/im-back/</link>
       <pubDate>Tue, 08 Dec 2009 06:10:18 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/12/im-back/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/12/im-back/</guid>
       <description>After a few months absence, I’m back. I’ve redesigned the site and a few more updates will hopefully come in the next few weeks. So much has happened since my last post –  VS 2010 and .net 4.0 beta MVC 2.0 beta Silverlight 4.0 beta New Bing maps Azure improvements  -and that’s just a high level view :)
 I’ll hopefully put up some articles to cover these soon. Stay tuned!</description>
     </item>
     
     <item>
       <title>Speaking on IE8 and Windows Live Services at the Windows 7 Launch Party</title>
-      <link>http://hsft.co/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</link>
       <pubDate>Sun, 01 Nov 2009 09:24:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/11/speaking-on-ie8-and-windows-live-services-at-the-windows-7-launch-party/</guid>
       <description>I&#39;m speaking on IE 8 and Windows Live Services at the Windows 7 Launch Party at Dhaka on November 7, 2009. Hope to see a few of my fellow MVPs there.</description>
     </item>
     
     <item>
       <title>Woohoo…I’m an Asp.net MVP…and a few questions for you</title>
-      <link>http://hsft.co/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</link>
       <pubDate>Wed, 01 Jul 2009 13:25:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/07/woohoo-im-an-aspnet-mvp-and-a-few-questions-for-you/</guid>
       <description>I was announced asp.net MVP today. It&amp;rsquo;s great to receive the award as a recognition of my activities at the asp.net forums. I hope I can continue to help people out there and that this site will grow in the process. It&amp;rsquo;s my first time receiving the award and hopefully it won&amp;rsquo;t be the last. In an attempt to hold on to it(!), I&amp;rsquo;ll ask you guys&amp;hellip;what should I write about?</description>
     </item>
     
     <item>
       <title>Speaking at Microsoft Day @ Dhaka- June 20, 2009</title>
-      <link>http://hsft.co/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</link>
       <pubDate>Fri, 12 Jun 2009 14:04:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/speaking-at-microsoft-day-dhaka-june-20-2009/</guid>
       <description>It&amp;rsquo;s finally happening&amp;hellip;we&amp;rsquo;re having an MS dev (and IT) event here in Dhaka, Bangladesh. This is the first one ever and marks a significant landmark for the software industry here. It&amp;rsquo;s going to be held on June 20, at IDB Bhaban Auditorium. You can find details and register (mandatory) for the event here:
 http://msdnbangladesh.net/content/msday.aspx
 Seats are limited&amp;hellip;only 200 in total. It&amp;rsquo;s open for devs, IT pros and students.
@@ -240,19 +240,19 @@ I&amp;rsquo;ll be doing a half hour session on Windows Azure, from 2:45pm to 3:1
     
     <item>
       <title>Top of the Mountain :)</title>
-      <link>http://hsft.co/ashic/blog/2009/05/top-of-the-mountain-/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/05/top-of-the-mountain-/</link>
       <pubDate>Mon, 18 May 2009 16:47:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/05/top-of-the-mountain-/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/05/top-of-the-mountain-/</guid>
       <description>I&amp;rsquo;ve been contributing more and more to the asp.net community recently. I had a somewhat dry spell two to three moths back. I completed my graduation in Computer Science and Engineering, moved out of the university dorms, got a new apartment, had a nightmare furnishing it; and finally got some time to sit down and get back to the community. Having a bit of free time, I wanted to make up for the lost time as much as I could.</description>
     </item>
     
     <item>
       <title>Top Answerer: Getting Started on www.asp.net</title>
-      <link>http://hsft.co/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</link>
+      <link>http://heartysoft.com/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</link>
       <pubDate>Thu, 31 Jul 2008 21:05:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2008/07/top-answerer-getting-started-on-wwwaspnet/</guid>
       <description>Just made the top answerer for the Getting Started section on the www.asp.net forums :)
 
 I overtook the awesome vinz. Of course, he&#39;s likely to bounce back tomorrow; and of course, he leads a lot of the boards I visit - the guy has endless time (and knowledge)&amp;nbsp;:D

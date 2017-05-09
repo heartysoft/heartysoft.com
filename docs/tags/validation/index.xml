@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Validation on Heartysoft Solutions Limited</title>
-    <link>http://hsft.co/tags/validation/</link>
+    <link>http://heartysoft.com/tags/validation/</link>
     <description>Recent content in Validation on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 16 Jun 2009 04:04:00 +0000</lastBuildDate>
     
-	<atom:link href="http://hsft.co/tags/validation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heartysoft.com/tags/validation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Display Modes of Validator Controls</title>
-      <link>http://hsft.co/ashic/blog/2009/06/display-modes-of-validator-controls/</link>
+      <link>http://heartysoft.com/ashic/blog/2009/06/display-modes-of-validator-controls/</link>
       <pubDate>Tue, 16 Jun 2009 04:04:00 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2009/06/display-modes-of-validator-controls/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2009/06/display-modes-of-validator-controls/</guid>
       <description>By default, asp.net validators are positioned right next to the control they validate. You can move them in the markup, but wherever you put them, they occupy an area equal to the area required to display the Text property (or if the Text is not present, then the ErrorMessage property). We may not want that. We may want them to only occupy space when they&amp;rsquo;re displayed, or not display them at all (and showing the error message in a validation summary only).</description>
     </item>
     

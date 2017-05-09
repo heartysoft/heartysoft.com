@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Agile on Heartysoft Solutions Limited</title>
-    <link>http://hsft.co/tags/agile/</link>
+    <link>http://heartysoft.com/tags/agile/</link>
     <description>Recent content in Agile on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 24 Nov 2011 09:07:44 +0000</lastBuildDate>
     
-	<atom:link href="http://hsft.co/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heartysoft.com/tags/agile/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Agile Fragile</title>
-      <link>http://hsft.co/ashic/blog/2011/11/agile-fragile/</link>
+      <link>http://heartysoft.com/ashic/blog/2011/11/agile-fragile/</link>
       <pubDate>Thu, 24 Nov 2011 09:07:44 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2011/11/agile-fragile/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2011/11/agile-fragile/</guid>
       <description>I’m going to indulge myself by having a nice old fashioned rant. The topic of choice is “Agile”. A few experiences and conversations of the recent past have compelled me to write something on this topic. So here goes nothing I’ve recently come across a quite senior person with an obscenely large number of years of experience during which time he has been involved in very large projects (think multi million pound) for very large organisations (think the likes of British Airways).</description>
     </item>
     

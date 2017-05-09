@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sql on Heartysoft Solutions Limited</title>
-    <link>http://hsft.co/tags/sql/</link>
+    <link>http://heartysoft.com/tags/sql/</link>
     <description>Recent content in Sql on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 06 Aug 2013 05:59:03 +0000</lastBuildDate>
     
-	<atom:link href="http://hsft.co/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heartysoft.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SQL Server, DateTime, and Precision</title>
-      <link>http://hsft.co/ashic/blog/2013/08/sql-server-datetime-and-precision/</link>
+      <link>http://heartysoft.com/ashic/blog/2013/08/sql-server-datetime-and-precision/</link>
       <pubDate>Tue, 06 Aug 2013 05:59:03 +0000</pubDate>
       
-      <guid>http://hsft.co/ashic/blog/2013/08/sql-server-datetime-and-precision/</guid>
+      <guid>http://heartysoft.com/ashic/blog/2013/08/sql-server-datetime-and-precision/</guid>
       <description>Sql Server’s DateTime type is quite often used to represent dates (and err…times). It’s so common that that’s the default mapping for some ORMs. The “new” MVC Web Security stuff’s tables use DateTime as well. Here’s a quick question – did you know that DateTime is accurate to about 3.33 milliseconds? In other words, if three DateTimes happened to be within 3.33 milliseconds of each other, they may be deemed equal due to precision issues.</description>
     </item>
     

@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Heartysoft Solutions Limited</title>
-    <link>http://hsft.co/categories/</link>
+    <link>http://heartysoft.com/categories/</link>
     <description>Recent content in Categories on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="http://hsft.co/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://heartysoft.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
