@@ -6,10 +6,19 @@
     <description>Recent content on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 21 May 2016 15:02:34 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 May 2017 00:27:30 +0000</lastBuildDate>
     
 	<atom:link href="http://heartysoft.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetes and Weird Environment Variables</title>
+      <link>http://heartysoft.com/ashic/blog/2017/05/kubernetes-and-weird-env-vars/</link>
+      <pubDate>Wed, 10 May 2017 00:27:30 +0000</pubDate>
+      
+      <guid>http://heartysoft.com/ashic/blog/2017/05/kubernetes-and-weird-env-vars/</guid>
+      <description>We&amp;rsquo;ve started using Kubernetes, and came across an obvious thing that wasn&amp;rsquo;t apparent until we realised what it was. We were setting up a Kafka Schema Registry, and a Spark cluster on Kubernetes. Things seemed to work, except we suddenly saw that they didn&amp;rsquo;t. Digging down, we saw that the Schema Registry was failing during initialisation stating that SCHEMA_REGISTRY_PORT is deprecated. We couldn&amp;rsquo;t figure out what was injecting the environment variable called SCHEMA_REGISTRY_PORT, and why it suddenly started getting injected, having worked fine before.</description>
+    </item>
     
     <item>
       <title>OpenVPN Disconnecting on Windows - Reset WinSock</title>
