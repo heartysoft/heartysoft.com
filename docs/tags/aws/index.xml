@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on Heartysoft Solutions Limited</title>
+    <link>http://heartysoft.com/tags/aws/</link>
+    <description>Recent content in Aws on Heartysoft Solutions Limited</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 May 2017 17:54:05 +0000</lastBuildDate>
+    
+	<atom:link href="http://heartysoft.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Friendly Names for AWS ELBS</title>
+      <link>http://heartysoft.com/ashic/blog/2017/05/friendly-names-for-aws-elbs/</link>
+      <pubDate>Sun, 14 May 2017 17:54:05 +0000</pubDate>
+      
+      <guid>http://heartysoft.com/ashic/blog/2017/05/friendly-names-for-aws-elbs/</guid>
+      <description>Elastic Load Balancers (ELBs) in AWS allow us to access load balanced resources via single endpoints. While useful, a common problem is that they have hideous names. A dns name like internal-aaaaaabbbbcc359111e789ac0ac70354142-1111223232.eu-west-1.elb.amazonaws.com isn&amp;rsquo;t the easiest thing in the world to remember, share, or use. We can use AWS Route53 to expose these load balancers with &amp;ldquo;friendly&amp;rdquo; names.
+Say, I have a domain, mysite.com registered via Route53 as a public Hosted Zone.</description>
+    </item>
+    
+  </channel>
+</rss>
