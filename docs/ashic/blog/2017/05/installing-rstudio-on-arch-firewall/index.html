@@ -74,80 +74,97 @@
         
     </nav>
 
+   
+
+
 
 <div id="blog" class="page color-1">
-    <div class="row inner-page centered">
-
-        <h3 class="text-center">Latest Blog Entries</h3>
-        <hr /> 
-        <div class="container col-md-4 blog-post-summary">
-            <div>
-                <a href="http://heartysoft.com/ashic/blog/2017/05/installing-rstudio-on-arch-firewall/">
-                    <h4 class="text-center ">Installing RStudio on Arch behind Firewall</h4>
-                    <p class="container justify">
-                        How to install packages on arch from source when your firewall blocks git://.
-                    </p>
-                    <p class="text-right">
-                        17-05-2017
-                    </p>
-                </a>
-            </div>
+    <div id="blog-banner" class="row inner-page centered">
+        <div class="col-md-12">
+            <img src="/img/custom/ashic_small.jpg" alt="ashic" />
+            <h1>Ashic's Blog</h1>
+            <p>ramblings of a technologist...standing on the shoulders of giants and all that...</p>
         </div>
-        <p class="hidden-md"></p>
         
-
     </div>
 </div>
 
-
-<div id="archive" class="page color-4">
+<div id="article" class="container">
     <div class="row inner-page centered">
-        <h3 class="text-center">Archive</h3>
-        <hr />
+        <div class="all-posts-link">
+            <a href="/blog" class="btn btn-primary centered">
+                Blog Archive
+            </a>
+        </div>
+        <h1>Installing RStudio on Arch behind Firewall</h1>
+        <div class="tag-holder">
+    <ul>
         
-
-        <ul>
             
+        
+                    
+                <li>
+                    <a href="/tags/linux/">linux</a>
+                </li>
             
-                <li class="col-md-12 container">
-                    <div class="col-md-8">
-                        <a href="http://heartysoft.com/ashic/blog/2017/05/installing-rstudio-on-arch-firewall/">
-                            <p>
-                                <h4>Installing RStudio on Arch behind Firewall</h4>
-                                17-05-2017
-
-                            </p>
-                        </a>
-                    </div>
-                     <div class="col-md-4">
-                        <ul class="tag-links">
-                            
-                                
-                            
-                                
-                                    <li>
-                                        <a href="/tags/linux/">linux</a>
-                                    </li>
-                                
-                            
-                                
-                                    <li>
-                                        <a href="/tags/git/">git</a>
-                                    </li>
-                                
-                            
-                                
-                                    <li>
-                                        <a href="/tags/r/">r</a>
-                                    </li>
-                                
-                            
-                        </ul>
-                    </div>
-               </li>
+        
+                    
+                <li>
+                    <a href="/tags/git/">git</a>
+                </li>
             
+        
+                    
+                <li>
+                    <a href="/tags/r/">r</a>
+                </li>
+            
+        
+    </ul>
+</div>
 
-        </ul>
+
+        <div class="clear"></div>
+        <div class="article-date">
+            17 May, 2017
+        </div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ashic">Tweet</a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+
+        <div class="clear"></div>
+        <div class="article-text">
+            <p>I&rsquo;ve been using Arch (more specifically Antergos) for a while now. This morning I was trying to set up RStudio, and saw that the package I likely want is rstudio-desktop-bin. I tried to yaourt -S it, and during the install, it was trying in install a dependency called gstream. The specific version it was trying to install was built from source, and that source repo had a submodule named common. Unfortunately, the submodule used the git:// protocol that our office firewall blocked. Once I identified this, the solution was simple. I just added the following to my global git config:</p>
+
+<pre><code>[url &quot;https://anongit.freedesktop.org/git/gstreamer/common&quot;]
+insteadOf = git://anongit.freedesktop.org/gstreamer/common
+</code></pre>
+
+<p>When I tried the install again, git used the https url instead of the git:// one, and everything installed fine. This would obviously work whenever you need to use a specific git url that you don&rsquo;t have access to.</p>
+
+        </div>
+        <div class="clear"></div>
+        <br />
+        <hr />
+        <p>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+     
+    var disqus_shortname = 'hsft'; 
+
+     
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+        </p>
     </div>
 </div>
 
