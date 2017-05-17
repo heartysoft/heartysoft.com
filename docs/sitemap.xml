@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://heartysoft.com/ashic/blog/2017/05/installing-rstudi-on-arch-firewall/</loc>
+    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://heartysoft.com/ashic/blog/2017/05/friendly-names-for-aws-elbs/</loc>
     <lastmod>2017-05-14T17:54:05+00:00</lastmod>
   </url>
@@ -541,13 +546,13 @@
   
   <url>
     <loc>http://heartysoft.com/tags/blog/</loc>
-    <lastmod>2017-05-14T17:54:05+00:00</lastmod>
+    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://heartysoft.com/blog/</loc>
-    <lastmod>2017-05-14T17:54:05+00:00</lastmod>
+    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -618,13 +623,13 @@
   
   <url>
     <loc>http://heartysoft.com/tags/git/</loc>
-    <lastmod>2014-03-04T00:56:45+00:00</lastmod>
+    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://heartysoft.com/</loc>
-    <lastmod>2017-05-14T17:54:05+00:00</lastmod>
+    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -660,7 +665,7 @@
   
   <url>
     <loc>http://heartysoft.com/tags/linux/</loc>
-    <lastmod>2015-07-06T14:27:58+00:00</lastmod>
+    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -691,6 +696,12 @@
   <url>
     <loc>http://heartysoft.com/tags/performance-tips/</loc>
     <lastmod>2013-06-10T11:57:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://heartysoft.com/tags/r/</loc>
+    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
     <priority>0</priority>
   </url>
   

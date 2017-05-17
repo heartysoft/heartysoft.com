@@ -86,7 +86,7 @@
     <item>
       <title>Blog</title>
       <link>http://heartysoft.com/tags/blog/</link>
-      <pubDate>Sun, 14 May 2017 17:54:05 +0000</pubDate>
+      <pubDate>Wed, 17 May 2017 11:44:05 +0000</pubDate>
       
       <guid>http://heartysoft.com/tags/blog/</guid>
       <description></description>
@@ -185,7 +185,7 @@
     <item>
       <title>Git</title>
       <link>http://heartysoft.com/tags/git/</link>
-      <pubDate>Tue, 04 Mar 2014 00:56:45 +0000</pubDate>
+      <pubDate>Wed, 17 May 2017 11:44:05 +0000</pubDate>
       
       <guid>http://heartysoft.com/tags/git/</guid>
       <description></description>
@@ -239,7 +239,7 @@
     <item>
       <title>Linux</title>
       <link>http://heartysoft.com/tags/linux/</link>
-      <pubDate>Mon, 06 Jul 2015 14:27:58 +0000</pubDate>
+      <pubDate>Wed, 17 May 2017 11:44:05 +0000</pubDate>
       
       <guid>http://heartysoft.com/tags/linux/</guid>
       <description></description>
@@ -287,6 +287,15 @@
       <pubDate>Mon, 10 Jun 2013 11:57:03 +0000</pubDate>
       
       <guid>http://heartysoft.com/tags/performance-tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>http://heartysoft.com/tags/r/</link>
+      <pubDate>Wed, 17 May 2017 11:44:05 +0000</pubDate>
+      
+      <guid>http://heartysoft.com/tags/r/</guid>
       <description></description>
     </item>
     
