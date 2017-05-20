@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://heartysoft.com/ashic/blog/2017/05/upgrading-k8s-with-kops-to-1.6.2-woes/</loc>
+    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://heartysoft.com/ashic/blog/2017/05/installing-rstudio-on-arch-firewall/</loc>
     <lastmod>2017-05-17T11:44:05+00:00</lastmod>
   </url>
@@ -546,13 +551,13 @@
   
   <url>
     <loc>http://heartysoft.com/tags/blog/</loc>
-    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
+    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://heartysoft.com/blog/</loc>
-    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
+    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -599,7 +604,7 @@
   
   <url>
     <loc>http://heartysoft.com/tags/devops/</loc>
-    <lastmod>2017-05-14T17:54:05+00:00</lastmod>
+    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -629,7 +634,7 @@
   
   <url>
     <loc>http://heartysoft.com/</loc>
-    <lastmod>2017-05-17T11:44:05+00:00</lastmod>
+    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -659,7 +664,7 @@
   
   <url>
     <loc>http://heartysoft.com/tags/kubernetes/</loc>
-    <lastmod>2017-05-10T00:27:30+00:00</lastmod>
+    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,20 @@
     <description>Recent content on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 May 2017 11:44:05 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 May 2017 20:42:30 +0000</lastBuildDate>
     
 	<atom:link href="http://heartysoft.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upgrading Kubernetes with Kops to 1.6.2</title>
+      <link>http://heartysoft.com/ashic/blog/2017/05/upgrading-k8s-with-kops-to-1.6.2-woes/</link>
+      <pubDate>Sat, 20 May 2017 20:42:30 +0000</pubDate>
+      
+      <guid>http://heartysoft.com/ashic/blog/2017/05/upgrading-k8s-with-kops-to-1.6.2-woes/</guid>
+      <description>Kops 1.6.0 was released this week, and I went ahead and ran kop update on one of my 1.5.2 clusters. After the rolling upgrade, it appeared to go well, but the master nodes didn&amp;rsquo;t seem to be ready. I tried various things, but the issues seemed to revolved around three components: kube-dns, weave-net, and dns-controller.
+Fixing kube-dns was simple. I just created an empty ConfigMap named kube-dns in the kube-system namespace:</description>
+    </item>
     
     <item>
       <title>Installing RStudio on Arch behind Firewall</title>
