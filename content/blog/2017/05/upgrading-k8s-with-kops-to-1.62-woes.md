@@ -17,7 +17,7 @@ kubectl create configmap -n kube-system kube-dns
 
 If you're not running HA masters, it's possibly you might need to do this, and the rolling update would fail without it. In my case, I ran it after.
 
-I also ran kubectl replace -f with the file from [link](https://github.com/kubernetes/kops/blob/5fe50e0764405e892ab297b9f9a22459b6c7c62b/upup/models/cloudup/resources/addons/networking.weave/k8s-1.6.yaml).
+I also ran kubectl replace -f with the file from [here](https://github.com/kubernetes/kops/blob/5fe50e0764405e892ab297b9f9a22459b6c7c62b/upup/models/cloudup/resources/addons/networking.weave/k8s-1.6.yaml).
 
 These two things fixed most issues. Kubernetes UI was reachable through the public address again (I could access it via kubectl proxy before, but it didn't seem to be reachable using public dns before the fixes. 
 
