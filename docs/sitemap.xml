@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://heartysoft.com/ashic/blog/2017/05/public-elbs-with-private-kubernetes/</loc>
+    <lastmod>2017-05-22T18:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://heartysoft.com/ashic/blog/2017/05/upgrading-k8s-with-kops-to-1.6.2-woes/</loc>
     <lastmod>2017-05-20T20:42:30+00:00</lastmod>
   </url>
@@ -539,7 +544,7 @@
   
   <url>
     <loc>http://heartysoft.com/tags/aws/</loc>
-    <lastmod>2017-05-14T17:54:05+00:00</lastmod>
+    <lastmod>2017-05-22T18:17:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -551,13 +556,13 @@
   
   <url>
     <loc>http://heartysoft.com/tags/blog/</loc>
-    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
+    <lastmod>2017-05-22T18:17:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://heartysoft.com/blog/</loc>
-    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
+    <lastmod>2017-05-22T18:17:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -604,7 +609,7 @@
   
   <url>
     <loc>http://heartysoft.com/tags/devops/</loc>
-    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
+    <lastmod>2017-05-22T18:17:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -634,7 +639,7 @@
   
   <url>
     <loc>http://heartysoft.com/</loc>
-    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
+    <lastmod>2017-05-22T18:17:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -664,7 +669,7 @@
   
   <url>
     <loc>http://heartysoft.com/tags/kubernetes/</loc>
-    <lastmod>2017-05-20T20:42:30+00:00</lastmod>
+    <lastmod>2017-05-22T18:17:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

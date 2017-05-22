@@ -6,10 +6,19 @@
     <description>Recent content in Blog on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 May 2017 20:42:30 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 May 2017 18:17:00 +0000</lastBuildDate>
     
 	<atom:link href="http://heartysoft.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Public ELBs with Private Kubernetes</title>
+      <link>http://heartysoft.com/ashic/blog/2017/05/public-elbs-with-private-kubernetes/</link>
+      <pubDate>Mon, 22 May 2017 18:17:00 +0000</pubDate>
+      
+      <guid>http://heartysoft.com/ashic/blog/2017/05/public-elbs-with-private-kubernetes/</guid>
+      <description>Kubernetes services allow us to address a collection of pods through a stable endpoint. Depending on the service type, this endpoint may be addressable only from within the cluster, from the same network, or even from the public internet. When running on AWS, setting the service type for a service to LoadBalancer will create an AWS ELB, which can be used as the endpoint. Wih a Kubernetes cluster running on public subnets, this just works.</description>
+    </item>
     
     <item>
       <title>Upgrading Kubernetes with Kops to 1.6.2</title>
