@@ -6,10 +6,21 @@
     <description>Recent content on Heartysoft Solutions Limited</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 29 May 2017 16:05:05 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jun 2017 23:14:30 +0000</lastBuildDate>
     
 	<atom:link href="http://heartysoft.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rescuing Linux Install</title>
+      <link>http://heartysoft.com/ashic/blog/2017/06/rescuing-linux-install/</link>
+      <pubDate>Mon, 05 Jun 2017 23:14:30 +0000</pubDate>
+      
+      <guid>http://heartysoft.com/ashic/blog/2017/06/rescuing-linux-install/</guid>
+      <description>Last week, I messed up. I was doing some stuff with react redux, and got annoyed at having to sudo install npm stuff. Now there are a few ways around this, but instead of using those, I followed the official page at https://docs.npmjs.com/getting-started/fixing-npm-permissions. Here&amp;rsquo;s the steps I followed:
+
+Notice that warning that looks like an innocent piece of text? I somehow foolishly missed that. As a result, I got in a bit of a pickle.</description>
+    </item>
     
     <item>
       <title>Cross AWS Account Builds - Part 2</title>
