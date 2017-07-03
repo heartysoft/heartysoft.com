@@ -2,7 +2,7 @@
 title = "Enabling K8s Features like PodPreset with Kops"
 description = "How to enable features like PodPreset in a Kubernetes cluster using Kops."
 tags = [ "blog", "devops", "kubernetes", "aws" ]
-date = "2017-06-05 23:14:30.00"
+date = "2017-07-03 23:32:30.00"
 slug = "enabling-k8s-features-like-podpreset-with-kops"
 +++
 
