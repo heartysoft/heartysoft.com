@@ -64,10 +64,11 @@ div#article-content-holder>h3 {
     color: #fff;
 }
 
-div#article-content-holder>div.article-text{
+div#article div.article-text {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1.4em;
     line-height: 1.6em;
+    text-align: justify
 }
 
 
@@ -79,7 +80,7 @@ div#archive-content-holder>div {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-div#article-content-holder>div.left-tag {
+div#article>div.left-tag {
     
     -webkit-transform:rotate(-90deg);
 	-moz-transform:rotate(-90deg);
@@ -93,7 +94,7 @@ div#article-content-holder>div.left-tag {
     text-align: center;
 }
 
-div#article-content-holder div.left-tag a {
+div#article div.left-tag a {
     padding: 0em 0em;
     white-space:nowrap;
     text-decoration: none;
@@ -103,11 +104,11 @@ div#article-content-holder div.left-tag a {
     margin: auto;
 }
 
-div#article-content-holder div.left-tag a div {
+div#article div.left-tag a div {
     padding: 0.25em 1em;
 }
 
-div#article-content-holder div.article-date {
+div#article div.article-date {
     font-weight: bold;
     float: right;
 }

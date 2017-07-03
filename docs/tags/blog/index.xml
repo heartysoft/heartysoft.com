@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Enabling K8s Features like PodPreset with Kops</title>
+      <link>http://heartysoft.com/ashic/blog/2017/06/enabling-k8s-features-like-podpreset-with-kops/</link>
+      <pubDate>Mon, 05 Jun 2017 23:14:30 +0000</pubDate>
+      
+      <guid>http://heartysoft.com/ashic/blog/2017/06/enabling-k8s-features-like-podpreset-with-kops/</guid>
+      <description>Kubernetes PodPresets are an interesting features. It allows us to define some common things about containers, and reuse them across different things (like deployments). For example, in my current project, we have some Kubernetes secrets relating to FTP connections. We use Airflow for orchestration, and as part of the workflow, sensors running in the Airflow container detect if particular files on FTP have changed. If they have, then a step in the workflow is triggered that runs a different pod in the cluster.</description>
+    </item>
+    
+    <item>
       <title>Rescuing Linux Install</title>
       <link>http://heartysoft.com/ashic/blog/2017/06/rescuing-linux-install/</link>
       <pubDate>Mon, 05 Jun 2017 23:14:30 +0000</pubDate>

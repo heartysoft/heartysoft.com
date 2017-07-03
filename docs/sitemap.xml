@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://heartysoft.com/ashic/blog/2017/06/enabling-k8s-features-like-podpreset-with-kops/</loc>
+    <lastmod>2017-06-05T23:14:30+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://heartysoft.com/ashic/blog/2017/06/rescuing-linux-install/</loc>
     <lastmod>2017-06-05T23:14:30+00:00</lastmod>
   </url>
@@ -560,7 +565,7 @@
   
   <url>
     <loc>http://heartysoft.com/tags/aws/</loc>
-    <lastmod>2017-05-29T16:05:05+00:00</lastmod>
+    <lastmod>2017-06-05T23:14:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -625,7 +630,7 @@
   
   <url>
     <loc>http://heartysoft.com/tags/devops/</loc>
-    <lastmod>2017-05-29T16:05:05+00:00</lastmod>
+    <lastmod>2017-06-05T23:14:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -685,7 +690,7 @@
   
   <url>
     <loc>http://heartysoft.com/tags/kubernetes/</loc>
-    <lastmod>2017-05-22T18:17:00+00:00</lastmod>
+    <lastmod>2017-06-05T23:14:30+00:00</lastmod>
     <priority>0</priority>
   </url>
   
